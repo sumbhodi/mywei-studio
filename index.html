@@ -164,11 +164,23 @@
   .tl-stage{position:relative}
   .tl-art{width:100%; height:auto; display:block}
   .tl-pins{list-style:none; position:absolute; inset:0; margin:0; padding:0}
-  .tl-pin{position:absolute; top:5.2%; transform:translateX(-50%);
-    display:flex; flex-direction:column; align-items:center; gap:.15rem}
-  .tl-pin i{display:block; width:2px; height:1.5rem; background:#734E32; opacity:.8}
-  .tl-pin b{font-family:'Jost',sans-serif; font-weight:500; font-size:.78rem; letter-spacing:.04em;
-    color:#4A2F1C; white-space:nowrap; text-shadow:0 0 8px #F1E7CE,0 0 4px #F1E7CE}
+  .tl-pin{position:absolute; top:5.6%; transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center}
+  .tl-tick{display:block; width:2px; height:1.1rem; background:#734E32; opacity:.9}
+  /* the hairline from pin to blurb — faint, it is a leader not a rule */
+  .tl-line{display:block; width:1px; background:#8B7355; opacity:.42; margin-top:.2rem}
+
+  .tl-blurb{position:absolute; width:min(30%,15rem); transform:translateX(-4px)}
+  .tl-blurb u{font-family:'Jost',sans-serif; text-decoration:none; display:block;
+    font-size:clamp(.62rem,1.1vw,.8rem); letter-spacing:.12em; text-transform:uppercase;
+    color:#8A6420; margin-bottom:.1rem}
+  .tl-blurb b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.06em;
+    color:#5C3D22; font-size:clamp(.8rem,1.5vw,1rem); display:block}
+  .tl-blurb span{font-family:'Cormorant Garamond',serif; color:#33281B;
+    font-size:clamp(.85rem,1.6vw,1.08rem); line-height:1.4; display:block; margin-top:.15rem}
+  .tl-blurb em{font-family:'Jost',sans-serif; font-style:normal;
+    font-size:clamp(.62rem,1.1vw,.78rem); color:#7A6448; line-height:1.45;
+    display:block; margin-top:.35rem; padding-left:.5rem; border-left:1px solid #C4AF84}
 
   /* the blurbs under the picture — the half that works with images off, at any zoom, read aloud */
   .tl-list{list-style:none; margin:1.5rem auto 0; padding:0; max-width:38rem}
@@ -336,14 +348,30 @@
       return '<p>'+p.p+cite+'</p>' }).join('')
     body.innerHTML=h
   }
-  /* the timeline paints itself from window.TIMELINE — pins and blurbs from one array */
+  /* ── THE TIMELINE PAINTS ITSELF from window.TIMELINE ──────────────────────
+     A pin sits on the axis at its year. A hairline drops from the pin to a blurb parked further
+     down the parchment, so a crowded stretch (everything from 800 BCE to 400 CE lands inside a
+     tenth of the axis) does not pile up on one line. `y` is the stagger. */
   ;(function(){
-    var T=window.TIMELINE||[], pins=document.getElementById('tl-pins'), list=document.getElementById('tl-list')
+    var T=window.TIMELINE||[], pins=document.getElementById('tl-pins')
     if(!T.length) return
-    pins.innerHTML=T.map(function(t){
-      return '<li class="tl-pin" style="left:'+(t.at*100)+'%"><i></i><b>'+t.year+'</b></li>' }).join('')
-    list.innerHTML=T.map(function(t){
-      return '<li><b>'+t.year+'</b><span>'+t.blurb+'</span></li>' }).join('')
+    pins.innerHTML = T.map(function(t){
+      /* keep a blurb on the page: it hugs its pin, but never runs off either edge */
+      var left = Math.min(Math.max(t.at, 0.03), 0.72)
+      /* ⚠ NO YEAR ON THE AXIS. Nine pins, five of them inside a tenth of the width, and the
+         labels overlapped into mush — in exactly the stretch whose tightness IS the argument.
+         The tick alone shows the clustering; the year rides on the blurb, where there is room. */
+      return '<li class="tl-pin" style="left:'+(t.at*100)+'%">'+
+               '<i class="tl-tick"></i>'+
+               '<i class="tl-line" style="height:calc('+(t.y*100)+'% - 1.6rem)"></i>'+
+             '</li>'+
+             '<li class="tl-blurb" style="left:'+(left*100)+'%;top:'+(t.y*100)+'%">'+
+               '<u>'+t.year+'</u>'+
+               '<b>'+t.title+'</b>'+
+               '<span>'+t.blurb+'</span>'+
+               (t.note?'<em>'+t.note+'</em>':'')+
+             '</li>'
+    }).join('')
   })()
 
   function open(btn){

@@ -185,7 +185,47 @@ window.CARDS = {
  * ⚠ Seeded with only the two facts his own Six Branches doc already states. Everything else is
  * his to give — nothing has been invented to fill the axis out. */
 window.TIMELINE = [
-  /* his dates go here — one line each: { at:0.42, year:'c. 400 CE', blurb:'…' }
-     `at` is the fraction along the axis drawn into timeline.png:
-     3000 BCE ≈ 0.02 · 1860 ≈ 0.55 · 1980 ≈ 0.79 · 2020 ≈ 0.96 */
+  /* ⭐ TRADITION, NOT HISTORY — his call: "we go by tradition not history, can footnote asterix
+     if you like on all these dates." So the years on the parchment are the ones the tradition
+     gives, and where scholarship disagrees the gap is a FOOTNOTE, not a correction. The gap is
+     often the more interesting fact anyway: the Gita is set three thousand years before the book
+     that reports it.
+
+     `at` is the fraction along the axis drawn into timeline.png — 3000 BCE ≈ 0.02, 1860 ≈ 0.55,
+     1980 ≈ 0.79, 2020 ≈ 0.96, interpolated between. `y` staggers the blurb down the parchment so
+     a crowded stretch does not collide; a hairline runs from the pin to the words. */
+
+  { at:0.009, y:0.10, year:'3102 BCE', title:'Krishna and Arjuna',
+    blurb:'The Gita, on a battlefield. Traditionally the start of Kali Yuga.',
+    note:'The text was written 200 BCE–200 CE. The story is set three thousand years before the book that reports it.' },
+
+  { at:0.26, y:0.30, year:'c. 800 BCE', title:'The Upanishads',
+    blurb:'The OG. Yoga in a shape you would recognise — the Katha has the chariot and the yoke.',
+    note:'Same span as Meso and the pyramids, but still a living document when Hebrew, Greek and Latin were being written. Better translations, no philosopher\u2019s stone needed \u2014 the fan fic survived.' },
+
+  { at:0.275, y:0.90, year:'\u015bruti / sm\u1e5bti', title:'Heard, and remembered',
+    blurb:'Two streams at once. \u015aruti is heard and fixed \u2014 the Vedas, locked by recitation. Sm\u1e5bti is remembered and plastic \u2014 the epics, retold and expanded every generation.',
+    note:'It did not survive on better weather. Palm leaf rots; India kept its texts in people, not paper. And the memorised ones stayed soft. Writing hardcoded them \u2014 a story you can cite is a story you can be wrong about.' },
+
+  { at:0.304, y:0.46, year:'c. 400 BCE', title:'Siddhartha',
+    blurb:'And Confucius, and Socrates, and the Hebrew prophets. Independent regions, no contact.',
+    note:'Historians call it the Axial Age. Traditional dates are 563\u2013483 BCE, but scholarship has moved his death LATER, toward 400 \u2014 which pulls him toward the rest of the cluster, not away.' },
+
+  { at:0.347, y:0.62, year:'0', title:'Christ',
+    blurb:'Vishnu comes back as a Jew this time, and they spell it Christ. Same guy. Not really blue.',
+    note:'First trick was at a party. Both are known for party tricks. By now the Silk Road is open and everybody wants a cut of the missionary business.' },
+
+  { at:0.325, y:0.78, year:'c. 200 BCE', title:'Patanjali',
+    blurb:'The Sutras. The eight limbs get written down and get an author.',
+    note:'Contested, and the range is enormous \u2014 tradition says 2nd century BCE, current scholarship argues c. 400 CE. Taking the early end puts Siddhartha, the Sutras and Christ inside four centuries. The six branches never get a date at all, which is why one column of the tree hangs off a year and the other does not.' },
+
+  { at:0.543, y:0.20, year:'the 1800s', title:'The mat',
+    blurb:'The yoga mat as we know it is invented. Before that it was a bed.',
+    note:'Which is what makes the PG-13 version of the Shiva and Parvati story hard to animate.' },
+
+  { at:0.549, y:0.38, year:'by 1850', title:'Nearly gone',
+    blurb:'The physical practice of hatha had all but disappeared from the world.' },
+
+  { at:0.79, y:0.54, year:'the 1980s', title:'Los Angeles',
+    blurb:'More people practicing hatha in LA than in all of India.' }
 ]
