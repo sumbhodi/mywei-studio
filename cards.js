@@ -55,26 +55,6 @@ window.CARDS = {
       ['genius malignus',          'if you liked The Matrix —<br>which is Descartes in better coats']
     ],
     body:[
-      {p:'Those are not five things. They are five vocabularies pointing at one thing, and the test is '+
-         'that <strong>it survives the translation.</strong> Swap the word and the problem does not '+
-         'change: something is doing the experiencing, and it cannot get around in front of itself to '+
-         'have a look.'},
-      {p:'<strong>That last one is worth a minute, because it is the one that goes wrong.</strong> '+
-         'Descartes imagined the <em>genius malignus</em> — a deceiver with the power to fake the entire world, '+
-         'every sight and sound and body. No machine; pure malice. Three hundred years later Hilary '+
-         'Putnam swapped the demon for hardware: a brain in a vat of fluid, wired to a computer feeding '+
-         'it a life. The Matrix is Putnam in better coats.'},
-      {p:'And here is the correction, because the film invites the mistake: <strong>the Matrix is the '+
-         'kosha, not the Atman.</strong> The simulation is the sheath — the render, Maya, the screen. It '+
-         'belongs on the other side of the ledger entirely.'},
-      {p:'The film gets the rest of it half-wrong too. It makes you a <em>battery</em> — a power source '+
-         'the machines are farming. Atman is not the power supply. Atman is the one the render is being '+
-         'shown to.'},
-      {p:'But the reason the picture still lands, and why it is worth keeping: <strong>the experience of '+
-         'being inside the Matrix is exactly what we experience as Atman.</strong> The felt sense of a '+
-         'someone in here, receiving a world out there. That feeling is the closest most people get to '+
-         'noticing the thing at all — and it is also, precisely, the illusion. The observer is the '+
-         'construction.'},
       {p:'<em>Atman is the slice of that universe that says &ldquo;I.&rdquo; Your node of awareness. The '+
          'part of Brahman wearing a body and wondering where it left its keys.</em>',
          cite:'History of Yoga'},
