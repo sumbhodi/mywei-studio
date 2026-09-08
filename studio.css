@@ -1,0 +1,373 @@
+/* studio.css — mywei.studio
+ *
+ * The typefaces and the gold are carried over from the A3 lecture pages already live on
+ * ozhunga (Cinzel display · Cormorant Garamond body · Jost ui · #C9A84C), so the new site
+ * reads as family with the lectures it links out to. What changes is the ground: those pages
+ * are dark, and every asset here is parchment, so this room is lit and they are not.
+ *
+ * ⭐ EVERYTHING BIG. His standing rule, and it drives real numbers below, not a sentiment:
+ * 19px base, 1.15rem minimum on any control, 3rem hit targets, focus rings you can see from
+ * across a room. Nothing here is set in a size he would have to lean in for.
+ */
+
+:root{
+  --parch:#EDE2C8; --parch-lit:#F6EFDC; --parch-deep:#DFD0AE;
+  --ink:#33281B; --ink-soft:#5C4B33; --ink-faint:#8B7355;
+  --gold:#A8791C; --gold-lit:#C9A84C;
+  --rule:#C4AF84;
+  --focus:#1C5C8C;
+  color-scheme:light;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background:var(--parch);
+  background-image:radial-gradient(ellipse at 50% 0%, var(--parch-lit) 0%, var(--parch) 55%, var(--parch-deep) 100%);
+  background-attachment:fixed;
+  color:var(--ink);
+  font-family:'Jost',system-ui,sans-serif;
+  font-size:19px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── the skip link. Real, and visible the moment it is focused. ───────────── */
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:100;
+  background:var(--ink); color:var(--parch-lit);
+  padding:1rem 1.5rem; font-size:1.15rem; text-decoration:none;
+}
+.skip:focus{left:0}
+
+:focus-visible{outline:3px solid var(--focus); outline-offset:3px; border-radius:2px}
+
+/* ── HEADER — ATMAN is BRAHMAN ────────────────────────────────────────────── */
+.head{padding:clamp(2rem,5vw,4rem) 1.25rem 1rem; text-align:center}
+
+.mahavakya{
+  display:flex; align-items:flex-start; justify-content:center;
+  gap:clamp(1rem,4vw,3.5rem); flex-wrap:wrap;
+}
+
+.term{
+  display:flex; flex-direction:column; gap:.3rem;
+  text-decoration:none; color:var(--ink);
+  padding:.6rem 1rem; border-radius:3px;
+  transition:color .18s, background .18s;
+}
+.term:hover,.term:focus-visible{background:rgba(168,121,28,.10); color:var(--gold)}
+.term-word{
+  font-family:'Cinzel',serif; font-size:clamp(1.7rem,5vw,2.9rem);
+  letter-spacing:.1em; line-height:1.1;
+}
+.term-gloss{
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:clamp(.95rem,2vw,1.15rem); color:var(--ink-faint);
+}
+.term:hover .term-gloss{color:var(--gold)}
+
+/* the "is" — and the arrow that points down at YOGA.
+   Drawn in CSS so it scales, prints, and survives images-off. */
+.is{display:flex; flex-direction:column; align-items:center; gap:.25rem; padding-top:.35rem}
+.is-word{
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:clamp(1.6rem,4.5vw,2.6rem); color:var(--gold);
+}
+.is-gloss{
+  font-family:'Jost',sans-serif; font-size:.9rem; letter-spacing:.06em;
+  color:var(--ink-faint); text-align:center; max-width:14rem;
+}
+.is-arrow{
+  width:2px; height:clamp(1.5rem,4vw,2.6rem); background:var(--gold);
+  position:relative; margin-top:.2rem;
+}
+.is-arrow::after{
+  content:''; position:absolute; bottom:-1px; left:50%; transform:translateX(-50%);
+  border-left:6px solid transparent; border-right:6px solid transparent;
+  border-top:9px solid var(--gold);
+}
+
+.head-note{
+  margin:1.6rem auto 0; max-width:44rem;
+  font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--ink-soft);
+}
+.quiet{color:var(--gold); text-decoration-thickness:1px; text-underline-offset:3px}
+
+/* ── THE TREE — THE ART IS THE GROUND, AND THE WORDS ARE PRINTED ON IT ────────
+   ⚠ 7 Sep, his call, twice: "so art is whole background" · "things are printed on the art."
+   The first pass had the tree boxed in a middle column with two lists beside it — a picture
+   with furniture either side. This is the opposite: the art is the stage, full bleed, and the
+   twenty names sit ON it.
+
+   ⭐ THE ONE CONCESSION, AND IT IS AN a11y ONE, NOT A TASTE ONE. Text laid straight onto a
+   painting has whatever contrast the painting happens to give it, which changes per pixel and
+   fails wherever a branch runs dark. So each name carries a parchment HALO (text-shadow in the
+   ground colour) rather than a box. It reads as printed on the art, and it stays legible over
+   every part of it — including at 200% zoom, where the art crops and the words move over paint
+   that was clear a moment ago. A box would have been safer and would have undone the whole ask. */
+.tree{
+  position:relative;
+  max-width:1700px; margin:clamp(.5rem,2vw,1.5rem) auto 0;
+  padding:clamp(1.5rem,4vw,3rem) clamp(1rem,3vw,2.5rem);
+  /* ⚠ CONTAIN, NOT COVER — and this was the bug the first screenshot caught. `cover` on a
+     1200x896 landscape inside a tall box zooms the painting until the canopy fills the frame,
+     which put every name on top of dark branch paint. `contain` plus the art's own aspect ratio
+     means the stage IS the picture: the tree sits whole, and the outer thirds stay clear
+     parchment — which is exactly where the two columns of names live. */
+  aspect-ratio:1200/896;
+  min-height:clamp(380px,44vw,760px);
+  background-image:url('art/yoga-tree.jpg');
+  background-size:contain; background-position:center; background-repeat:no-repeat;
+  display:grid; grid-template-columns:1fr minmax(160px,30vw) 1fr;
+  align-items:center; gap:clamp(.5rem,1.5vw,1.5rem);
+}
+.tree:focus{outline:none}
+
+/* the <img> stays in the markup for print and for images-off, but the screen uses the
+   background so it can cover the whole stage. */
+.tree-img{display:none}
+
+.trunk{
+  position:relative; display:flex; flex-direction:column;
+  align-items:center; justify-content:flex-end; align-self:stretch;
+  padding-bottom:clamp(.5rem,2vw,1.5rem);
+}
+
+/* the centre control — the art letters YOGA into its own canopy, so this is the door, not the
+   display. Small, named, and out of the painting's way. */
+.centre{
+  background:none; border:none; cursor:pointer; color:var(--ink); font:inherit;
+  display:flex; flex-direction:column; align-items:center; gap:.15rem;
+  min-height:3.25rem; padding:.6rem 1rem; border-radius:3px;
+  transition:background .18s;
+}
+.centre:hover,.centre:focus-visible{background:rgba(246,239,220,.78)}
+.centre-sans{font-size:clamp(1.4rem,3vw,2rem); color:var(--gold); line-height:1; text-shadow:0 0 10px var(--parch-lit)}
+.centre-gloss{
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:clamp(.95rem,2vw,1.15rem); color:var(--ink-soft);
+  text-shadow:0 0 10px var(--parch-lit),0 0 4px var(--parch-lit);
+}
+
+/* ── THE TWO SIDES — names only, printed on the painting ──────────────────── */
+.side{align-self:center}
+.side-right{text-align:right}
+.side-h{
+  font-family:'Cinzel',serif; font-size:clamp(1rem,1.9vw,1.3rem);
+  letter-spacing:.16em; color:var(--gold);
+  text-shadow:0 0 12px var(--parch-lit),0 0 5px var(--parch-lit);
+}
+.side-sub{
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  color:var(--ink-soft); font-size:1rem; margin-bottom:.7rem;
+  text-shadow:0 0 12px var(--parch-lit),0 0 5px var(--parch-lit);
+}
+.limb-list{list-style:none; display:flex; flex-direction:column; gap:.1rem}
+
+/* ONE ROW = a rolled scroll and a word. Still a real 3rem button, still keyboard-operable —
+   it just has no chrome until you touch it. */
+.leaf{
+  display:flex; align-items:center; gap:.6rem; width:100%;
+  min-height:3rem; padding:.45rem .7rem;
+  background:none; border:none; border-radius:3px;
+  color:var(--ink); font:inherit; text-align:left; cursor:pointer;
+  transition:background .16s;
+}
+.side-right .leaf{flex-direction:row-reverse; text-align:right}
+.leaf:hover,.leaf:focus-visible{background:rgba(246,239,220,.86)}
+
+.leaf-ico{
+  width:34px; height:auto; flex:none; opacity:.75;
+  transition:opacity .16s, transform .16s;
+}
+.leaf:hover .leaf-ico,.leaf:focus-visible .leaf-ico{opacity:1; transform:scale(1.08)}
+
+.leaf-name{
+  font-family:'Cinzel',serif; font-size:clamp(1.05rem,1.7vw,1.35rem);
+  letter-spacing:.1em; display:flex; align-items:baseline; gap:.45rem;
+  text-shadow:0 0 12px var(--parch-lit),0 0 5px var(--parch-lit),0 0 2px var(--parch-lit);
+}
+.side-right .leaf-name{flex-direction:row-reverse}
+.leaf-n{font-family:'Jost',sans-serif; font-size:.8rem; color:var(--gold); font-weight:500}
+
+/* the two the class is actually built on get a gold rule, not a paragraph */
+.leaf[data-weight="core"] .leaf-name{color:var(--gold)}
+
+/* ── ROOTS ────────────────────────────────────────────────────────────────── */
+.roots{
+  max-width:1500px; margin:clamp(1rem,3vw,2rem) auto 0; padding:2rem 1.25rem;
+  text-align:center; border-top:2px solid var(--rule);
+}
+.roots-h{font-family:'Cinzel',serif; font-size:clamp(1.4rem,3vw,2rem); letter-spacing:.14em; color:var(--gold)}
+.roots-sub{font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--ink-soft); font-size:1.15rem}
+.root-btn{
+  margin-top:1.1rem; min-height:3.25rem; padding:.85rem 2rem;
+  font:inherit; font-size:1.15rem; letter-spacing:.05em;
+  background:var(--ink); color:var(--parch-lit); border:none; cursor:pointer;
+  transition:background .18s;
+}
+.root-btn:hover,.root-btn:focus-visible{background:var(--gold)}
+
+/* ── TIMELINE — pinned, stays open alongside a scroll ─────────────────────── */
+.timeline{max-width:1200px; margin:0 auto; padding:1rem 1.25rem 2.5rem}
+.tl-h{
+  font-family:'Cinzel',serif; font-size:1.2rem; letter-spacing:.14em;
+  color:var(--gold); text-align:center; margin-bottom:.9rem;
+}
+.tl-frame{
+  position:relative; background:var(--parch-lit);
+  border:1px solid var(--rule); padding:1.4rem 1.25rem 1rem;
+}
+.tl-axis{
+  list-style:none; position:relative; height:2.6rem;
+  border-bottom:2px solid var(--ink-soft); margin-bottom:.6rem;
+}
+.tl-tick{position:absolute; bottom:0; transform:translateX(-50%); text-align:center}
+.tl-tick::after{content:''; display:block; width:2px; height:.7rem; background:var(--ink-soft); margin:.2rem auto -2px}
+.tl-tick span{font-size:.95rem; letter-spacing:.06em; white-space:nowrap}
+.tl-pins{list-style:none; display:flex; flex-direction:column; gap:.5rem; margin-top:.8rem}
+.tl-note{
+  max-width:46rem; margin:.9rem auto 0; text-align:center;
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:1.1rem; color:var(--ink-soft);
+}
+
+/* ── ESSAYS ───────────────────────────────────────────────────────────────── */
+.essays{max-width:1200px; margin:0 auto; padding:1rem 1.25rem 3rem; border-top:2px solid var(--rule)}
+.essays-h{
+  font-family:'Cinzel',serif; font-size:1.2rem; letter-spacing:.14em;
+  color:var(--gold); text-align:center; margin:1.5rem 0 1.2rem;
+}
+.essay-list{
+  list-style:none; display:grid; gap:.6rem;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+/* ── THE STUB BADGE — says out loud what has not been written yet ──────────── */
+.stub{
+  display:inline-block; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+  background:var(--parch-deep); color:var(--ink-soft);
+  border:1px dashed var(--ink-faint); padding:.1rem .5rem; margin-left:.5rem;
+}
+
+/* ── THE SCROLL — one dialog, fifteen fills ───────────────────────────────── */
+
+/* ⚠ THIS RULE IS LOAD-BEARING AND IT WAS THE FIRST BUG. `.scroll` sets display:flex, and a
+   class selector beats the [hidden] attribute's UA default of display:none — so the dialog
+   rendered OPEN on first paint, over the header, on a page nobody had clicked yet. Any element
+   below that is hidden by attribute AND laid out by class needs its own [hidden] rule. */
+[hidden]{display:none !important}
+
+.scrim{position:fixed; inset:0; background:rgba(35,28,18,.62); z-index:40}
+.scroll{
+  position:fixed; z-index:50; inset:clamp(.5rem,3vh,2.5rem) clamp(.5rem,4vw,3rem);
+  display:flex; align-items:center; justify-content:center; pointer-events:none;
+}
+.scroll-inner{
+  position:relative; pointer-events:auto;
+  width:min(58rem,100%); max-height:100%;
+  background:var(--parch-lit);
+  background-image:url('art/lesson.png');
+  background-size:100% 100%; background-repeat:no-repeat;
+  border:1px solid var(--rule);
+  box-shadow:0 24px 70px rgba(35,28,18,.45);
+  display:flex; flex-direction:column;
+}
+.scroll-close{
+  position:absolute; top:.6rem; right:.6rem; z-index:2;
+  min-height:2.75rem; padding:.5rem 1.1rem;
+  font:inherit; font-size:1rem; letter-spacing:.06em;
+  background:var(--ink); color:var(--parch-lit); border:none; cursor:pointer;
+}
+.scroll-close:hover,.scroll-close:focus-visible{background:var(--gold)}
+.scroll-body{
+  overflow-y:auto; padding:clamp(2.5rem,6vw,4rem) clamp(1.5rem,6vw,4.5rem);
+}
+.scroll-body:focus{outline:none}
+
+.s-name{
+  font-family:'Cinzel',serif; font-size:clamp(1.8rem,5vw,2.6rem);
+  letter-spacing:.1em; line-height:1.15;
+}
+.s-n{font-family:'Jost',sans-serif; font-size:1rem; color:var(--gold); display:block; margin-bottom:.2rem}
+.s-gloss{
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:1.3rem; color:var(--ink-soft); margin-bottom:.4rem;
+}
+.s-taught{
+  font-size:.95rem; color:var(--ink-soft);
+  background:rgba(168,121,28,.10); border-left:3px solid var(--gold);
+  padding:.6rem .9rem; margin:1rem 0 1.4rem;
+}
+.s-caste{
+  font-size:.85rem; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); margin-bottom:1.2rem;
+  border-top:1px dotted var(--rule); border-bottom:1px dotted var(--rule); padding:.4rem 0;
+}
+.s-rule{border:none; border-top:1px solid var(--rule); margin:1.2rem 0}
+.s-body p{
+  font-family:'Cormorant Garamond',serif; font-size:1.3rem; line-height:1.62;
+  margin-bottom:1.1rem; max-width:38rem;
+}
+.s-body p.lead{font-size:1.5rem; color:var(--ink)}
+.s-cite{
+  display:block; font-family:'Jost',sans-serif; font-style:normal;
+  font-size:.85rem; letter-spacing:.06em; color:var(--ink-faint); margin-top:.25rem;
+}
+.s-list{list-style:none; margin:0 0 1.4rem; padding:0; max-width:38rem}
+.s-list li{
+  display:flex; gap:.9rem; align-items:baseline;
+  padding:.55rem 0; border-bottom:1px dotted var(--rule);
+}
+.s-list b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.06em; min-width:11rem}
+.s-list span{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.15rem; color:var(--ink-soft)}
+.s-stub{
+  background:var(--parch-deep); border:1px dashed var(--ink-faint);
+  padding:1.1rem 1.3rem; font-size:1.05rem; color:var(--ink-soft); max-width:38rem;
+}
+
+/* ── FOOT ─────────────────────────────────────────────────────────────────── */
+.foot{
+  text-align:center; padding:2.5rem 1.25rem 3.5rem;
+  border-top:2px solid var(--rule); color:var(--ink-soft);
+}
+.foot-fine{font-size:.9rem; color:var(--ink-faint); max-width:40rem; margin:.5rem auto 0}
+
+/* ── NARROW — the three columns become one honest column ──────────────────── */
+@media (max-width:900px){
+  /* ⚠ REWRITTEN 7 Sep. The old block here belonged to the boxed three-column layout and it is
+     what stacked both lists into one column ON TOP of a zoomed painting. On a phone the art
+     stops being a stage and goes back to being a picture: it sits above, whole, and the two
+     lists run underneath it as plain honest lists. Printing words over art only works when
+     there is art-margin to print them on, and at 380px wide there is none. */
+  .tree{
+    aspect-ratio:auto; min-height:0; background-image:none;
+    grid-template-columns:1fr; gap:1.25rem;
+    padding:1rem 1.25rem 2rem;
+  }
+  .tree-img{
+    display:block; order:-1; width:100%; height:auto;
+    max-height:44vh; object-fit:contain; margin:0 auto;
+  }
+  .trunk{align-self:auto; padding-bottom:0}
+  .side-right{text-align:left}
+  .side-right .leaf{flex-direction:row}
+  .side-right .leaf-name{flex-direction:row}
+  .leaf{background:rgba(246,239,220,.55)}
+  .leaf-name,.side-h,.side-sub,.centre-gloss,.centre-sans{text-shadow:none}
+}
+
+/* ── MOTION — off, if they asked for it off ───────────────────────────────── */
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important; animation:none !important; scroll-behavior:auto !important}
+}
+
+/* ── PRINT — the scroll is the handout. Parchment art drops, words stay. ──── */
+@media print{
+  body{background:#fff}
+  .head,.tree,.roots,.timeline,.essays,.foot,.scrim,.scroll-close{display:none}
+  .scroll{position:static; inset:auto}
+  .scroll-inner{background:#fff; box-shadow:none; border:none; width:100%}
+  .scroll-body{overflow:visible; padding:0}
+  .s-body p{font-size:12pt}
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoga — mywei.studio</title>
+
+<!-- 7 Sep 2026 — THE ART, AND THREE WORDS. Nothing else yet.
+     His call: "Atman is Brahman up top here, nothing else — is can be right on top center of tree."
+     So the two nouns sit on the clear parchment either side, and the copula sits ON the canopy's
+     centre peak. The built version (six names left, eight right, the scroll factory, his own docs
+     as content) is whole and parked at _parked/2026-09-07-tree-with-names/. Nothing was deleted.
+
+     ⭐ THE OVERLAY IS IN PERCENTAGES, NOT PIXELS. The words are positioned inside a box that
+     carries the art's own 1200x896 aspect ratio, so every word keeps its spot on the painting at
+     any width — the "is" stays on the canopy peak on a phone and on a projector alike. Pixel
+     offsets would have drifted off the tree the first time the window changed size. -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ⭐ THE CONTRAST DIAL — his call, not mine. "make arrow pop a little more, but let me make
+     call on contrast." One number, one place. .30 was where it started (invisible to me on a
+     scaled screenshot), .48 is where it sits now. Turn it up until it is right in the room, on
+     the projector he will actually teach from — that judgement needs his eyes, not mine. */
+  :root{ --arrow-ink:.48; }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:#EDE2C8;
+    display:flex; align-items:center; justify-content:center;
+    color-scheme:light;
+  }
+
+  /* the stage carries the painting's own aspect ratio, so the overlay lays out in % of it */
+  .stage{
+    position:relative;
+    width:min(100vw, calc(100vh * 1200 / 896));
+    aspect-ratio:1200/896;
+  }
+  .stage img{width:100%; height:100%; display:block; object-fit:contain}
+
+  .w{
+    position:absolute; transform:translate(-50%,-50%);
+    font-family:'Cinzel',serif; color:#734E32;
+    text-decoration:none; white-space:nowrap;
+    /* a parchment halo, so a word stays legible wherever the paint runs dark under it */
+    text-shadow:0 0 18px #F6EFDC, 0 0 7px #F6EFDC, 0 0 3px #F6EFDC;
+    transition:color .18s;
+  }
+  a.w:hover, a.w:focus-visible{color:#4A2F1C}
+  a.w:focus-visible{outline:3px solid #1C5C8C; outline-offset:6px; border-radius:2px}
+
+  /* ⭐ ALL THREE IN THE TREE'S OWN INK. Sampled, not guessed: 57,384 ink pixels off the trunk
+     and the YOGA lettering average #866241, and the single most common value is #734E32. The words
+     are the same substance as the drawing, which is the point of lettering them onto it. */
+  .atman  {left:15%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
+  .brahman{left:85%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
+
+  /* the bad is — same line, no halo, free to be swallowed by the canopy. His call, twice. */
+  .is{
+    left:50%; top:6.5%;
+    font-family:'Cormorant Garamond',serif; font-style:italic;
+    font-size:clamp(1.05rem,4vw,3rem);
+    text-shadow:none;
+    opacity:.85;
+  }
+
+  /* ⭐⭐ THE ARROW — from the "is" down into the YOGA lettering in the canopy.
+     His call: "add arrow down from is to yoga, that is also lost in the noise but there if you
+     focus. whole page is a yoga lesson."
+
+     So the page stops being a page about yoga and becomes an instance of it. The arrow is drawn at
+     the same threshold as the copula — present, in the tree's own ink, and quiet enough that it
+     only resolves once you hold your attention on it. That act has a name in the course: DHARANA,
+     the sixth limb, held attention on a chosen object. The site does not describe the practice in
+     a caption; it asks for it, and then it rewards it.
+
+     ⚠ AND THE a11y ANSWER, WHICH IS NOT "MAKE IT LOUDER". A faint arrow cannot be found by focus
+     if you are not looking with eyes at all, so the same teaching is delivered in words to a
+     screen reader (.sr below) — same content, different modality. Turning the arrow up to meet
+     WCAG contrast would destroy the lesson for everyone; giving a blind student the sentence
+     instead gives them the lesson without asking a sighted one to give up theirs. */
+  .arrow{
+    position:absolute; left:50%; top:9%;
+    transform:translateX(-50%);
+    width:clamp(12px,1.4vw,22px); height:clamp(26px,5.6vw,95px);
+    opacity:var(--arrow-ink); pointer-events:none;
+  }
+  .arrow svg{width:100%; height:100%; display:block; overflow:visible}
+
+  /* visually hidden, but read aloud */
+  .sr{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+  }
+
+  @media (max-width:620px){
+    .atman{left:17%} .brahman{left:83%}
+    .sc-left{left:31%} .sc-right{left:69%}
+    .atman,.brahman{letter-spacing:.04em}
+  }
+
+  /* the three words are buttons now — reset the chrome, keep the type */
+  /* the three words are buttons now — reset the chrome, keep the type */
+  button.w{background:none; border:none; padding:0; cursor:pointer; color:#734E32}
+  button.w:hover{color:#4A2F1C}
+  button.w:focus-visible{outline:3px solid #1C5C8C; outline-offset:6px; border-radius:2px}
+
+  /* ── THE SCROLL — his blank parchment, opened over the tree ────────────────
+     ⚠ 7 Sep: "remove scroll art, changed my mind. open the blank scroll, write new one with philo."
+     So there is no rolled-scroll icon anywhere; the words themselves are the door, and what opens
+     is lesson.png — the blank sheet — with new writing on it rather than a link out to the old
+     Atman lecture, which he asked me not to point at. */
+  [hidden]{display:none !important}
+  .scrim{position:fixed; inset:0; background:rgba(45,34,22,.6); z-index:40}
+  .sheet{
+    position:fixed; z-index:50; inset:clamp(.5rem,3vh,2.5rem) clamp(.5rem,4vw,3rem);
+    display:flex; align-items:center; justify-content:center; pointer-events:none;
+  }
+  .sheet-inner{
+    pointer-events:auto; position:relative;
+    width:min(52rem,100%); max-height:100%;
+    background:#F6EFDC url('art/lesson.png') center/100% 100% no-repeat;
+    box-shadow:0 24px 70px rgba(45,34,22,.45);
+    display:flex; flex-direction:column;
+  }
+  .sheet-close{
+    position:absolute; top:.5rem; right:.5rem; z-index:2;
+    min-height:2.75rem; padding:.5rem 1.1rem; font:inherit; font-size:1rem;
+    letter-spacing:.06em; background:#734E32; color:#F6EFDC; border:none; cursor:pointer;
+  }
+  .sheet-close:hover,.sheet-close:focus-visible{background:#4A2F1C}
+  .sheet-body{overflow-y:auto; padding:clamp(2.75rem,6vw,4.5rem) clamp(1.75rem,6vw,5rem)}
+  .sheet-body:focus{outline:none}
+  .sheet-body h1{
+    font-family:'Cinzel',serif; font-weight:600; color:#734E32;
+    font-size:clamp(1.5rem,4vw,2.4rem); letter-spacing:.1em; line-height:1.2;
+  }
+  .sheet-body .sub{
+    font-family:'Cormorant Garamond',serif; font-style:italic; color:#6B573C;
+    font-size:clamp(1.05rem,2.2vw,1.35rem); margin:.3rem 0 1.4rem;
+    border-bottom:1px solid #C4AF84; padding-bottom:1rem;
+  }
+  .sheet-body p{
+    font-family:'Cormorant Garamond',serif; color:#33281B;
+    font-size:clamp(1.1rem,2.1vw,1.35rem); line-height:1.62; margin-bottom:1.05rem; max-width:36rem;
+  }
+  .sheet-body p.big{font-size:clamp(1.25rem,2.6vw,1.65rem); color:#4A2F1C}
+  .sheet-body .draft{
+    margin-top:1.6rem; font-family:'Jost',sans-serif; font-size:.9rem; color:#6B573C;
+    border:1px dashed #A08A62; padding:.85rem 1.1rem; max-width:36rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <img src="art/yoga-tree.jpg"
+       alt="A tree drawn in Tamil script, with the word YOGA lettered into its canopy."
+       width="1200" height="896">
+
+  <button class="w atman" type="button" data-scroll aria-haspopup="dialog">ATMAN</button>
+  <span class="w is">is</span>
+  <button class="w brahman" type="button" data-scroll aria-haspopup="dialog">BRAHMAN</button>
+
+  <!-- the arrow, at the same threshold of visible as the "is" it falls from -->
+  <span class="arrow" aria-hidden="true">
+    <svg viewBox="0 0 20 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 0 L10 88" stroke="#734E32" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M2.5 79 L10 92 L17.5 79" stroke="#734E32" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </span>
+
+  <p class="sr">
+    Atman is Brahman. The word “is” sits on the crown of the tree, and an arrow falls from it into
+    the word YOGA lettered in the canopy — <em>yuj</em>, to yoke, to harness. Both are drawn faintly,
+    on purpose: they are there if you hold your attention on them, which is itself the sixth limb,
+    dharana. The whole page is a yoga lesson.
+  </p>
+
+</div>
+
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h" hidden>
+  <div class="sheet-inner">
+    <button class="sheet-close" id="sheet-close" type="button">Close<span aria-hidden="true"> &#10005;</span></button>
+    <div class="sheet-body" id="sheet-body" tabindex="-1">
+
+      <h1 id="sheet-h">ATMAN IS BRAHMAN</h1>
+      <p class="sub"><em>yuj</em> &mdash; to yoke, to harness. The middle word is the practice.</p>
+
+      <p class="big">The whole load is carried by the smallest word, and the smallest word is the
+        same root as the name of the thing you came here to do.</p>
+
+      <p>So it is not a description of a state you arrive at later, after enough mornings on the mat.
+        The yoking is not the reward for the sentence. <strong>The yoking is the sentence.</strong></p>
+
+      <p>Which leaves an obvious problem, and it is worth saying out loud before anybody sits down:
+        in here, out there, us and other &mdash; <em>a necessary illusion to order coffee.</em></p>
+
+      <p>Because if it really is all one, walls are hard to avoid, and the car still has to be driven
+        somewhere. <em>&ldquo;I want&rdquo;</em> &mdash; what does that even mean? The Buddha said I
+        should have no wants. And yet somebody has to decide about dinner.</p>
+
+      <p>So the split gets called an illusion and then kept anyway, because it is load-bearing. That
+        is not hypocrisy. That is the practice. You see through it and you order the coffee.</p>
+
+      <p class="big">True enlightenment is useless. Spend too long in nirvana and you will wind up
+        sitting in a pile of crap.</p>
+
+      <p>Which is the entire method, stated as plainly as it can be stated: find the seat. Turn the
+        brain off. Unplug it &mdash; and then <strong>plug it back in.</strong></p>
+
+      <p>Find sukhasana. Find samadhi. And leave before you need to change your shorts.</p>
+
+      <p class="draft"><strong>Draft &mdash; yours to cut.</strong> Every line above is your own, from
+        tonight and from the Wei. Nothing has been invented in your name. Say the word and it changes.</p>
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var sheet=document.getElementById('sheet'), scrim=document.getElementById('scrim'),
+      body=document.getElementById('sheet-body'), stage=document.querySelector('.stage'), from=null
+  function open(btn){
+    from=btn; scrim.hidden=false; sheet.hidden=false
+    stage.setAttribute('aria-hidden','true'); document.body.style.overflow='hidden'; body.focus()
+  }
+  function close(){
+    sheet.hidden=true; scrim.hidden=true
+    stage.removeAttribute('aria-hidden'); document.body.style.overflow=''
+    if(from&&document.contains(from))from.focus()   /* back to the word they pressed */
+    from=null
+  }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-scroll]')
+    if(t){open(t);return}
+    if(e.target.closest('#sheet-close')||e.target===scrim)close()
+  })
+  document.addEventListener('keydown',function(e){
+    if(sheet.hidden)return
+    if(e.key==='Escape'){close();return}
+    if(e.key!=='Tab')return
+    var f=sheet.querySelectorAll('button,[href],[tabindex]:not([tabindex="-1"])')
+    if(!f.length)return
+    var first=f[0], last=f[f.length-1]
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+  })
+})()
+</script>
+
+</body>
+</html>
