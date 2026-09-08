@@ -1,117 +1,123 @@
-# Handoff — 8 Sep 2026, before compaction
+# Handoff — 8 Sep 2026
 
-Read this and `NOTES-source.md` before touching `cards.js`.
-
----
-
-## ⭐ THE HISTORY CARD — this is the next build, in his words
-
-⚠ **THE TIMELINE IS DONE. DO NOT REBUILD IT.** He said so plainly: *"no this isn't timeline, that
-is done, this is history card."* The timeline is the dated skeleton. **The HISTORY card is the
-story told through** — the scroll that opens from the rolled-scroll door below the parchment.
-
-So this is a narrative, read start to finish, not a set of pins. It has a turn in it, and the turn
-is the best thing in the whole course.
-
-**The beats, in order — this is the shape of the history lecture:**
-
-1. **Ohm.** The Brahma bull, Vishnu's dream starting.
-2. **Shiva getting busy with Parvati.** The first lesson.
-3. **Siddhartha.** His compression, and it is a good one: **"Buddhism is Yoga II."**
-4. **The Sutras.**
-5. **The early texts** — Vedas, Upanishads. A side note on Sid, not a chapter.
-6. **THE TURN — and this is the part that is not on the site yet.**
-7. **The propaganda tour.**
-8. **Then the fetishism of the East.**
-
-### ⭐⭐ THE TURN — modern yoga starts with Indians making fun of white people
-
-His words, and they reframe the whole modern half:
-
-> *"Modern yoga starts with Indians making fun of white people. Stiff shirts, stiff backs and
-> chairs. You can't dance like this. You wish you looked this good."*
-
-- **Bright, loose, comfortable clothing against starched colonial shirts.** It is a style argument
-  before it is a spiritual one, and it is anti-colonial by being *better looking and more fun*.
-- **The dance.** The performance lineage that runs forward into Bollywood.
-- This is the revival, and it starts as **mockery and display**, not piety.
-
-### ⭐ AND THE ECONOMIC ENGINE, which is the honest bit
-
-> *"Late 1800s, street hustle basically, for the untouchable class, to beg money from tourists.
-> All but dies by 1850, but the tourist trade basically revives it, as performative."*
-
-**This is the missing mechanism.** The timeline has these as separate dated facts; the history
-card is where they become one story. It explains four things at once:
-
-- why **hatha is tagged lowest caste** in his 2015 doc — it was street performers and beggars
-- why the revival was **performative** — because the paying audience was tourists
-- why the **mat arrives as a prop** — a clean stage on a dirty market floor
-- why the whole thread runs *exhibition → propaganda tour → Bikram's podium* without a break
-
-⚠ **Do not soften this into "yoga was popularised by tourism."** The claim is sharper: a practice
-assigned to the bottom of the caste order survived as a hustle, performed for foreigners with
-money, and that performance is what got revived — not the philosophy.
+Read this and `NOTES-source.md` before touching anything.
+Current joy state: **`joy-2026-09-08`** (`7ad65b1`). `git checkout joy-2026-09-08 -- .` to return.
 
 ---
 
-## What is already built and correct
+## What is BUILT and finished. Do not rebuild these.
 
-- **Six columns, 38 dates, 12 cards.** Every date is a door; era heads open era cards.
-- Ticks are **derived from `rows`** — never re-add a parallel `ticks:[]` array. Three of six lost
-  theirs once and rendered blank on the axis.
-- Row cards carry `h · sub · lead · doors · body`. `doors` renders as date/thing pairs.
-- The mat card is date/thing pairs and he approved it.
-- **SAMADHI** carries his psychiatric and housing history at his explicit request, with his
-  guardrail line. Rules for editing it are written at the top of the card in `cards.js`.
-- The exhibit card and the Bikram podium card are in, with the through-line between them.
+| | |
+|---|---|
+| **the tree** | the art, three words, the arrow |
+| **four philosophy scrolls** | YOGA · ATMAN · BRAHMAN · SAMADHI |
+| **the timeline** | six columns, 40 dated doors, floored 900px, capped 1400px |
+| **the history lecture** | 52 paragraphs, Om to the bagel |
 
-## Open
-
-- **THE HISTORY CARD ITSELF** — the narrative above. It is the next thing to build.
-- **The six branches** and **the eight limbs** as their own scrolls. Both docs are ready in Drive
-  and summarised in `NOTES-source.md`. The caste tags in the branches doc are the sharpest thing
-  he has written for this course, and the timeline now points at a card that does not exist.
-- **His ashtanga story and the record disagree.** He knows. His telling: white men in the fifties
-  trademarked it. The record: KPJAYI filed 2010, held by Sharath Jois, pushed with American money.
-  He said *"our stories disagree, but we have the highlights"* — do not keep re-litigating it.
-- More of his writing is in Google Docs. `History of Meditation`, `A Meditation on Meditation`,
-  `A Brief History of Nothing` are read and summarised. There is more he has not pointed at yet.
-- He said to **skip the purely Buddhist meditation-as-religion material** and keep to yoga.
+⚠ **THE TIMELINE IS DONE** and so is **THE HISTORY CARD**. He said the first one plainly and the
+second was finished at `186ce73`/`a31d53d`. The timeline is the dated skeleton; the history card is
+the story told through it. Two different objects, both complete.
 
 ---
 
-## ⚠ HOW TO EDIT `cards.js` — I broke it three times in one evening
+## What is actually OPEN
 
-All three breaks were the same mistake: patching a live file with string surgery, blind, one
-character at a time, without checking.
+- **THE SIX BRANCHES** and **THE EIGHT LIMBS**, each as its own scroll. Both his docs are read and
+  summarised in `NOTES-source.md`. The branches doc is the important one — it tags every branch by
+  caste in his own 2015 hand, and the timeline and history card already point at that argument
+  without a card to land on.
+- More of his writing is in Google Docs; three are read (`History of Meditation`,
+  `A Meditation on Meditation`, `A Brief History of Nothing`). There is more he has not pointed at.
+- He said to **skip the purely Buddhist meditation-as-religion material** and stay on yoga.
+- Nothing is deployed. `mywei.studio` is still parked on Squarespace DNS. Local only, his word
+  required before anything goes live.
 
-**The rule now:** build the whole change, write it to a temp file, run `node --check` on the temp
-file, and only then move it into place. Never write `cards.js` directly.
+---
+
+## ⭐ THE SPINE — his story, in his words. It is the reason the site works.
+
+The through-line, and he arrived at it himself across the evening:
+
+> **The practice gets sorted three times, and it is the same practice every time.** Caste put it at
+> the bottom. Colonial taste made it embarrassing. Money made it a luxury. And the branch assigned
+> to the lowest caste is the one that conquered the world — and then got expensive.
+
+**THE TURN** — modern yoga starts with **Indians making fun of white people**. Stiff shirts, stiff
+backs, chairs. Bright loose clothing against starched collars. *You can't dance like this. You wish
+you looked this good.* A style argument before a spiritual one.
+
+**THE ENGINE** — by 1850 hatha had all but died. Late-1800s **street hustle by the untouchable
+class, performing for tourist coins**, kept it alive, and **the tourist trade revived it AS
+PERFORMANCE**, not as philosophy. That one mechanism explains the lowest-caste tag, the mat as a
+prop, and the unbroken line from exhibition hall to Bikram's podium.
+
+**HIS FRAME, which closes the history card** — he teaches a colonial gym routine as performance
+art. *Look at me, look at what I can do* is a real part of yoga, **neither diminished nor
+indulged**. Then cognitive science and meditation beside it. The asana is honest about being a
+show; the rest is not a show.
+
+---
+
+## ⚠ HOW TO WORK ON THIS — four rules, all of them earned tonight
+
+**1 · Never write `cards.js` directly.** Build the whole change, write it to a temp file, run
+`node --check` on the temp file, and only then move it into place. I broke the file three times in
+one evening patching it live with blind string surgery.
 
 ```bash
 python3 build.py > /tmp/cards_new.js && node --check /tmp/cards_new.js && cp /tmp/cards_new.js cards.js
 ```
 
-⚠ **And his standing correction, which I earned four separate times tonight: when he says GO BACK,
-use git.** Do not "restore" by retyping from memory, and do not bundle an improvement into a
-revert. `git checkout <hash> -- cards.js` is the whole move. If he then asks for one line changed,
-change one line — and diff it to prove it was one.
+**2 · GO BACK means git.** Do not "restore" by retyping from memory, and never bundle an
+improvement into a revert. `git checkout <hash> -- .` is the whole move. If he then asks for one
+line changed, change one line and diff it to prove it was one. I got this wrong four separate times
+and he had to say it four times.
+
+**3 · Check the instrument before believing a defect.** He reported horizontal overflow; I walked
+back three commits chasing it. The overflow measured **exactly 123px at every commit** — identical
+at `d7991df`, `526057c` and HEAD — which was the giveaway. Nothing in the code had changed. **I had
+left the browser emulating a 620px viewport** during earlier testing. Reset the emulation before
+concluding anything about layout.
+
+**4 · Do the smallest thing he asked for.** He asked for a min-width; I built an `overflow-x`
+wrapper and a media query around it, and that version made the whole page slide sideways on a
+phone. The answer was one property.
 
 ---
 
-## Where the repo is
+## Measurements that must not be re-guessed
 
-`~/Documents/mywei/studio` · git initialised, everything committed.
+All read off the art, all written into CSS comments at the site of use:
 
-| tag | what |
-|---|---|
-| `joy-yoga-2026-09-08` | the yoga lesson |
-| `joy-timeline-2026-09-08` | the timeline set into the roots at the notch depth |
-| `joy-timeline-columns` | five columns, ticks on the measured axis |
+- **4.33% of width** — the parchment's deepest notch, which is how far the timeline overlaps the
+  roots. Any more eats root; any less shows page through the tear.
+- **8.58% of height** — the axis rule drawn into `timeline.png`, the only row that is 100% ink
+  across the full width. Ticks hang from there. They were at 5.4% once, floating in the year-label
+  band above the line.
+- **`min(1vw, 1.3393vh)`** — one percent of the stage. The stage is height-bound on a wide short
+  window; the words were width-bound in plain `vw`, so the picture shrank while ATMAN and BRAHMAN
+  grew and met in the middle. The font must scale off the same quantity the stage does.
+- **900px floor / 1400px ceiling** on the timeline. Six columns of dates do not compress; below
+  ~900 they slide into each other.
 
-Serve it with the `studio` config in `.claude/launch.json` — `http://localhost:8791`.
+## Structure rules
 
-**Two measurements that must not be re-guessed**, both read off the art and both written into CSS
-comments: the parchment's deepest notch is **4.33% of width** (the overlap onto the roots), and the
-drawn axis rule sits at **8.58% of height** (where ticks hang from).
+- **Ticks are DERIVED from `rows`.** Never re-add a parallel `ticks:[]` array — three of six eras
+  lost theirs in a restructure once and rendered blank on the axis while the data looked fine.
+- Row cards carry `h · sub · lead · doors · body`. **All five must be passed through** in the
+  date-row path; it once built from `h/sub/body` only and tables silently vanished.
+- The click handler must match **both** `[data-scroll]` and `[data-row]`. Matching only the first
+  made every date on the timeline inert while looking perfectly built.
+- **SAMADHI** carries his psychiatric and housing history at his explicit request. The editing
+  rules are written at the top of that card in `cards.js` — it is a credential, not a confession,
+  and his guardrail line travels with it always.
+
+---
+
+## Where it lives
+
+`~/Documents/mywei/studio` · git initialised, everything committed, working tree clean.
+Serve with the `studio` config in `.claude/launch.json` → `http://localhost:8791`.
+
+Tags: `joy-2026-09-08` (current) · `joy-2026-09-08-restored` · `joy-history-2026-09-08` ·
+`joy-timeline-2026-09-08` · `joy-timeline-columns` · `joy-yoga-2026-09-08`
