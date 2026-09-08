@@ -493,12 +493,18 @@ window.TIMELINE = [
         {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
         {p:'Tune in, drop out.'}
       ]},
-      { at:0.766, y:'1967', n:'the mat is invented', body:[
-        {p:'<strong>Angela Farmer</strong>, an English teacher working in Germany, cuts a piece of <em>foam carpet padding</em> to stand on.'},
-        {p:'It is not a yoga product. It is underlay. Her students want one anyway, so her father tracks down the German manufacturer and becomes the first person on earth to sell yoga mats.'},
-        {p:'<strong>The yoga mat is younger than the moon landing.</strong> Three thousand years of this practice happened before it, on grass, skin, cloth and dirt.'},
-        {p:'Three thousand years of this practice happened before it \u2014 on grass, skin, cloth and dirt.',
-         cite:'Wikipedia: Yoga mat', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
+      { at:0.766, y:'1967', n:'the mat', body:[
+        {p:'<strong>The seat, by year.</strong> The oldest object in the room turns out to be the newest thing in it.'},
+        {p:'<strong>In the Gita itself</strong> \u2014 a firm seat, neither too high nor too low, laid in three layers: <em>kusha grass, then a deerskin, then a cloth.</em> That is the original mat, it is described in the text, and it is a stack.'},
+        {p:'<strong>Then centuries of substitutes.</strong> A deerskin or tiger skin for a yogi, a cotton rug for everyone else. Jute, straw, burlap and canvas matting. Cork and rubber once vulcanising made flexible matting possible \u2014 cork was standard gym flooring by the 1950s, a decade before the foam. Or the bare ground. Whatever you had. And in the Shiva and Parvati story, a bed.'},
+        {p:'<strong>1967</strong> \u2014 Angela Farmer, an English teacher working in Germany, uses a piece of foam carpet padding as a makeshift mat. Her students want one. Her father tracks down the manufacturer and becomes the first person to sell them.'},
+        {p:'<strong>c. 1982</strong> \u2014 rubber carpet underlay is sold as a yoga product. It is still carpet underlay.'},
+        {p:'<strong>The 1990s</strong> \u2014 the first mats actually designed for yoga, because the underlay crumbled with use.'},
+        {p:'<strong>The 2000s onward</strong> \u2014 the eco generation: natural tree rubber, cork, jute, TPE. Roll-up, wipe-down, in a colour.'},
+        {p:'<strong>So Farmer did not invent the mat.</strong> She invented the yoga mat as a thing you buy. People had been practising on jute, cork and rubber for years \u2014 she was the first to sell one with the word yoga on it.'},
+        {p:'So: <strong>the yoga mat is younger than the moon landing.</strong> It is newer than the seven-chakra chart, and newer than the trademark it gets rolled out under. Three thousand years of this practice happened on grass, skin, cloth and dirt.'},
+        {p:'<strong>The yoga mat is barely older than your teacher.</strong>',
+         cite:'Wikipedia: Yoga mat &middot; a history of fitness flooring', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
       ]},
       { at:0.772, y:'1971', n:'the gold standard', body:[
         {p:'Well. It was the seventies. Blame Nixon &mdash; off the gold standard in 1971, the HMO Act reshaping health care in 1973.'},
@@ -509,29 +515,15 @@ window.TIMELINE = [
         {p:'By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
         {p:'<strong>Which is the six branches wearing different clothes.</strong> That list sorted the practice by caste: meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change &mdash; <em>who has time to study and read, and who is bathing in the ashes of the dead.</em>'}
       ]},
-      { at:0.800, y:'c. 1982', n:'rubber underlay', body:[
-        {p:'The sticky mat goes commercial \u2014 rubber carpet underlay, sold as a yoga product.'},
-        {p:'Still carpet underlay. Nobody has yet made a mat <em>for</em> yoga; they are selling you flooring with a new label on it.'},
-        {p:'<strong>Which puts the mat and the tax cuts in the same decade.</strong> The object and the disposable income arrive together, and neither is a coincidence.'}
-      ]},
       { at:0.815, y:'1987', n:'the seven chakras', body:[
         {p:'The seven-chakra system as everyone now knows it gets standardised in the West &mdash; Anodea Judith&rsquo;s <em>Wheels of Life</em>.'},
         {p:'&#9888; And the rainbow colours are newer than that. The chakras are not traditionally mapped to the visible spectrum at all; that comes from Christopher Hills in 1977.'},
         {p:'<strong>The chart everybody treats as ancient is the same age as the studios that could suddenly afford to print it.</strong>'}
       ]},
-      { at:0.854, y:'the 1990s', n:'a mat made for yoga', body:[
-        {p:'The first mats actually <strong>designed</strong> for the practice \u2014 built because the carpet underlay crumbled with use.'},
-        {p:'Durable, cheaper, and available in colours. This is the point at which the mat stops being improvised and becomes an object you are supposed to own.'}
-      ]},
       { at:0.879, y:'2001', n:'&ldquo;stretch and relaxation&rdquo;', body:[
         {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation'},
         {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'},
         {p:'<em>This class is part of that wave.</em>'}
-      ]},
-      { at:0.896, y:'the 2000s', n:'cork, jute, tree rubber', body:[
-        {p:'The eco generation. Natural tree rubber, cork, jute, TPE. Roll it up, wipe it down, pick a colour.'},
-        {p:'Grouped by decade rather than by year, because the first-use dates for each material are not clean.'},
-        {p:'<strong>So the full seat, by year:</strong> kusha grass and a deerskin, then centuries of rug and dirt, then carpet underlay, then flooring with a label, then cork. That is the whole material history of the thing under you.'}
       ]},
       { at:0.918, y:'2010', n:'the name gets claimed', body:[
         {p:'<em>K Pattabhi Jois Ashtanga Yoga Institute</em> is filed as a trademark on 14 May 2010, held by R. Sharath Jois &mdash; Pattabhi Jois&rsquo;s grandson.'},
