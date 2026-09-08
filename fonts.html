@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATMAN · BRAHMAN — face test</title>
+
+<!-- A CHOOSER, NOT A GUESS. He asked for "a different font, that makes it look more like tamil."
+     Rather than pick one and iterate (which is the whack-a-mole he named), every candidate is
+     rendered on the real art at the real size and position, labelled with the exact line to paste.
+     Tamil's character is ROUND and LOOPED with no headline bar — the opposite of Devanagari — so
+     the list runs from actual Tamil families (Arima, Baloo Thambi, Catamaran, Hind Madurai, Anek)
+     through the Indic-flavoured display faces (Yatra One, Modak, Tillana, Kalam) with Cinzel last
+     as the control. -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;600&family=Baloo+Thambi+2:wght@400;600&family=Catamaran:wght@400;600&family=Hind+Madurai:wght@400;600&family=Anek+Tamil:wght@400;600&family=Yatra+One&family=Modak&family=Tillana:wght@400;600&family=Kalam:wght@400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#EDE2C8; color:#33281B; font-family:system-ui,sans-serif; padding:1.5rem}
+  h1{font-size:1.1rem; letter-spacing:.1em; margin-bottom:.3rem}
+  .hint{font-size:.9rem; color:#6B573C; margin-bottom:1.5rem}
+  .row{margin-bottom:1.1rem; border:1px solid #C4AF84; background:#F6EFDC}
+  .label{
+    display:flex; justify-content:space-between; align-items:center; gap:1rem;
+    padding:.4rem .8rem; background:#E3D5B4; font-size:.85rem; letter-spacing:.05em;
+  }
+  .label b{font-size:1rem}
+  .label code{font-family:ui-monospace,Menlo,monospace; font-size:.78rem; color:#4A2F1C}
+  .stage{
+    position:relative; width:100%; aspect-ratio:1200/896;
+    background:url('art/yoga-tree.jpg') center/contain no-repeat;
+  }
+  .w{
+    position:absolute; transform:translate(-50%,-50%);
+    color:#734E32; letter-spacing:.12em; white-space:nowrap;
+    font-size:clamp(1.15rem,4.4vw,3.4rem);
+  }
+  .a{left:15%; top:6%} .b{left:85%; top:6%}
+  .i{
+    left:50%; top:6.5%; opacity:.85; letter-spacing:0;
+    font-family:'Cormorant Garamond',serif; font-style:italic;
+    font-size:clamp(1.05rem,4vw,3rem);
+  }
+</style>
+</head>
+<body>
+
+<h1>ATMAN · BRAHMAN — pick a face</h1>
+<p class="hint">Same art, same size, same 15% / 85% / top 6%. Only the typeface changes.
+   Tell me the number, or paste the <code>font-family</code> line yourself.</p>
+
+<div id="out"></div>
+
+<script>
+var FACES = [
+  ['Arima',          "'Arima', serif",           'Tamil + Latin, drawn together — closest to the tree'],
+  ['Baloo Thambi 2', "'Baloo Thambi 2', serif",  'Tamil family, rounded and heavy'],
+  ['Catamaran',      "'Catamaran', sans-serif",  'Tamil family, clean and modern'],
+  ['Hind Madurai',   "'Hind Madurai', sans-serif",'Tamil family, named for the city'],
+  ['Anek Tamil',     "'Anek Tamil', sans-serif", 'Tamil family, variable and open'],
+  ['Yatra One',      "'Yatra One', serif",       'Indic-flavoured Latin — the strongest "looks Indian"'],
+  ['Modak',          "'Modak', serif",           'round and bulbous, closest to Tamil loops'],
+  ['Tillana',        "'Tillana', serif",         'decorative, calligraphic'],
+  ['Kalam',          "'Kalam', cursive",         'handwritten, Indic-influenced'],
+  ['Cinzel',         "'Cinzel', serif",          'what is on the page now — the control']
+]
+document.getElementById('out').innerHTML = FACES.map(function(f,i){
+  return '<div class="row">' +
+    '<div class="label"><b>' + (i+1) + ' &nbsp; ' + f[0] + '</b>' +
+      '<span>' + f[2] + '</span>' +
+      '<code>font-family:' + f[1].replace(/'/g,'&#39;') + '</code></div>' +
+    '<div class="stage" style="font-family:' + f[1] + '">' +
+      '<span class="w a">ATMAN</span>' +
+      '<span class="w i">is</span>' +
+      '<span class="w b">BRAHMAN</span>' +
+    '</div></div>'
+}).join('')
+</script>
+</body>
+</html>

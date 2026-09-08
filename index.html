@@ -52,28 +52,27 @@
 
   .w{
     position:absolute; transform:translate(-50%,-50%);
-    font-family:'Cinzel',serif; color:#33281B;
+    font-family:'Cinzel',serif; color:#734E32;
     text-decoration:none; white-space:nowrap;
     /* a parchment halo, so a word stays legible wherever the paint runs dark under it */
     text-shadow:0 0 18px #F6EFDC, 0 0 7px #F6EFDC, 0 0 3px #F6EFDC;
     transition:color .18s;
   }
-  a.w:hover, a.w:focus-visible{color:#A8791C}
+  a.w:hover, a.w:focus-visible{color:#4A2F1C}
   a.w:focus-visible{outline:3px solid #1C5C8C; outline-offset:6px; border-radius:2px}
 
   /* ⭐ ALL THREE IN THE TREE'S OWN INK. Sampled, not guessed: 57,384 ink pixels off the trunk
      and the YOGA lettering average #866241, and the single most common value is #734E32. The words
      are the same substance as the drawing, which is the point of lettering them onto it. */
-  .atman  {left:20%; top:11%; font-size:clamp(1rem,3.4vw,var(--word)); letter-spacing:.12em}
-  .brahman{left:80%; top:11%; font-size:clamp(1rem,3.4vw,var(--word)); letter-spacing:.12em}
+  .atman  {left:15%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
+  .brahman{left:85%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
 
-  /* gold, 2.5rem, opacity 1, on the same 11% line as the two nouns — restored from his own
-     measurement of the state he asked for, not from memory of how it looked. */
   .is{
-    left:50%; top:11%;
+    left:50%; top:6.5%;
     font-family:'Cormorant Garamond',serif; font-style:italic;
-    font-size:clamp(1.05rem,3.2vw,2.5rem); color:#A8791C; opacity:1;
-    text-shadow:0 0 26px #F6EFDC, 0 0 14px #F6EFDC, 0 0 6px #F6EFDC, 0 0 2px #F6EFDC;
+    font-size:clamp(1.05rem,4vw,3rem);
+    text-shadow:none;
+    opacity:.85;
   }
 
   /* ⭐⭐ THE ARROW — from the "is" down into the YOGA lettering in the canopy.
@@ -92,7 +91,7 @@
      WCAG contrast would destroy the lesson for everyone; giving a blind student the sentence
      instead gives them the lesson without asking a sighted one to give up theirs. */
   .arrow{
-    position:absolute; left:50%; top:14.5%;
+    position:absolute; left:50%; top:9%;
     transform:translateX(-50%);
     width:clamp(12px,1.4vw,22px); height:clamp(26px,5.6vw,95px);
     opacity:var(--arrow-ink); pointer-events:none;
@@ -113,8 +112,8 @@
 
   /* the three words are buttons now — reset the chrome, keep the type */
   /* the three words are buttons now — reset the chrome, keep the type */
-  button.w{background:none; border:none; padding:0; cursor:pointer; color:#33281B}
-  button.w:hover{color:#A8791C}
+  button.w{background:none; border:none; padding:0; cursor:pointer; color:#734E32}
+  button.w:hover{color:#4A2F1C}
   button.w:focus-visible{outline:3px solid #1C5C8C; outline-offset:6px; border-radius:2px}
 
   /* ── THE SCROLL — his blank parchment, opened over the tree ────────────────
