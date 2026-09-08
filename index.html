@@ -437,7 +437,10 @@
     if(btn.dataset.row){                       /* a single date, built from its own row */
       var p=btn.dataset.row.split('-'), e=window.TIMELINE[+p[0]], r=e&&e.rows[+p[1]]
       if(!r) return
-      c={ h:r.y, sub:r.n, body:(r.body&&r.body.length) ? r.body
+      /* ⚠ carry lead and doors too. This built the card from h/sub/body only, so a row with a
+         date/thing table on it rendered as bare paragraphs and the table silently vanished. */
+      c={ h:r.y, sub:r.n, lead:r.lead, doors:r.doors,
+          body:(r.body&&r.body.length) ? r.body
           : [{p:'This one is still <strong>yours to write</strong>. Nothing has been invented here in your name.'}] }
     } else c=window.CARDS[btn.dataset.scroll]
     if(!c) return

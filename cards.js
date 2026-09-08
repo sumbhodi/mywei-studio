@@ -471,23 +471,23 @@ window.TIMELINE = [
         {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
         {p:'Tune in, drop out.'}
       ]},
-      { at:0.768, y:'1967', n:'the mat', body:[
-        {p:'<strong>The seat, by year.</strong> The oldest object in the room turns out to be the newest thing in it.'},
-
-        {p:'<strong>In the Gita itself</strong> \u2014 a firm seat, neither too high nor too low, laid in three layers: <em>kusha grass, then a deerskin, then a cloth.</em> That is the original mat, it is described in the text, and it is a stack.'},
-        {p:'<strong>Then centuries of nothing much</strong> \u2014 a deerskin or tiger skin for a yogi, a cotton rug for everyone else, or the bare ground. Whatever you had. And in the Shiva and Parvati story, a bed.'},
-
-        {p:'<strong>1967</strong> \u2014 Angela Farmer, an English teacher working in Germany, uses a piece of <em>foam carpet padding</em> as a makeshift mat. Her students want one. Her father tracks down the manufacturer and becomes the first person to sell them.'},
-        {p:'<strong>c. 1982</strong> \u2014 rubber carpet underlay is sold as a yoga product. It is still carpet underlay.'},
-        {p:'<strong>The 1990s</strong> \u2014 the first mats actually <em>designed</em> for yoga, because the underlay crumbled with use.'},
-        {p:'<strong>The 2000s onward</strong> \u2014 the eco generation: natural tree rubber, cork, jute, TPE. Roll-up, wipe-down, in a colour.'},
-
-        {p:'So: <strong>the yoga mat is younger than the moon landing.</strong> It is newer than the seven-chakra chart, and newer than the trademark it gets rolled out under. Three thousand years of this practice happened on grass, skin, cloth and dirt.'},
-        {p:'<strong>The yoga mat is barely older than your teacher.</strong>'},
-
-        {p:'&#9888; <strong>Two admissions.</strong> I had the mat in the 1800s and that was wrong \u2014 fact-checked 8 September 2026 and moved here. And I could not source a rattan mat anywhere in the lineage; if it belongs, it needs a citation before it goes on the wall.',
-         cite:'Yoga Journal &middot; Wikipedia: Yoga mat', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
-      ]},
+      { at:0.768, y:'1967', n:'the mat', lead:'The seat, by year.',
+        doors:[
+          ['in the Gita',   'kusha grass, then a deerskin, then a cloth &mdash; three layers'],
+          ['for centuries', 'jute, straw and burlap matting. A skin, a rug, the bare ground. A bed.'],
+          ['1839',          'vulcanised rubber makes flexible matting possible'],
+          ['the 1950s',     'cork &mdash; standard gym and standing-room flooring'],
+          ['1967',          '<strong>foam carpet padding &mdash; the first product for sale</strong>'],
+          ['c. 1982',       'rubber carpet underlay, sold as a yoga product. Still underlay.'],
+          ['the 1990s',     'the first mats actually designed for yoga'],
+          ['the 2000s',     'natural tree rubber, cork, jute, TPE']
+        ],
+        body:[
+          {p:'<strong>1967 is the first product for sale, not the first mat.</strong> Angela Farmer, an English teacher working in Germany, cut a piece of foam carpet padding to stand on. Her students wanted one. Her father tracked down the manufacturer and became the first person to sell them. She did not invent the mat \u2014 she invented the yoga mat as a thing you buy.'},
+          {p:'So: <strong>the yoga mat is younger than the moon landing.</strong> It is newer than the seven-chakra chart, and newer than the trademark it gets rolled out under. Three thousand years of this practice happened on grass, skin, cloth and dirt.'},
+          {p:'<strong>The yoga mat is barely older than your teacher.</strong>',
+           cite:'Wikipedia: Yoga mat', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
+        ]},
       { at:0.772, y:'1971', n:'the gold standard', body:[
         {p:'Well. It was the seventies. Blame Nixon &mdash; off the gold standard in 1971, the HMO Act reshaping health care in 1973.'},
         {p:'Yoga turns up on public television. Science peaks late in the decade, then goes quiet until MRI gets cheap.'}
