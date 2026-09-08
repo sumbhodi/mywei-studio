@@ -191,6 +191,7 @@
     color:#734E32; min-width:13rem; font-size:1.05rem}
   .sheet-body .doors span{font-family:'Cormorant Garamond',serif; font-style:italic;
     font-size:1.1rem; color:#6B573C}
+  .sheet-body cite a{color:#8A6420; text-underline-offset:2px}
   .sheet-body cite{display:block; font-family:'Jost',sans-serif; font-style:normal;
     font-size:.82rem; letter-spacing:.05em; color:#6B573C; margin-top:.3rem}
   .sheet-body .draft{
@@ -254,7 +255,12 @@
     if(c.doors) h+='<ul class="doors">'+c.doors.map(function(d){
       return '<li><b>'+d[0]+'</b><span>'+d[1]+'</span></li>' }).join('')+'</ul>'
     h+=c.body.map(function(p){
-      return '<p>'+p.p+(p.cite?'<cite>&mdash; '+p.cite+'</cite>':'')+'</p>' }).join('')
+      var cite=''
+      if(p.cite){
+        var t = p.href ? '<a href="'+p.href+'">'+p.cite+' &#8599;</a>' : p.cite
+        cite = '<cite>&mdash; '+t+'</cite>'
+      }
+      return '<p>'+p.p+cite+'</p>' }).join('')
     h+='<p class="draft"><strong>Draft &mdash; yours to cut.</strong> Cited to where each line was '+
        'written. The film scene is described, not transcribed.</p>'
     body.innerHTML=h
