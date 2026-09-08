@@ -187,10 +187,13 @@
   .sheet-body .doors{list-style:none; margin:.4rem 0 1.6rem; padding:0; max-width:36rem}
   .sheet-body .doors li{display:flex; gap:1rem; align-items:baseline; flex-wrap:wrap;
     padding:.6rem 0; border-bottom:1px dotted #C4AF84}
+  /* ⚠ 13rem was too narrow for GENIUS MALIGNUS and CONTROLLED HALLUCINATION — the term ate the
+     row and threw its gloss onto a second line, so two of the five read differently from the
+     other three. flex-basis holds the column; the gloss takes what is left and wraps inside it. */
   .sheet-body .doors b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.06em;
-    color:#734E32; min-width:13rem; font-size:1.05rem}
+    color:#734E32; flex:0 0 15.5rem; font-size:1.05rem}
   .sheet-body .doors span{font-family:'Cormorant Garamond',serif; font-style:italic;
-    font-size:1.1rem; color:#6B573C}
+    font-size:1.1rem; color:#6B573C; flex:1 1 11rem}
   .sheet-body cite a{color:#8A6420; text-underline-offset:2px}
   .sheet-body cite{display:block; font-family:'Jost',sans-serif; font-style:normal;
     font-size:.82rem; letter-spacing:.05em; color:#6B573C; margin-top:.3rem}
