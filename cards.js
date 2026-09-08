@@ -57,7 +57,7 @@ window.CARDS = {
       {p:'So what is the yoke actually <em>for</em>. To make your perception of reality match it more '+
          'closely. To get more awareness of, and more control over, your own controlled hallucination. '+
          '<strong>To recognise the screen — and realise we were the projector all along.</strong>'},
-      {p:'<strong>Samadhi is the highest goal.</strong> A state of oneness. Easier to find on the cushion '+
+      {p:'<button class="inline-door" type="button" data-scroll="samadhi" aria-haspopup="dialog">Samadhi</button> <strong>is the highest goal.</strong> A state of oneness. Easier to find on the cushion '+
          'or the mat, entirely achievable while doing the dishes, and <em>rude in a heated discussion '+
          'with a loved one.</em> Not good for watching a movie or a date night. Great for a long solo '+
          'hike and for gardening.'},
@@ -180,6 +180,38 @@ window.CARDS = {
      His call, 8 Sep: "each date is just a name on timeline, click for card... open a scroll for
      details." So the axis stays legible and the detail lives in a scroll, like everything else. */
 
+  /* ── SAMADHI ─────────────────────────────────────────────────────────────────
+     ⚠ THIS CARD CARRIES HIS OWN PSYCHIATRIC AND HOUSING HISTORY, and it is here because he asked
+     for it to be, 8 Sep 2026: "this can be public, I do not mind." His reason, and it is the right
+     one: on day one he tells students he learned this homeless in mental hospitals, and it brings
+     their guard down — I am crazy, doing the best I can, welcome.
+     Two rules for anyone editing this card.
+     1. It is a CREDENTIAL, not a confession. It is here because he went to the far end of the
+        practice and came back with a report. Never edit it toward pity.
+     2. HIS GUARDRAIL LINE TRAVELS WITH IT, always — "I would never recommend insanity, addiction
+        and psychosis for anyone else, but they always worked for me." Without that sentence this
+        is an anecdote about extremity. With it, it is a warning with a person behind it. */
+  samadhi: {
+    h:'SAMADHI', sub:'the eighth limb \u2014 and the one to be careful with',
+    lead:'Bliss. Enlightenment. Oneness.',
+    body:[
+      {p:'<em>Bliss, enlightenment, oneness.</em>', cite:'The 8 Limbs'},
+      {p:'Naming it pulls you out of it. So it gets explained one time, and then left alone \u2014 I rarely mention it again after that.'},
+      {p:'A state of oneness. Easier to find on the cushion or the mat, entirely achievable while doing the dishes, and <em>rude in a heated discussion with a loved one</em>. Not good for watching a movie or a date night. Great for a long solo hike and for gardening.'},
+      {p:'<strong>Find the seat. Turn the brain off. Unplug it \u2014 and then plug it back in.</strong> Find sukhasana and samadhi, and leave before you need to change your shorts.'},
+
+      {p:'<strong>Now the part I tell you on the first day, so it is not a surprise later.</strong>'},
+      {p:'<em>I am a special case. I love doing nothing. My first mental hospitalization was due to catatonia. I was completely unresponsive. Nothing was distracting me from my meditation. I was deep.</em>', cite:'A Meditation on Meditation'},
+      {p:'<em>In fact I have struggled with being addicted to doing nothing. It is what led to my chronic homelessness. <strong>If you sit in zazen long enough you eventually wind up in a pile of crap.</strong> The body does not stop processing, after all.</em>', cite:'A Meditation on Meditation'},
+      {p:'So when I say <strong>true enlightenment is useless</strong>, that is not a bit. It is a report.'},
+
+      {p:'<strong>And the line that has to come with it:</strong> <em>I would never recommend insanity, addiction and psychosis for anyone else. But they always worked for me. So have asana, pranayama and pratyahara.</em>', cite:'A Meditation on Meditation'},
+
+      {p:'Which is why the goal is stated the careful way. <strong>To be able to find it \u2014 not to stay there.</strong> It is technically a form of dissociation, and <em>leaving matters exactly as much as arriving.</em>'},
+      {p:'That is the middle way, and it is the whole reason this class has a door on both ends. I am not selling you somewhere to go. I am teaching you a seat you can get up from.'}
+    ]
+  },
+
   'era-pre': {
     h:'BEFORE THE MAP', sub:'to 3000 BCE',
     lead:'Everything left of here is told, not written.',
@@ -254,7 +286,7 @@ window.CARDS = {
 
       {p:'<strong>The sixties.</strong> Tune in, drop out. Iyengar\u2019s <em>Light on Yoga</em> in 1966, the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.'},
 
-      {p:'<strong>The seventies.</strong> Well. It was the seventies. Blame Nixon \u2014 off the gold standard in 1971, health care privatised in 1973. Yoga turns up on public television.'},
+      {p:'<strong>The seventies.</strong> Well. It was the seventies. Blame Nixon \u2014 off the gold standard in 1971, the HMO Act reshaping health care in 1973. Yoga turns up on public television.'},
 
       {p:'<strong>And then the eighties</strong>, when the tax cuts for the rich actually start \u2014 so rich white people could afford yoga classes again. By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
 
@@ -285,6 +317,7 @@ window.TIMELINE = [
       { at:0.008, y:'the first lesson', n:'Shiva, as yogi, teaching Parvati', body:[
         {p:'The first yoga lesson anybody tells a story about. Shiva on a mountaintop, teaching Parvati. Eighty-four asanas.'},
         {p:'<em>The PG-13 version of that story ends right there.</em>', cite:'History of Yoga'},
+        {p:'And there was no mat. It was a bed &mdash; which is what makes the PG-13 version hard to animate.'},
         {p:'And the honest part: <strong>we still have no idea what he was actually doing.</strong> Either the concept was so ever-present that no explanation was required, or it was regarded as a special skill bordering on magic &mdash; another thing Shiva had mastered, shrouded in secrecy. <em>No one&rsquo;s gonna buy the cow if you can get the milk for free.</em>', cite:'A Brief History of Nothing'},
         {p:'&#9888; The 84-asana story is sourced to the Mahanirvana Tantra, which is an <strong>18th-century</strong> text. The teaching frame of Shiva instructing Parvati is genuinely ancient; that particular telling of it is one of the latest things you could cite.'}
       ]},
@@ -388,7 +421,7 @@ window.TIMELINE = [
       { at:0.550, y:'by 1850', n:'hatha nearly gone', body:[
         {p:'<em>The physical practice of hatha yoga had all but disappeared from the world by 1850.</em>', cite:'The Six Branches'},
         {p:'<strong>The column closes on almost nothing.</strong> Which is the fact that makes the next column absurd.'},
-        {p:'The mat is invented in this window too. Before that it was a bed &mdash; which is what makes the PG-13 version of the Shiva and Parvati story hard to animate.'}
+        {p:'&#9888; <strong>I used to say the mat was invented in this window. It was not, and I have cut it.</strong> The mat is 1967. It is in the modern column now, where it belongs, and the true date is better for the argument anyway.'}
       ]},
       { at:0.600, y:'1875', n:'the Theosophists', body:[
         {p:'The Victorian appetite for the ancient and the occult &mdash; Theosophy founded in 1875, Egyptomania, the Golden Dawn in 1888, the Orient Express running from 1883. The east becomes fashionable in drawing rooms.'},
@@ -438,8 +471,25 @@ window.TIMELINE = [
         {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
         {p:'Tune in, drop out.'}
       ]},
+      { at:0.768, y:'1967', n:'the mat', body:[
+        {p:'<strong>The seat, by year.</strong> The oldest object in the room turns out to be the newest thing in it.'},
+
+        {p:'<strong>In the Gita itself</strong> \u2014 a firm seat, neither too high nor too low, laid in three layers: <em>kusha grass, then a deerskin, then a cloth.</em> That is the original mat, it is described in the text, and it is a stack.'},
+        {p:'<strong>Then centuries of nothing much</strong> \u2014 a deerskin or tiger skin for a yogi, a cotton rug for everyone else, or the bare ground. Whatever you had. And in the Shiva and Parvati story, a bed.'},
+
+        {p:'<strong>1967</strong> \u2014 Angela Farmer, an English teacher working in Germany, uses a piece of <em>foam carpet padding</em> as a makeshift mat. Her students want one. Her father tracks down the manufacturer and becomes the first person to sell them.'},
+        {p:'<strong>c. 1982</strong> \u2014 rubber carpet underlay is sold as a yoga product. It is still carpet underlay.'},
+        {p:'<strong>The 1990s</strong> \u2014 the first mats actually <em>designed</em> for yoga, because the underlay crumbled with use.'},
+        {p:'<strong>The 2000s onward</strong> \u2014 the eco generation: natural tree rubber, cork, jute, TPE. Roll-up, wipe-down, in a colour.'},
+
+        {p:'So: <strong>the yoga mat is younger than the moon landing.</strong> It is newer than the seven-chakra chart, and newer than the trademark it gets rolled out under. Three thousand years of this practice happened on grass, skin, cloth and dirt.'},
+        {p:'<strong>The yoga mat is barely older than your teacher.</strong>'},
+
+        {p:'&#9888; <strong>Two admissions.</strong> I had the mat in the 1800s and that was wrong \u2014 fact-checked 8 September 2026 and moved here. And I could not source a rattan mat anywhere in the lineage; if it belongs, it needs a citation before it goes on the wall.',
+         cite:'Yoga Journal &middot; Wikipedia: Yoga mat', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
+      ]},
       { at:0.772, y:'1971', n:'the gold standard', body:[
-        {p:'Well. It was the seventies. Blame Nixon &mdash; off the gold standard in 1971, health care privatised in 1973.'},
+        {p:'Well. It was the seventies. Blame Nixon &mdash; off the gold standard in 1971, the HMO Act reshaping health care in 1973.'},
         {p:'Yoga turns up on public television. Science peaks late in the decade, then goes quiet until MRI gets cheap.'}
       ]},
       { at:0.815, y:'1987', n:'the seven chakras', body:[
