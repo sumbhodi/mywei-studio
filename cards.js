@@ -151,28 +151,46 @@ window.CARDS = {
 
   /* ── THE HISTORY — the rolled scroll below the timeline opens this ───────── */
   history: {
-    h:'THE HISTORY', sub:'where all of it comes from',
-    lead:'When did this begin? <strong>Before the universe.</strong>',
+    h:'THE HISTORY', sub:'the whole thing, start to finish',
+    lead:'Not a list of dates. A story with a turn in it.',
     body:[
-      {p:'Most cosmogenesis stories involve some form of vibration or intention. In the beginning was '+
-         'the Word. Vishnu\'s dream. The Logos.', cite:'History of Yoga'},
-      {p:'If the universe burst into existence in a void — does it make a sound?', cite:'History of Yoga'},
-      {p:'<em>I like to imagine a cosmic Brahma bull slowly pronouncing the syllable Ohm. That is '+
-         'probably what it sounded like. It still echoes, if you listen.</em>', cite:'History of Yoga'},
-      {p:'And the sidebar, for anyone who wants it: the Big Bang did produce acoustic pressure waves — '+
-         'oscillations that shaped how matter is distributed across the observable universe. '+
-         '<strong>The cosmos literally has a frequency.</strong> This is not fan fiction.',
-         cite:'History of Yoga'},
-      {p:'<strong>There is an actual lineage.</strong> Krishna describes it directly in the Bhagavad '+
-         'Gita: he taught this yoga first to Vivasvan, the sun god; Vivasvan to Manu, the first king; '+
-         'Manu to Ikshvaku. Sun to earth to kings to teachers to you.', cite:'History of Yoga'},
-      {p:'The first yoga lesson we have a story for: <strong>Shiva, on a mountaintop, teaching '+
-         'Parvati.</strong> Eighty-four asanas. From the Mahanirvana Tantra.', cite:'History of Yoga'},
-      {p:'<em>The PG-13 version of that story ends right there.</em>', cite:'History of Yoga'},
-      {p:'What matters is this: it is not a modern wellness trend, and it was not invented by Lululemon. '+
-         'It is a technology for consciousness older than writing, with a direct lineage from teacher to '+
-         'student reaching back to the beginning of recorded thought. <strong>And possibly before.</strong>',
-         cite:'History of Yoga'}
+      {p:'<strong>Ohm.</strong> A cosmic Brahma bull slowly pronouncing the syllable, and Vishnu\u2019s dream beginning. Most cosmogenesis stories are some form of vibration or intention \u2014 in the beginning was the Word, the Logos, the dream. <em>It still echoes, if you listen.</em>', cite:'History of Yoga'},
+
+      {p:'<strong>Shiva gets busy with Parvati.</strong> A mountaintop, eighty-four asanas, and the first yoga lesson anybody tells a story about. The PG-13 version ends right there. And we still have no idea what he was actually doing.'},
+
+      {p:'<strong>The early texts.</strong> Vedas and Upanishads \u2014 already describing meditation as ancient when they were written. The Katha has the chariot and the yoke. Kept in people rather than paper, because palm leaf rots.'},
+
+      {p:'<strong>Siddhartha.</strong> Same window as Confucius, Socrates and the Hebrew prophets, from places that were not talking to each other. Buddhists use the same word the Vedas and yoga use \u2014 <em>dhyana</em>. <strong>Buddhism is Yoga II.</strong> That is the side note, not the chapter.'},
+
+      {p:'<strong>The Sutras.</strong> Patanjali writes the eight limbs down and they get an author. The six branches never do.'},
+
+      {p:'&#8212;'},
+
+      {p:'<strong>THE TURN, and this is where modern yoga actually starts.</strong>'},
+
+      {p:'<strong>It starts with Indians making fun of white people.</strong> Stiff shirts. Stiff backs. Chairs. Bright loose comfortable clothing set against starched colonial collars.'},
+
+      {p:'<em>You can\u2019t dance like this. You wish you looked this good.</em>'},
+
+      {p:'It is a <strong>style argument before it is a spiritual one</strong>, and it is anti-colonial by being better looking and more fun. That is the same current that runs forward into the dance, the performance, and eventually Bollywood.'},
+
+      {p:'<strong>And underneath it, the part nobody puts on a studio wall.</strong> By 1850 hatha had all but disappeared. What kept it alive in the late 1800s was <strong>street hustle</strong> \u2014 the untouchable class performing for coins from tourists.'},
+
+      {p:'<strong>The tourist trade is what revived it, and it revived it as performance.</strong> Not the philosophy. The show.'},
+
+      {p:'Which explains everything that looked like separate facts. Why hatha sits at the bottom of the caste list. Why the mat arrives as a prop \u2014 cork and rubber rolled over a dirty market floor to make a clean stage. Why the revival is performative all the way down.'},
+
+      {p:'<strong>Then the propaganda tour.</strong> The Maharaja of Mysore\u2019s own word for it. Krishnamacharya sent across South India giving public demonstrations, with a silent film funded for national circulation. Meanwhile young Indians in Mysore thought yoga was beneath them and preferred the bodybuilding gym \u2014 because hatha was what poor people did.', cite:'History of Meditation'},
+
+      {p:'<strong>And then the fetishism of the East.</strong> World\u2019s fairs and travelling shows. The contortionist, the beggar, the rope trick, the levitating man with his staff \u2014 all from the same Victorian appetite for an East that is mystical, bendable and safely far away.'},
+
+      {p:'The little raised stage never goes away after that. It leaves the exhibition hall, and turns up in Beverly Hills with a man on a platform in a speedo.'},
+
+      {p:'&#8212;'},
+
+      {p:'<strong>So here is what I actually teach you.</strong> A routine out of a colonial gymnasium, as performance art. <em>Look at me, look at what I can do</em> is a real part of yoga \u2014 not to be diminished, and not to be indulged. But it is there, it has always been there, and pretending otherwise is the one dishonest move available.'},
+
+      {p:'And then, next to it, cognitive science and meditation. <strong>The asana is honest about being a show. The rest is not a show.</strong>'}
     ]
   },
 
