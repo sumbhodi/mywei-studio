@@ -423,6 +423,14 @@ window.TIMELINE = [
         {p:'<strong>The column closes on almost nothing.</strong> Which is the fact that makes the next column absurd.'},
         {p:'&#9888; <strong>I used to say the mat was invented in this window. It was not, and I have cut it.</strong> The mat is 1967. It is in the modern column now, where it belongs, and the true date is better for the argument anyway.'}
       ]},
+      { at:0.596, y:'1851 onward', n:'yoga as an exhibit', body:[
+        {p:'<strong>Before yoga was a practice in the West, it was an act.</strong> World\u2019s fairs, exhibitions, travelling shows. India arrives as spectacle, and the yogi shares a bill with the contortionist.'},
+        {p:'The contortionist. The street beggar. The rope trick. The levitating man with his staff. <strong>All of it comes from the same drive</strong> \u2014 a Victorian appetite for an East that is mystical, bendable, and safely far away.'},
+        {p:'&#9888; The famous Indian rope trick is a documented hoax: invented by a Chicago newspaper in 1890 and admitted as fabrication the following year. That never stopped anyone believing it.'},
+        {p:'Which is the surface the practice travelled on \u2014 cork and rubber matting rolled over a dirty floor to make a clean stage, and a demonstration to sell. <strong>The mat arrives as a prop long before it arrives as equipment.</strong>'},
+        {p:'And there was no mat before that. There was a bed \u2014 which is what makes the PG-13 version of the Shiva and Parvati story hard to animate.'},
+        {p:'<strong>And this never stops.</strong> The little raised stage carries straight through the century, out of the exhibition hall and into the heated room, where the teacher still stands on a platform above the class and the class still faces front.'}
+      ]},
       { at:0.600, y:'1875', n:'the Theosophists', body:[
         {p:'The Victorian appetite for the ancient and the occult &mdash; Theosophy founded in 1875, Egyptomania, the Golden Dawn in 1888, the Orient Express running from 1883. The east becomes fashionable in drawing rooms.'},
         {p:'The Theosophical Society moves its headquarters to Adyar, Madras, in 1882. It is one of the main pipes through which Indian ideas reach the West &mdash; and it is also how a lot of Western assumptions flow back the other way.'}
@@ -497,6 +505,13 @@ window.TIMELINE = [
         {p:'&#9888; And the rainbow colours are newer than that. The chakras are not traditionally mapped to the visible spectrum at all; that comes from Christopher Hills in 1977.'},
         {p:'<strong>The chart everybody treats as ancient is the same age as the studios that could suddenly afford to print it.</strong>'}
       ]},
+      { at:0.778, y:'1973', n:'the man on the podium', body:[
+        {p:'<strong>Bikram Choudhury</strong> opens in Beverly Hills. Twenty-six postures, a room at a hundred and five degrees, and the teacher on a raised platform in a speedo.'},
+        {p:'<strong>It is the exhibition act, indoors.</strong> The mini stage from the world\u2019s fair, the demonstration, the man elevated above the floor \u2014 staged on the traditional seat of a yogi, which is the exact lineage he is claiming while wearing swimwear.'},
+        {p:'He then tried to <strong>copyright the sequence itself</strong>. US courts said no: a sequence of postures is not copyrightable. That is the counterweight to the trademark story \u2014 the gate can be built, but it does not always hold.'},
+        {p:'His empire collapsed under civil suits, including a multi-million dollar judgment in 2016, and he left the country.'},
+        {p:'&#9888; <strong>The podium is the thing to watch.</strong> The fair, the platform, the authorized teacher list \u2014 every version of this is somebody standing above the room and selling the right to be there.'}
+      ]},
       { at:0.792, y:'the 1980s', n:'tax cuts, and LA', body:[
         {p:'The tax cuts for the rich actually start &mdash; so rich white people could afford yoga classes again.'},
         {p:'By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
@@ -515,8 +530,7 @@ window.TIMELINE = [
       ]},
       { at:0.879, y:'2001', n:'&ldquo;stretch and relaxation&rdquo;', body:[
         {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation'},
-        {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'},
-        {p:'<em>This class is part of that wave.</em>'}
+        {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'}
       ]}
     ],
     ticks:[0.730,0.756,0.762,0.772,0.792,0.815,0.879,0.918] }
