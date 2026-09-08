@@ -261,16 +261,18 @@ window.CARDS = {
     lead:'Upper Caste',
     body:[
       {p:'<strong>His 2015 doc tags this branch: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'Focuses on achieving and maintaining specific mental states through meditation — yet still incorporates all eight limbs, including asana.', cite:'The Six Branches'}
-    ]
+      {p:'Focuses on achieving and maintaining specific mental states through meditation — yet still incorporates all eight limbs, including asana.', cite:'The Six Branches'},
+      {p:'&#9888; <strong>And notice what the caste tag means here.</strong> The branch that owns <em>meditation</em> was assigned to the people with the leisure to sit. Contemplation was not distributed by aptitude.'}
+      ]
   },
 
   'br-jnana': { h:'JNANA', sub:'mind · study and wisdom',
     lead:'Upper Caste',
     body:[
       {p:'<strong>His 2015 doc tags this branch: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'Still follows the eight-limbed practice, but focuses on improvement of the mind through scholarly endeavour.', cite:'The Six Branches'}
-    ]
+      {p:'Still follows the eight-limbed practice, but focuses on improvement of the mind through scholarly endeavour.', cite:'The Six Branches'},
+      {p:'&#9888; <strong>This is the branch the whole systemic argument is about.</strong> Scholarship needs literacy, time, and somebody else doing the work. When you ask <em>who has time to study and read, and who is bathing in the ashes of the dead</em> &mdash; this is the branch on the answering end.'}
+      ]
   },
 
   'br-karma': { h:'KARMA', sub:'living life, learning lessons',
@@ -336,8 +338,10 @@ window.CARDS = {
     ],
     body:[
       {p:'<strong>How it is actually taught:</strong> covered at the start of semester'},
-      {p:'Front-loaded with yama, then it runs underneath everything else all semester.'}
-    ]
+      {p:'Front-loaded with yama, then it runs underneath everything else all semester.'},
+      {p:'<em>Satya: truth is easier. Stealing is just unsustainable, not wrong &mdash; the distinction matters.</em>', cite:'The Wei'},
+      {p:'Front-loaded with yama at the start of semester, and then it runs underneath everything else without being named again.'}
+      ]
   },
 
   'limb-asana': { h:'ASANA', sub:'to take a seat',
@@ -535,14 +539,16 @@ window.TIMELINE = [
 { card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE AXIAL AGE', span:'900 BCE &ndash; 400 CE',
     rows:[
       { at:0.249, y:'c. 900 BCE', n:'the Torah', body:[
-        {p:'It refers to meditative practice as if it were a common, well-understood behaviour. Nobody is introducing the idea; everybody already has it.', cite:'History of Meditation'}
+        {p:'It refers to meditative practice as if it were a common, well-understood behaviour. Nobody is introducing the idea; everybody already has it.', cite:'History of Meditation'},
+      {p:'<strong>That is the useful part.</strong> Nobody explains a practice everybody already has. It is evidence of ubiquity, not of origin.'}
       ]},
       { at:0.260, y:'c. 800 BCE', n:'the Upanishads', body:[
         {p:'<strong>The OG.</strong> Yoga in a shape you would recognise &mdash; the Katha has the chariot and the yoke.'},
         {p:'Same span as Mesoamerica and the pyramids, but still a living document when Hebrew, Greek and Latin were being written. Better translations, no philosopher&rsquo;s stone needed. <em>The fan fic survived.</em>'}
       ]},
       { at:0.282, y:'c. 600 BCE', n:'Taoism', body:[
-        {p:'<strong>The turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> &mdash; a tool you use on yourself, with benefits you can talk about outside the temple.', cite:'History of Meditation'}
+        {p:'<strong>The turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> &mdash; a tool you use on yourself, with benefits you can talk about outside the temple.', cite:'History of Meditation'},
+      {p:'&#9888; <strong>And this is the ancestor of the hospital.</strong> The first time anyone discusses the benefits outside a spiritual frame is the first step on a road that ends with an eight-week protocol at a medical school in 1979.'}
       ]},
       { at:0.293, y:'c. 400 BCE', n:'Siddhartha', body:[
         {p:'And Confucius, and Socrates, and the Hebrew prophets. Independent regions, no contact, one window. Historians call it the <strong>Axial Age</strong>.'},
@@ -577,7 +583,9 @@ window.TIMELINE = [
         {p:'&#9888; Where the framing strains, and it is worth saying in class: al-Ghazali dies in 1111 and Symeon in 1022, so half of this predates or straddles the First Crusade. The contact routes &mdash; trade, and Al-Andalus &mdash; were already open. <strong>Contemporaneous rather than obviously caused by</strong>, which arguably makes it the more interesting convergence.'}
       ]},
       { at:0.470, y:'1111', n:'al-Ghazali', body:[
-        {p:'Sufi practice is formalised and systematised &mdash; dhikr becomes a structure rather than a habit.', cite:'History of Meditation'}
+        {p:'Sufi practice is formalised and systematised &mdash; dhikr becomes a structure rather than a habit.', cite:'History of Meditation'},
+      {p:'He is the figure who reconciled the mystical practice with orthodox theology &mdash; which is what let it be taught openly rather than quietly.'},
+      {p:'The same move, in a different century, as taking the Buddhism out of meditation so a ward can teach it. <strong>Make it acceptable to the institution and it survives.</strong>'}
       ]},
       { at:0.476, y:'c. 1150', n:'the ladder', body:[
         {p:'A Latin monk writes <strong>read, ponder, pray, contemplate</strong> into a formal structure he calls a ladder.', cite:'History of Meditation'},
@@ -585,7 +593,9 @@ window.TIMELINE = [
         {p:'In the same window: Byzantine monks fix prayer to posture and repetition (hesychasm), and Zen begins being taught apart from Buddhism as Chan gets its Song-dynasty codification.'}
       ]},
       { at:0.488, y:'1291', n:'the last Crusade', body:[
-        {p:'The window closes. Then roughly six hundred years pass in which nothing much changes &mdash; monks around the world quietly develop and pass on the practice.', cite:'History of Meditation'}
+        {p:'The window closes. Then roughly six hundred years pass in which nothing much changes &mdash; monks around the world quietly develop and pass on the practice.', cite:'History of Meditation'},
+      {p:'And then roughly six hundred years in which nothing much changes. Monks around the world quietly develop and pass on the practice, and nobody writes a new system.', cite:'History of Meditation'},
+      {p:'<strong>Which is worth sitting with.</strong> The gap between this and the next column is longer than the gap between the Upanishads and Patanjali.'}
       ]}
     ]},
 
@@ -597,7 +607,9 @@ window.TIMELINE = [
         {p:'&#9888; And this runs both directions, which is the uncomfortable half. Educated Indians began reading their own tradition back out of colonial editions. What had been kept in people was now kept in books &mdash; catalogued by the people who had colonised them.'}
       ]},
       { at:0.542, y:'1785', n:'the Gita in English', body:[
-        {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation'}
+        {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation'},
+      {p:'Charles Wilkins &mdash; the first direct translation of a major Sanskrit work into English. Before this you needed Sanskrit, or a teacher, or both.'},
+      {p:'<strong>It is the hinge of the whole Enlightenment column.</strong> Everything downstream &mdash; Thoreau, the Theosophists, Vivekananda&rsquo;s audience &mdash; is people who could finally read it.'}
       ]}
     ],
     ticks:[0.527,0.540,0.542] },
@@ -638,7 +650,9 @@ window.TIMELINE = [
         {p:'This is downstream of the <strong>Bengal Renaissance</strong> &mdash; which is why 1860 is a tick on this axis at all. It is not a yoga date. It is the Indian cultural revival that re-popularised hatha and became the same current that eventually produces Indian cinema. Tagore is born in 1861.'}
       ]},
       { at:0.670, y:'1920', n:'Yogananda', body:[
-        {p:'Arrives in the United States and never really leaves. The Roaring Twenties squeeze him in alongside everything else.'}
+        {p:'Arrives in the United States and never really leaves. The Roaring Twenties squeeze him in alongside everything else.'},
+      {p:'He founds the Self-Realization Fellowship the same year and stays for the rest of his life. His autobiography, published in 1946, is still the book most Westerners meet this through.'},
+      {p:'<strong>He is the roaring twenties man</strong> &mdash; arriving in the same window as the shorter skirts, the chakras, and the Tibetan Book of the Dead. Everybody is squeezing something in.'}
       ]},
       { at:0.700, y:'the 1930s', n:'Krishnamacharya', body:[
         {p:'The Mysore Palace school. <strong>Everything you have ever taken a class in walks out of this one room.</strong>'},
