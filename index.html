@@ -54,7 +54,12 @@
   /* the stage carries the painting's own aspect ratio, so the overlay lays out in % of it */
   .stage{
     position:relative;
-    width:min(100%, calc(100vh * 1200 / 896)); flex:none;
+    /* ⚠ THE WORDS MUST SCALE OFF THE SAME THING THIS DOES, and for a long time they did not.
+       The stage is min(100vw, 100vh x 1200/896) — height-bound on a wide, short window. The words
+       were sized in plain vw, which is width-bound. So on a wide short screen the stage shrank
+       while ATMAN and BRAHMAN kept growing, and they met in the middle. One percent of this box is
+       min(1vw, 1.3393vh), which is what the font now uses. */
+    width:min(100%, calc(100vh * 1200 / 896)); max-width:1400px; flex:none;
     aspect-ratio:1200/896;
   }
   .stage img{width:100%; height:100%; display:block; object-fit:contain}
@@ -78,9 +83,9 @@
      runs off the right edge at about 75px and that is the ceiling, whatever you set. Pinned to the
      edges instead, they grow INWARD toward the "is" and the only limit is where they meet it. */
   .atman  {left:3%;  top:6%; transform:translateY(-50%);
-           font-size:clamp(1.15rem,calc(var(--word) * 1vw),12rem); letter-spacing:.1em}
+           font-size:clamp(1.15rem,calc(var(--word) * min(1vw, 1.3393vh)),6.25rem); letter-spacing:.1em}
   .brahman{left:auto; right:3%; top:6%; transform:translateY(-50%);
-           font-size:clamp(1.15rem,calc(var(--word) * 1vw),12rem); letter-spacing:.1em}
+           font-size:clamp(1.15rem,calc(var(--word) * min(1vw, 1.3393vh)),6.25rem); letter-spacing:.1em}
 
   /* the "is" is the FIXED POINT — dead centre, always. It does not move to suit the words;
      the words are sized to leave it room. His call, and it is the right one: the copula is the
@@ -145,7 +150,7 @@
 
   /* ── THE TIMELINE ──────────────────────────────────────────────────────── */
   .timeline{
-    width:min(100%, calc(100vh * 1200 / 896));   /* the stage's own basis, so the edges line up */
+    width:min(100%, calc(100vh * 1200 / 896)); max-width:1400px;   /* the stage's own basis, so the edges line up */
     margin:0 auto; padding:0;
     /* ⭐ the scroll's torn top edge rides OVER the base of the tree, so the roots run under the
        parchment instead of stopping at it. A % margin is a share of the width, so the overlap
