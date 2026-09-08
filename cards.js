@@ -374,7 +374,10 @@ window.TIMELINE = [
       { at:0.372, y:'in the Gita', n:'the original seat', body:[
         {p:'The Gita describes the seat itself: firm, neither too high nor too low, laid in <strong>three layers &mdash; kusha grass, then a deerskin, then a cloth.</strong>'},
         {p:'That is the oldest yoga mat we have a description of, and it is a stack. Everything after it is a substitution for one of those three layers.'},
-        {p:'Then centuries of nothing much: a skin for a yogi, a cotton rug for everybody else, or the bare ground. Whatever you had.'}
+        {p:'<strong>And the bottom layer is the point.</strong> Kusha is a woven grass mat &mdash; which is what people <em>slept</em> on. The yoga seat and the bed were the same object. You did not own a mat; you sat on the floor covering you already had.'},
+        {p:'Which is why the Shiva and Parvati story has a bed in it and no mat. There was no such thing as a mat. There was a woven grass floor, and everything happened on it.'},
+        {p:'Then centuries of nothing much: a skin for a yogi, a cotton rug for everybody else, or the bare ground. Whatever you had.'},
+        {p:'<strong>And then in 1967 somebody cuts a piece of foam carpet underlay to stand on.</strong> Same object, three thousand years later: the flooring you already had. It only becomes a <em>yoga</em> mat when somebody works out you will pay for one.'}
       ]},
       { at:0.391, y:'c. 400 CE', n:'Patanjali?', body:[
         {p:'The other end of the argument. Current scholarship dates the Yoga Sutras here rather than to the 2nd century BCE.'},
