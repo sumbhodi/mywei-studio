@@ -212,9 +212,10 @@ window.CARDS = {
 
       {p:'&#8212;'},
 
-      {p:'<strong>The eighties.</strong> Woo. Crystals, spirit animals, angel guides, and a magic wand on an infomercial. And more people practising in LA than in all of India \u2014 which I will stand by as an urban legend, because I have never been able to source it and neither has anyone else.'},
+      {p:'<strong>The eighties.</strong> Woo. Crystals, spirit animals, angel guides, and a magic wand on an infomercial. '},
       {p:'<strong>The nineties.</strong> <em>I bet you jog and eat salads too.</em> If nothing else works, try yoga. The <em>be here now</em> and <em>wherever you go, there you are</em> books make their way into rehabs, mental hospitals and jails \u2014 and from there they leak into pop culture. Fight Club has a cave and a spirit animal. Happy Gilmore has a happy place. Once you start looking you find a few Adam Sandler films with one.'},
       {p:'<strong>Post-Y2K</strong> it goes mainstream, but filtered. It arrives in the college catalog under a name nobody could object to: <em>stretch and relaxation.</em>'},
+      {p:'<strong>The 2010s</strong> \u2014 the Jois family goes hard on the trademark, and the argument about who owns this gets loud. That is when you start hearing there are <em>more people practising in LA than in all of India</em>. I will stand by it as an urban legend, because I have never been able to source it and neither has anyone else \u2014 but it is exactly the sort of line people reach for when the argument is about ownership.'},
       {p:'<strong>2008</strong> \u2014 I graduate from SLCC\u2019s first yoga teacher training program.'},
       {p:'<strong>2020</strong> \u2014 a pandemic, and everyone is doing it or wishing they had. Meditation finally goes fully mainstream, about three thousand years after it was already ancient.'},
 
@@ -562,14 +563,15 @@ window.TIMELINE = [
         {p:'His empire collapsed under civil suits, including a multi-million dollar judgment in 2016, and he left the country.'},
         {p:'&#9888; <strong>The podium is the thing to watch.</strong> The fair, the platform, the authorized teacher list \u2014 every version of this is somebody standing above the room and selling the right to be there.'}
       ]},
-      { at:0.792, y:'the 1980s', n:'tax cuts, and LA', body:[
+      { at:0.792, y:'the 1980s', n:'tax cuts', body:[
         {p:'The tax cuts for the rich actually start &mdash; so rich white people could afford yoga classes again.'},
-        {p:'By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
+        
         {p:'<strong>Which is the six branches wearing different clothes.</strong> That list sorted the practice by caste: meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change &mdash; <em>who has time to study and read, and who is bathing in the ashes of the dead.</em>'}
       ]},
       { at:0.918, y:'2010', n:'the name gets claimed', body:[
         {p:'<em>K Pattabhi Jois Ashtanga Yoga Institute</em> is filed as a trademark on 14 May 2010, held by R. Sharath Jois &mdash; Pattabhi Jois&rsquo;s grandson.'},
         {p:'The push behind it is American money: a partnership with Sonia Jones, married to a hedge fund billionaire, to codify the teaching, open Jois Yoga boutique studios and launch a clothing line.'},
+        {p:'This is also when you start hearing there are <em>more people practising in LA than in all of India</em> \u2014 an urban legend I have never been able to source, and exactly the sort of line people reach for when the argument is about who owns a thing.'},
         {p:'&#9888; <strong>The correction to the story I used to tell.</strong> It was not white men in the fifties taking the word. It is 2010, it is the lineage family claiming their own name, and it is financed from Greenwich. Which lands closer to the point, not further from it.'},
         {p:'And the enforcement is not a lawsuit. It is <strong>the authorized teacher list</strong>. Long-time teachers who let the practice evolve &mdash; used props, made modifications &mdash; quietly stopped appearing on it.'},
         {p:'So I cannot call this class Ashtanga because of <strong>a gate, not a statute</strong>. The bare word is <em>ashtau</em> plus <em>anga</em>: eight, limb. Nobody\u2019s mark stops me teaching the eight limbs and calling them that.'},
