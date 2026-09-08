@@ -55,7 +55,7 @@ window.CARDS = {
       ['consciousness',            'if you came in through philosophy'],
       ['the spark',                'if you like Transformers'],
       ['controlled hallucination', 'if you like cognitive science'],
-      ['res cogitans',             'the thinking thing — if you liked The Matrix, which is Descartes in leather']
+      ['res cogitans',             'the thinking thing — if you liked The Matrix, which is Descartes in leather trench coats']
     ],
     body:[
       {p:'Those are not five things. They are five vocabularies pointing at one thing, and the test is '+
