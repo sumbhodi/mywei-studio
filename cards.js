@@ -251,6 +251,139 @@ window.CARDS = {
      2. HIS GUARDRAIL LINE TRAVELS WITH IT, always — "I would never recommend insanity, addiction
         and psychosis for anyone else, but they always worked for me." Without that sentence this
         is an anecdote about extremity. With it, it is a warning with a person behind it. */
+  /* ── THE SIX BRANCHES AND THE EIGHT LIMBS ────────────────────────────────────
+     ROUGH CUT, 8 Sep. Transplanted whole from _parked/2026-09-07-tree-with-names/content.js —
+     his own 2015 Six Branches doc (with the caste tag on every branch) and his 2016 8 Limbs doc,
+     plus the teaching weighting he gave on 7 Sep. Nothing retyped.
+     SAMADHI is not here; it already has its own card with his history on it. */
+
+  'br-raja': { h:'RAJA', sub:'royal · meditation',
+    lead:'Upper Caste',
+    body:[
+      {p:'<strong>His 2015 doc tags this branch: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'Focuses on achieving and maintaining specific mental states through meditation — yet still incorporates all eight limbs, including asana.', cite:'The Six Branches'}
+    ]
+  },
+
+  'br-jnana': { h:'JNANA', sub:'mind · study and wisdom',
+    lead:'Upper Caste',
+    body:[
+      {p:'<strong>His 2015 doc tags this branch: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'Still follows the eight-limbed practice, but focuses on improvement of the mind through scholarly endeavour.', cite:'The Six Branches'}
+    ]
+  },
+
+  'br-karma': { h:'KARMA', sub:'living life, learning lessons',
+    lead:'Working Caste',
+    body:[
+      {p:'<strong>His 2015 doc tags this branch: Working Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'<em>We are all doing this, it\'s just a matter of how consciously.</em>', cite:'The Six Branches'},
+      {p:'The trick is to live now in such a way that you create better tomorrows — in this lifetime and the next.', cite:'The Six Branches'}
+    ]
+  },
+
+  'br-bhakti': { h:'BHAKTI', sub:'devotion, loving service',
+    lead:'Working Caste',
+    body:[
+      {p:'<strong>His 2015 doc tags this branch: Working Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'The yoga of devotion, usually to Krishna. Devotees keep the name on their lips and love in their heart, hoping to be spared the endless cycle of death and rebirth.', cite:'The Six Branches'},
+      {p:'The work is to feast and serve and sing and dance — to care for the god, his guests, and fellow devotees. They practise in this life to be the better servant in the next.', cite:'The Six Branches'}
+    ]
+  },
+
+  'br-tantra': { h:'TANTRA', sub:'ritual, ceremony',
+    lead:'Monastic Caste',
+    body:[
+      {p:'<strong>His 2015 doc tags this branch: Monastic Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'Making every act of a mundane human life into a ritual offered up — to connect with the divine, or simply to raise consciousness.', cite:'The Six Branches'},
+      {p:'<em>While sex can be included in such a practice, so is: the way you make your rice, get dressed, speak, garden. Most Tantric schools actually recommend celibacy.</em>', cite:'The Six Branches'}
+    ]
+  },
+
+  'br-hatha': { h:'HATHA', sub:'purification of the vessel',
+    lead:'Lowest Caste',
+    body:[
+      {p:'<strong>His 2015 doc tags this branch: Lowest Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'<em>While hatha is only one sixth of the body of yoga, it is by far the most widely known, practiced and researched form known today.</em>', cite:'The Six Branches'},
+      {p:'<em>Any time the word yoga is used in any language other than Sanskrit, they are probably talking about Hatha.</em>', cite:'The Six Branches'},
+      {p:'Most believed its sole purpose was to keep the body out of the way — that it was not a valid path of transcendence on its own.', cite:'The Six Branches'},
+      {p:'<strong>The physical practice had all but disappeared from the world by 1850. By the 1980s there were more people practicing hatha in LA than in all of India.</strong>', cite:'The Six Branches'}
+    ]
+  },
+
+  'limb-yama': { h:'YAMA', sub:'the restraints · the dont\'s',
+    doors:[
+      ['Ahimsa','no harm, loving kindness'],
+      ['Satya','no lying'],
+      ['Asteya','no stealing'],
+      ['Brahmacharya','no gluttony, controlling desire'],
+      ['Aparigraha','no hoarding']
+    ],
+    body:[
+      {p:'<strong>How it is actually taught:</strong> covered at the start of semester · one guided meditation on ahimsa'},
+      {p:'Handled early, then lived rather than lectured. The one that gets its own guided meditation is <strong>ahimsa</strong>.'},
+      {p:'<em>Satya: truth is easier. Stealing is just unsustainable, not wrong — the distinction matters.</em>', cite:'The Wei'}
+    ]
+  },
+
+  'limb-niyama': { h:'NIYAMA', sub:'the observances · the do\'s',
+    doors:[
+      ['Shaucha','purity'],
+      ['Samtosha','contentment'],
+      ['Tapas','discipline'],
+      ['Svadhyaya','study'],
+      ['Ishvara Pranidhana','surrender to that which is greater than you']
+    ],
+    body:[
+      {p:'<strong>How it is actually taught:</strong> covered at the start of semester'},
+      {p:'Front-loaded with yama, then it runs underneath everything else all semester.'}
+    ]
+  },
+
+  'limb-asana': { h:'ASANA', sub:'to take a seat',
+    body:[
+      {p:'<strong>How it is actually taught:</strong> ★ one of the two this class is actually built on'},
+      {p:'<em>Asana refers to more than just a physical pose. It is the practice of becoming fully embodied — both in your physical body and in the present moment.</em>', cite:'The 8 Limbs'},
+      {p:'<em>You are always in a pose. You just forget sometimes. The pose you are in right now — reading this, however you are sitting or standing or lying down — is a pose. You are practicing. You just did not know it was class.</em>', cite:'The Wei'},
+      {p:'The word means <strong>seat</strong>. Find the seat. That is the limb.'}
+    ]
+  },
+
+  'limb-pranayama': { h:'PRANAYAMA', sub:'breath control',
+    body:[
+      {p:'<strong>How it is actually taught:</strong> ★ one of the two this class is actually built on'},
+      {p:'<em>Prana is the life force that flows through everything: the air we breathe, the food we eat, the sounds we hear, the light we see. Even the love we receive in relationships can be considered prana.</em>', cite:'The 8 Limbs'},
+      {p:'<em>Yama</em> is a discipline or constraint — the same word as the first limb. So pranayama is breath control used as a tool for <strong>disciplining the flow of all the energies in our lives</strong>.', cite:'The 8 Limbs'},
+      {p:'<em>You are always breathing. If you weren\'t — breathe right now. Take a deep breath. You\'re welcome. I accept tips.</em>', cite:'The Wei'}
+    ]
+  },
+
+  'limb-pratyahara': { h:'PRATYAHARA', sub:'awareness of the senses',
+    body:[
+      {p:'<strong>How it is actually taught:</strong> named at the start of class and again at the end'},
+      {p:'<em>At first translated as a withdrawal from the senses — it is better described as diving so deep into all the senses that you are no longer distracted by them.</em>', cite:'The 8 Limbs'},
+      {p:'<em>The sound of the garbage truck: easy to not identify as self. Music: easy. The voice inside your head reading these words right now: less easy. The inner critic: less.</em>', cite:'The Wei'},
+      {p:'<em>Learn to hear it all as if listening to music.</em>', cite:'The Wei'}
+    ]
+  },
+
+  'limb-dharana': { h:'DHARANA', sub:'mental focus',
+    body:[
+      {p:'<strong>How it is actually taught:</strong> this is where the guided meditations live'},
+      {p:'<em>A single-minded intention. Traditionally a drishti — a gaze upon a sacred object or meditative device: candle, incense, ancestor. It can also simply be a thought to keep you present, or any mantra that fits your practice.</em>', cite:'The 8 Limbs'},
+      {p:'The white bear is why it works this way. Tell the mind <em>don\'t</em> and one part obeys while another keeps checking whether it has stopped yet — and the checking is the thinking. So you do not empty the head by force. <strong>Give it a brown bear first.</strong>', cite:'the bible · Field and Stream'}
+    ]
+  },
+
+  'limb-dhyana': { h:'DHYANA', sub:'stillness',
+    body:[
+      {p:'<strong>How it is actually taught:</strong> taught by explaining it once, then shutting up as much as possible'},
+      {p:'<em>Traditional or zazen meditation. A clear still mind.</em>', cite:'The 8 Limbs'},
+      {p:'The method <strong>is</strong> the silence after the explanation. Say it once, then get out of the way — talking over it is the one thing guaranteed to prevent it.'},
+      {p:'<strong>Dhyana has no door that isn\'t dharana.</strong> You choose a thought, hold it on purpose, let it end, choose again. Empty is best if it comes — but it comes <em>through</em> the choosing, never through the forcing.', cite:'the bible'}
+    ]
+  },
+
   samadhi: {
     h:'SAMADHI', sub:'the eighth limb \u2014 and the one to be careful with',
     lead:'Bliss. Enlightenment. Oneness.',
@@ -608,3 +741,17 @@ window.TIMELINE = [
     ],
     ticks:[0.730,0.756,0.762,0.772,0.792,0.815,0.879,0.918] }
 ]
+
+/* ── THE TREE'S TWO SIDES — six branches left of the trunk, eight limbs right.
+   Name and card id only; the detail is in the card. Rough cut 8 Sep. */
+window.TREE = {
+  branches:[
+    ['br-raja','RAJA'], ['br-jnana','JNANA'], ['br-karma','KARMA'],
+    ['br-bhakti','BHAKTI'], ['br-tantra','TANTRA'], ['br-hatha','HATHA']
+  ],
+  limbs:[
+    ['limb-yama','YAMA'], ['limb-niyama','NIYAMA'], ['limb-asana','ASANA'],
+    ['limb-pranayama','PRANAYAMA'], ['limb-pratyahara','PRATYAHARA'],
+    ['limb-dharana','DHARANA'], ['limb-dhyana','DHYANA'], ['samadhi','SAMADHI']
+  ]
+}
