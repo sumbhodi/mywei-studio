@@ -213,11 +213,20 @@ window.CARDS = {
       {p:'&#8212;'},
 
       {p:'<strong>The eighties.</strong> Woo. Crystals, spirit animals, angel guides, and a magic wand on an infomercial. '},
-      {p:'<strong>The nineties.</strong> <em>I bet you jog and eat salads too.</em> If nothing else works, try yoga. The <em>be here now</em> and <em>wherever you go, there you are</em> books make their way into rehabs, mental hospitals and jails \u2014 and from there they leak into pop culture. Fight Club has a cave and a spirit animal. Happy Gilmore has a happy place.'},
+      {p:'<strong>The nineties.</strong> <em>I bet you jog and eat salads too.</em> If nothing else works, try yoga. The <em>be here now</em> and <em>wherever you go, there you are</em> books make their way into rehabs, mental hospitals and jails.'},
+      {p:'<strong>And there is a specific reason they got in.</strong> In 1979 Jon Kabat-Zinn put meditation inside a hospital \u2014 the Stress Reduction Clinic at UMass, and the eight-week MBSR protocol. <strong>He did it by subtraction:</strong> take the practice, remove the Buddhism, leave a procedure with a curriculum and evidence behind it. No belief required.'},
+      {p:'That is what let it through the door: it arrives as <em>treatment</em> rather than religion, so a ward can teach it and an insurer can pay for it. <strong>It is also what got left behind.</strong> Dharana without the other seven limbs is a technique, not a path. A fair price. Still a price.'},
+      {p:'<strong>And it was already leaking into the movies long before that.</strong> <strong>Star Wars</strong> is probably the biggest vector there has ever been \u2014 Yoda is a yogi archetype down to the name, Dagobah is a meditation retreat, and the whole business about trying versus doing is a teaching on effort and attachment delivered by a swamp puppet. Millions of children absorbed a contemplative frame and nobody called it that.'},
+      {p:'<strong>Kung Fu</strong> put a Shaolin monk in American living rooms through the early seventies \u2014 the exact decade yoga was arriving. <strong>The Karate Kid</strong> did stillness and discipline for the next cohort in 1984.'},
+      {p:'<strong>Groundhog Day</strong> is the most-cited Buddhist film that is not about Buddhism; teachers have used it as a rebirth parable for thirty years. And <strong>Caddyshack</strong> somehow contains the most-quoted Buddhism in American comedy.'},
+      {p:'<strong>Fight Club</strong> has a cave and a spirit animal. <strong>Happy Gilmore</strong> has a happy place.'},
       {p:'<strong>Post-Y2K</strong> it goes mainstream, but filtered. It arrives in the college catalog under a name nobody could object to: <em>stretch and relaxation.</em>'},
       {p:'<strong>The 2010s</strong> \u2014 the Jois family goes hard on the trademark, and the argument about who owns this gets loud. That is when you start hearing there are <em>more people practising in LA than in all of India</em>. I will stand by it as an urban legend, because I have never been able to source it and neither has anyone else \u2014 but it is exactly the sort of line people reach for when the argument is about ownership.'},
       {p:'<strong>2008</strong> \u2014 I graduate from SLCC\u2019s first yoga teacher training program.'},
       {p:'<strong>2020</strong> \u2014 a pandemic, and everyone is doing it or wishing they had. Meditation finally goes fully mainstream, about three thousand years after it was already ancient.'},
+      {p:'<strong>And then, post-2020, somebody makes the towel joke again.</strong> <em>Everything Everywhere All at Once</em> is arguably the most explicitly non-dual film ever to win Best Picture, and it builds the whole argument around a bagel \u2014 an everything bagel, containing all of it, which is exactly the thing that swallows you if you stare too long.'},
+      {p:'It runs straight into the problem we already have. <strong>If it is all one, walls are hard to avoid</strong> \u2014 and the film knows it. So it does not land on transcendence. It lands on <em>be kind</em>, and on staying in the room.'},
+      {p:'<strong>Which is the pool and the towel, with a bagel.</strong> Same device, arrived at independently, and the same refusal to let you off easily. You see through it and you still have to do the laundry.'},
 
       {p:'&#8212;'},
 
@@ -563,10 +572,22 @@ window.TIMELINE = [
         {p:'His empire collapsed under civil suits, including a multi-million dollar judgment in 2016, and he left the country.'},
         {p:'&#9888; <strong>The podium is the thing to watch.</strong> The fair, the platform, the authorized teacher list \u2014 every version of this is somebody standing above the room and selling the right to be there.'}
       ]},
+      { at:0.788, y:'1979', n:'meditation enters the hospital', body:[
+        {p:'<strong>Jon Kabat-Zinn</strong> starts the Stress Reduction Clinic at the University of Massachusetts Medical School and builds <strong>MBSR</strong> \u2014 Mindfulness-Based Stress Reduction. An eight-week protocol, in a hospital, for patients doctors had run out of options for.'},
+        {p:'<strong>The move was subtraction.</strong> He took Buddhist practice and took the Buddhism out \u2014 no robes, no lineage, no belief required \u2014 and left a procedure with a curriculum and an evidence base. That is what a hospital can teach, study, and eventually bill for.'},
+        {p:'&#9888; And that is how meditation reaches people who would never walk into a temple. <strong>It arrives as treatment.</strong> Chronic pain, anxiety, relapse prevention \u2014 later MBCT for depression, now a standard recommendation in places that would not have touched this in 1979.'},
+        {p:'His books carry it out of the clinic, and from there it lands in rehabs, mental hospitals and jails. Which is how a lot of people meet it. Including some of us.'},
+        {p:'<strong>The trade is worth naming.</strong> Stripping the religion out is what got it through the door, and it is also what got left behind. Dharana without the other seven limbs is a technique, not a path. A fair price for something that works on a ward \u2014 but a price.'}
+      ]},
       { at:0.792, y:'the 1980s', n:'tax cuts', body:[
         {p:'The tax cuts for the rich actually start &mdash; so rich white people could afford yoga classes again.'},
         
         {p:'<strong>Which is the six branches wearing different clothes.</strong> That list sorted the practice by caste: meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change &mdash; <em>who has time to study and read, and who is bathing in the ashes of the dead.</em>'}
+      ]},
+      { at:0.912, y:'2010', n:'Eat Pray Love', body:[
+        {p:'A Western woman goes to an ashram, and it becomes a film. <strong>If you want a single date for the mainstreaming, this is it.</strong>'},
+        {p:'It measurably drove real yoga tourism \u2014 people flew to India because of a book. Which is the tourist trade reviving the practice all over again, a hundred and thirty years after the first time, and for the same reason.'},
+        {p:'&#9888; Note the shape repeating. In the 1800s the audience was tourists and the performers were the untouchable class. In 2010 the audience is still tourists. Only the direction of travel changed.'}
       ]},
       { at:0.918, y:'2010', n:'the name gets claimed', body:[
         {p:'<em>K Pattabhi Jois Ashtanga Yoga Institute</em> is filed as a trademark on 14 May 2010, held by R. Sharath Jois &mdash; Pattabhi Jois&rsquo;s grandson.'},
