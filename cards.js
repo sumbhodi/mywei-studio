@@ -58,7 +58,7 @@ window.CARDS = {
       {p:'<em>Atman is the slice of that universe that says &ldquo;I.&rdquo; Your node of awareness. The '+
          'part of Brahman wearing a body and wondering where it left its keys.</em>',
          cite:'History of Yoga'},
-      {p:'Here is the difficulty, stated once. The eye cannot see itself. The knife cannot cut itself. '+
+      {p:'The eye cannot see itself. The knife cannot cut itself. '+
          'The scale cannot weigh itself. You are studying the mind from inside the mind, and the '+
          'instrument <em>is</em> the thing being measured.', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
       {p:'So: everything you call reality is the <strong>screen</strong>. The render. What the koshas '+
