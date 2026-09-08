@@ -2,7 +2,18 @@
 
 Current joy state: **`joy-2026-09-08`**. `git checkout joy-2026-09-08 -- .` to return.
 
-## ⭐ THE NEXT TASK — deploy to mywei.studio
+## ✅ DEPLOYED 8 Sep 2026, ~2:15am — https://mywei.studio is live
+
+> The paragraph below was the task; kept because it says what the road was before it existed.
+> **The road now:** `./deploy.sh` (his word first, each time). Cloudflare Pages project `mywei-studio`
+> · zone `mywei.studio` on cecelia/chase (same pair as 0zhung) · two proxied CNAMEs (`@` and `www`)
+> → `mywei-studio.pages.dev`, which he typed himself. Repo: github.com/sumbhodi/mywei-studio (public).
+> ⚠ Two traps paid for tonight: (1) Cloudflare's zone import copied Squarespace's parking A rows and
+> proxied their "Coming Soon" page — delete every imported row before adding the CNAMEs; (2) the
+> wrangler OAuth token has `zone:read` only — it cannot create a zone or touch DNS rows, so those
+> are green buttons in the dash. Adding the custom domain via the Pages API does NOT create the CNAME.
+
+## THE TASK AS IT STOOD — deploy to mywei.studio
 
 He said it plainly at the end of the session: *"I will have fable speed run the post to my wei part
 after compact."* That is the job. Everything below is context for it.
