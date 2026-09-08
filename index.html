@@ -30,7 +30,17 @@
              3.4rem after I bumped it. Same font either way (Cinzel, measured) — only the size moved.
      --arrow-ink: how much the arrow pops. Started .30 (invisible), now .48. */
   :root{
-    --word:2.6rem;
+    /* --word is now a vw NUMBER, not a rem ceiling. Measured: the two words together take
+       10.166px of width for every 1px of font-size, so at 9vw they filled 91.5% of the stage and
+       left a 21px gap — the "is" needs about 60. 8.2vw lands them at ~85%, which is as close to
+       filling as it goes with the copula still between them. Being a vw, that ratio now holds at
+       every window width instead of drifting the way a rem ceiling did. */
+    /* ⭐ BRAHMAN IS THE BINDING CONSTRAINT, not the pair. The "is" holds dead centre, so each
+       word gets its own half minus 60px of clearance. ATMAN is 4.235em wide and has slack;
+       BRAHMAN is 5.934em and runs out of room first — so the whole size is solved off BRAHMAN:
+           font = (0.47 x stage - 60) / 5.934
+       which at this width is ~56px, i.e. 6.7vw. Sizing off the PAIR is what pushed it past centre. */
+    --word:6.7;
     --arrow-ink:.48;
   }
 
@@ -64,11 +74,20 @@
   /* ⭐ ALL THREE IN THE TREE'S OWN INK. Sampled, not guessed: 57,384 ink pixels off the trunk
      and the YOGA lettering average #866241, and the single most common value is #734E32. The words
      are the same substance as the drawing, which is the point of lettering them onto it. */
-  .atman  {left:15%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
-  .brahman{left:85%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
+  /* ⭐ EDGE-ANCHORED, NOT CENTRE-ANCHORED — this is what lets them get big.
+     At left:15%/85% with translate(-50%) the words grow from their own centre, so BRAHMAN's tail
+     runs off the right edge at about 75px and that is the ceiling, whatever you set. Pinned to the
+     edges instead, they grow INWARD toward the "is" and the only limit is where they meet it. */
+  .atman  {left:3%;  top:6%; transform:translateY(-50%);
+           font-size:clamp(1.15rem,calc(var(--word) * 1vw),12rem); letter-spacing:.1em}
+  .brahman{left:auto; right:3%; top:6%; transform:translateY(-50%);
+           font-size:clamp(1.15rem,calc(var(--word) * 1vw),12rem); letter-spacing:.1em}
 
+  /* the "is" is the FIXED POINT — dead centre, always. It does not move to suit the words;
+     the words are sized to leave it room. His call, and it is the right one: the copula is the
+     axis of the sentence, so it sits on the axis of the page. */
   .is{
-    left:50%; top:6.5%;
+    left:50%; top:4.5%;
     font-family:'Cormorant Garamond',serif; font-style:italic;
     font-size:clamp(1.05rem,4vw,3rem);
     text-shadow:none;
