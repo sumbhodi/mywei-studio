@@ -1,0 +1,118 @@
+/* cards.js — the lessons, as data. One sheet in index.html, many fills here.
+ * Add a lesson: add a key. No markup, no handler, no css.
+ *
+ * ⚠ PROVENANCE IS THE POINT OF THIS FILE, because the whole reason for the site is that he is
+ * teaching from his own content. Every citation is real and checkable:
+ *   'the history draft' — his Google Doc  history_of_yoga_p1_draft
+ *   'the bible'         — ozhunga B3/church/the-bible.md
+ *   'The Wei'           — his live site, ozhunga B3/church
+ *   a date              — his own words typed that night
+ *
+ * ⚠⚠ THE CORRECTION THAT MATTERS. An earlier draft of the Brahman card said he wrote the towel
+ * BEFORE seeing I Heart Huckabees. That was my invention and it is FALSE. His words, 7 Sep 2026:
+ * "I copied the movie, changed it to towel, added my jaded cynicism sureal nihilist logical
+ * absurdisms style." Never put a provenance claim in his mouth — especially not on a public page
+ * with his name on it. The lineage is the better story anyway, and in a yoga class it is the
+ * correct shape: teacher to student, changed a little in the handing over.
+ *
+ * The film scene is DESCRIBED, not transcribed. One short line is quoted and credited on the spot.
+ */
+
+window.CARDS = {
+
+  /* ── YOGA — the painted word in the canopy opens this ────────────────────── */
+  yoga: {
+    h:'YOGA', sub:'the word, before anything else',
+    lead:'The root is <em>yuj</em>. To yoke.',
+    body:[
+      {p:'As in the wishbone-shaped wooden crosspiece you strap to an ox to pull a cart. A tool for '+
+         'doing work. <strong>Not part of an egg.</strong>', cite:'the history draft'},
+      {p:'So yoga is a yoke. A connection, a union, a harness — a tool. Which leaves the only question '+
+         'worth opening a class with: <strong>what are we harnessing?</strong>', cite:'the history draft'},
+      {p:'The dictionary will tell you it is a Hindu spiritual and ascetic discipline, widely practised '+
+         'for health and relaxation. True, and useless. That describes what people do on a Tuesday, not '+
+         'what the word says.', cite:'OED, by way of the history draft'},
+      {p:'In Advaita Vedanta — the non-dual tradition yoga draws from most heavily — the answer is that '+
+         '<em>we are not yoking two separate things together. We are remembering that they were never '+
+         'separate.</em>', cite:'the history draft'},
+      {p:'So the yoke is the tool we use to re-member what the brain split apart. Not destroying the ego '+
+         '— <em>true ego death is suicide, it is just a matter of pace</em> — but loosening its grip. '+
+         'Getting out of the pool long enough to dry off.', cite:'the history draft'},
+      {p:'And worth saying out loud on day one: this is not a modern wellness trend. It was not invented '+
+         'by Lululemon. It is a technology for consciousness older than writing, handed teacher to '+
+         'student the whole way down.', cite:'the history draft'}
+    ]
+  },
+
+  /* ── ATMAN — five doors into one thing ───────────────────────────────────── */
+  atman: {
+    h:'ATMAN', sub:'the one that is doing the looking',
+    lead:'You already have five words for this. You just learned them in different rooms.',
+    doors:[
+      ['the soul',                 'if you came in through religion'],
+      ['consciousness',            'if you came in through philosophy'],
+      ['the spark',                'if you like Transformers'],
+      ['controlled hallucination', 'if you like cognitive science'],
+      ['the ghost in the machine', 'if you liked The Matrix — which is Descartes in better coats']
+    ],
+    body:[
+      {p:'Those are not five things. They are five vocabularies pointing at one thing, and the test is '+
+         'that <strong>it survives the translation.</strong> Swap the word and the problem does not '+
+         'change: something is doing the experiencing, and it cannot get around in front of itself to '+
+         'have a look.'},
+      {p:'<em>Atman is the slice of that universe that says &ldquo;I.&rdquo; Your node of awareness. The '+
+         'part of Brahman wearing a body and wondering where it left its keys.</em>',
+         cite:'the history draft'},
+      {p:'Here is the difficulty, stated once. The eye cannot see itself. The knife cannot cut itself. '+
+         'The scale cannot weigh itself. You are studying the mind from inside the mind, and the '+
+         'instrument <em>is</em> the thing being measured.', cite:'the bible'},
+      {p:'So: everything you call reality is the <strong>screen</strong>. The render. What the koshas '+
+         'call Maya and what neuroscience calls controlled hallucination. You have spent your whole life '+
+         'staring at that screen trying to find yourself in the picture. <strong>You are not in the '+
+         'picture.</strong>', cite:'the bible · The Projector and the Screen'},
+      {p:'<strong>You are the projector.</strong> Atman is the light, not the image. You cannot see the '+
+         'projector by squinting harder at the movie.', cite:'the bible'},
+      {p:'Which is why the lab and the temple end up in the same room. Vedanta and neuroscience agree on '+
+         'this one: <em>the self is the model, not the modeler.</em> The observer is the construction.',
+         cite:'the history draft'}
+    ]
+  },
+
+  /* ── BRAHMAN — the sheet ─────────────────────────────────────────────────── */
+  brahman: {
+    h:'BRAHMAN', sub:'the sheet',
+    lead:'Not a god. Not a place. The fabric itself.',
+    body:[
+      {p:'The universe is not a container that holds things — it <em>is</em> what things are. One '+
+         'continuous movement. No seams. No inside or outside. No pockets.', cite:'the history draft'},
+      {p:'<em>This is why the universe is always losing its keys. No pockets.</em>',
+         cite:'the history draft'},
+      {p:'There is a scene in <em>I Heart Huckabees</em> that teaches this better than most scripture. A '+
+         'detective holds up a bedsheet: this is all the matter and energy there is, you and me and '+
+         'everything, nothing left out. Asked what is outside it, he says more sheet. Then he draws '+
+         'himself on it, and you, and Paris, and a war, and a hamburger — all the same fabric, differing '+
+         'only in where they sit on it.', cite:'I Heart Huckabees, 2004'},
+      {p:'Then the question the scene turns on, and the one worth carrying out of the room: '+
+         '<strong>&ldquo;What is not the sheet?&rdquo;</strong>', cite:'I Heart Huckabees, 2004'},
+      {p:'<strong>I took that and made it a towel.</strong> Same demonstration, my vocabulary — and that '+
+         'is the honest way to say it. It is also how this whole tradition has ever moved: teacher to '+
+         'student, changed a little in the handing over.', cite:'Sum, 7 Sep 2026'},
+      {p:'<em>The towel is everything. The pool is in the towel. You are in the towel. This part is you. '+
+         'This part is me. What is not the towel?</em>', cite:'The Wei'},
+      {p:'<strong>Where their version and mine part company.</strong> Theirs resolves into comfort — get '+
+         'the blanket thing and you can relax, because everything you could ever want you already are. '+
+         'Mine does not let you off that lightly.'},
+      {p:'<em>The towel may not exist. Getting out of the pool is still the correct move. You are the '+
+         'water. You are the towel. You were never actually wet.</em> That is not comforting at first. '+
+         'That is also the Wei.', cite:'The Wei'},
+      {p:'So: <strong>Atman is Brahman.</strong> <em>Tat tvam asi</em> — thou art that. The individual '+
+         'witness and the witnessed are the same thing looking at itself. The light in your projector is '+
+         'the same light in mine; there was only ever one bulb.',
+         cite:'the history draft · the bible'},
+      {p:'And the problem we do not paper over: if it really is all one sheet, walls are still hard to '+
+         'avoid, and somebody still has to order the coffee. In here, out there, us and other — a '+
+         'necessary illusion. You see through it and you order the coffee anyway. That is not hypocrisy. '+
+         'That is the practice.', cite:'Sum, 7 Sep 2026'}
+    ]
+  }
+}

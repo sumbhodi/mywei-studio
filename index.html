@@ -87,12 +87,21 @@
      the words are sized to leave it room. His call, and it is the right one: the copula is the
      axis of the sentence, so it sits on the axis of the page. */
   .is{
-    left:50%; top:4.5%;
+    left:50%; top:2.5%;
     font-family:'Cormorant Garamond',serif; font-style:italic;
     font-size:clamp(1.05rem,4vw,3rem);
     text-shadow:none;
     opacity:.85;
   }
+
+  .yoga-link{
+    position:absolute; left:50%; top:28%; transform:translate(-50%,-50%);
+    width:46%; height:24%;
+    background:none; border:2px solid transparent; border-radius:6px; padding:0; cursor:pointer;
+    transition:background .18s, border-color .18s;
+  }
+  .yoga-link:hover{background:rgba(246,239,220,.20); border-color:rgba(115,78,50,.30)}
+  .yoga-link:focus-visible{outline:3px solid #1C5C8C; outline-offset:4px}
 
   /* ⭐⭐ THE ARROW — from the "is" down into the YOGA lettering in the canopy.
      His call: "add arrow down from is to yoga, that is also lost in the noise but there if you
@@ -175,6 +184,15 @@
     font-size:clamp(1.1rem,2.1vw,1.35rem); line-height:1.62; margin-bottom:1.05rem; max-width:36rem;
   }
   .sheet-body p.big{font-size:clamp(1.25rem,2.6vw,1.65rem); color:#4A2F1C}
+  .sheet-body .doors{list-style:none; margin:.4rem 0 1.6rem; padding:0; max-width:36rem}
+  .sheet-body .doors li{display:flex; gap:1rem; align-items:baseline; flex-wrap:wrap;
+    padding:.6rem 0; border-bottom:1px dotted #C4AF84}
+  .sheet-body .doors b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.06em;
+    color:#734E32; min-width:13rem; font-size:1.05rem}
+  .sheet-body .doors span{font-family:'Cormorant Garamond',serif; font-style:italic;
+    font-size:1.1rem; color:#6B573C}
+  .sheet-body cite{display:block; font-family:'Jost',sans-serif; font-style:normal;
+    font-size:.82rem; letter-spacing:.05em; color:#6B573C; margin-top:.3rem}
   .sheet-body .draft{
     margin-top:1.6rem; font-family:'Jost',sans-serif; font-size:.9rem; color:#6B573C;
     border:1px dashed #A08A62; padding:.85rem 1.1rem; max-width:36rem;
@@ -188,9 +206,14 @@
        alt="A tree drawn in Tamil script, with the word YOGA lettered into its canopy."
        width="1200" height="896">
 
-  <button class="w atman" type="button" data-scroll aria-haspopup="dialog">ATMAN</button>
+  <button class="w atman" type="button" data-scroll="atman" aria-haspopup="dialog">ATMAN</button>
   <span class="w is">is</span>
-  <button class="w brahman" type="button" data-scroll aria-haspopup="dialog">BRAHMAN</button>
+
+  <!-- the painted YOGA is the third door: a real button over the lettering, with a real accessible
+       name and no chrome until you touch it. The art displays; this opens. -->
+  <button class="yoga-link" type="button" data-scroll="yoga" aria-haspopup="dialog"
+          aria-label="Yoga — what the word means. Open the lesson."></button>
+  <button class="w brahman" type="button" data-scroll="brahman" aria-haspopup="dialog">BRAHMAN</button>
 
   <!-- the arrow, at the same threshold of visible as the "is" it falls from -->
   <span class="arrow" aria-hidden="true">
@@ -215,54 +238,37 @@
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h" hidden>
   <div class="sheet-inner">
     <button class="sheet-close" id="sheet-close" type="button">Close<span aria-hidden="true"> &#10005;</span></button>
-    <div class="sheet-body" id="sheet-body" tabindex="-1">
-
-      <h1 id="sheet-h">ATMAN IS BRAHMAN</h1>
-      <p class="sub"><em>yuj</em> &mdash; to yoke, to harness. The middle word is the practice.</p>
-
-      <p class="big">The whole load is carried by the smallest word, and the smallest word is the
-        same root as the name of the thing you came here to do.</p>
-
-      <p>So it is not a description of a state you arrive at later, after enough mornings on the mat.
-        The yoking is not the reward for the sentence. <strong>The yoking is the sentence.</strong></p>
-
-      <p>Which leaves an obvious problem, and it is worth saying out loud before anybody sits down:
-        in here, out there, us and other &mdash; <em>a necessary illusion to order coffee.</em></p>
-
-      <p>Because if it really is all one, walls are hard to avoid, and the car still has to be driven
-        somewhere. <em>&ldquo;I want&rdquo;</em> &mdash; what does that even mean? The Buddha said I
-        should have no wants. And yet somebody has to decide about dinner.</p>
-
-      <p>So the split gets called an illusion and then kept anyway, because it is load-bearing. That
-        is not hypocrisy. That is the practice. You see through it and you order the coffee.</p>
-
-      <p class="big">True enlightenment is useless. Spend too long in nirvana and you will wind up
-        sitting in a pile of crap.</p>
-
-      <p>Which is the entire method, stated as plainly as it can be stated: find the seat. Turn the
-        brain off. Unplug it &mdash; and then <strong>plug it back in.</strong></p>
-
-      <p>Find sukhasana. Find samadhi. And leave before you need to change your shorts.</p>
-
-      <p class="draft"><strong>Draft &mdash; yours to cut.</strong> Every line above is your own, from
-        tonight and from the Wei. Nothing has been invented in your name. Say the word and it changes.</p>
-
-    </div>
+    <div class="sheet-body" id="sheet-body" tabindex="-1"></div>
   </div>
 </div>
 
+<script src="cards.js"></script>
 <script>
 (function(){
   var sheet=document.getElementById('sheet'), scrim=document.getElementById('scrim'),
       body=document.getElementById('sheet-body'), stage=document.querySelector('.stage'), from=null
+
+  function render(c){
+    var h='<h1 id="sheet-h">'+c.h+'</h1><p class="sub">'+c.sub+'</p>'
+    if(c.lead) h+='<p class="big">'+c.lead+'</p>'
+    if(c.doors) h+='<ul class="doors">'+c.doors.map(function(d){
+      return '<li><b>'+d[0]+'</b><span>'+d[1]+'</span></li>' }).join('')+'</ul>'
+    h+=c.body.map(function(p){
+      return '<p>'+p.p+(p.cite?'<cite>&mdash; '+p.cite+'</cite>':'')+'</p>' }).join('')
+    h+='<p class="draft"><strong>Draft &mdash; yours to cut.</strong> Cited to where each line was '+
+       'written. The film scene is described, not transcribed.</p>'
+    body.innerHTML=h
+  }
   function open(btn){
-    from=btn; scrim.hidden=false; sheet.hidden=false
+    var c=window.CARDS[btn.dataset.scroll]; if(!c) return
+    render(c); from=btn
+    scrim.hidden=false; sheet.hidden=false
     stage.setAttribute('aria-hidden','true'); document.body.style.overflow='hidden'; body.focus()
   }
   function close(){
     sheet.hidden=true; scrim.hidden=true
     stage.removeAttribute('aria-hidden'); document.body.style.overflow=''
-    if(from&&document.contains(from))from.focus()   /* back to the word they pressed */
+    if(from&&document.contains(from))from.focus()
     from=null
   }
   document.addEventListener('click',function(e){
