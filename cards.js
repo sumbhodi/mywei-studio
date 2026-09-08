@@ -119,6 +119,17 @@ window.CARDS = {
       {p:'<strong>I took that and made it a towel.</strong> Same demonstration, my vocabulary — and that '+
          'is the honest way to say it. It is also how this whole tradition has ever moved: teacher to '+
          'student, changed a little in the handing over.'},
+      {p:'So here is the scene. <em>Someone is in a pool, complaining about being wet. You say: get out '+
+         'of the pool. They say — but I am all wet. Do you have a towel?</em>',
+         cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
+      {p:'<strong>That is me.</strong> That is everyone who walks into the room. They are not asking to '+
+         'stop being wet. They are asking for the towel.'},
+      {p:'And they think yoga is the towel. <strong>It is not.</strong>'},
+      {p:'<strong>Yoga is getting out of the pool long enough to dry off.</strong>'},
+      {p:'And thanks to global warming, that does not take long at all. A beautiful Christmas Day in '+
+         'Phoenix, high of a hundred and eight, three percent humidity.'},
+      {p:'<strong>And then choosing to dive back in with your friends.</strong> That is the part nobody '+
+         'sells you, and it is the whole practice. You do not get out to stay out.'},
       {p:'<em>The towel is everything. The pool is in the towel. You are in the towel. This part is you. '+
          'This part is me. What is not the towel?</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
       {p:'<strong>Where their version and mine part company.</strong> Theirs resolves into comfort — get '+
