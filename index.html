@@ -161,7 +161,10 @@
   }
   .tl-h{font-family:'Cinzel',serif; font-size:clamp(1.1rem,2.4vw,1.5rem); letter-spacing:.16em;
     color:#734E32; text-align:center; margin-bottom:1.2rem}
-  .tl-stage{position:relative}
+  /* ⭐ A FLOOR. Six columns of dates cannot compress — below about 900px they slide into each
+     other and it turns to mush. It does not collapse; if the window is narrower than this, the
+     timeline runs off the edge and you scroll to it. That is the correct behaviour for a scroll. */
+  .tl-stage{position:relative; min-width:900px}
   .tl-art{width:100%; height:auto; display:block}
   .tl-pins{list-style:none; position:absolute; inset:0; margin:0; padding:0}
   /* the bracket on the axis, with a tick per date */
