@@ -1,2 +1,4 @@
 _parked/
 .DS_Store
+dist/
+.wrangler/
