@@ -164,27 +164,39 @@
   .tl-stage{position:relative}
   .tl-art{width:100%; height:auto; display:block}
   .tl-pins{list-style:none; position:absolute; inset:0; margin:0; padding:0}
-  /* the bracket: a span on the axis, with its ticks inside */
-  .tl-era{position:absolute; top:5.4%; height:1rem}
+  /* the bracket on the axis, with a tick per date */
+  .tl-era{position:absolute; height:.95rem}   /* top comes from AXIS, measured off the art */
+  /* the bracket hangs BELOW the drawn rule, like the art's own ticks at 1860 and 1980 */
   .tl-brk{position:absolute; inset:0; display:block;
     border-left:2px solid #734E32; border-right:2px solid #734E32;
     border-bottom:2px solid #734E32; opacity:.8}
-  .tl-t{position:absolute; top:0; width:1px; height:.58rem; background:#734E32; opacity:.95}
+  .tl-t{position:absolute; top:0; width:1px; height:.55rem; background:#734E32; opacity:.95}
 
-  /* the name IS the door */
-  .tl-name{position:absolute; transform:translateX(-50%)}
-  .tl-a{top:9.5%}
-  .tl-b{top:14.5%}
-  .tl-name button{
-    background:none; border:1px solid transparent; cursor:pointer;
-    font-family:'Cinzel',serif; font-weight:600; letter-spacing:.12em;
-    font-size:clamp(.6rem,1.15vw,.86rem); color:#5C3D22; white-space:nowrap;
-    padding:.3rem .55rem; border-radius:3px;
-    text-shadow:0 0 9px #F1E7CE,0 0 4px #F1E7CE;
-    transition:background .16s, border-color .16s, color .16s;
+  /* the L-leader: drop, run across, tip down into the column */
+  .tl-drop,.tl-tip{position:absolute; width:1px; background:#8B7355; opacity:.4}
+  .tl-run{position:absolute; height:1px; background:#8B7355; opacity:.4}
+
+  /* the column IS the door */
+  .tl-col{position:absolute; width:18%}
+  .tl-col button{
+    display:block; width:100%; text-align:left; cursor:pointer;
+    background:none; border:1px solid transparent; border-radius:3px;
+    padding:.45rem .5rem; margin-left:-.5rem;
+    transition:background .15s, border-color .15s;
   }
-  .tl-name button:hover{background:rgba(246,239,220,.92); border-color:#C4AF84; color:#8A6420}
-  .tl-name button:focus-visible{outline:3px solid #1C5C8C; outline-offset:3px}
+  .tl-col button:hover{background:rgba(246,239,220,.88); border-color:#C4AF84}
+  .tl-col button:focus-visible{outline:3px solid #1C5C8C; outline-offset:3px}
+  .tl-col i{display:block; font-family:'Jost',sans-serif; font-style:normal;
+    font-size:clamp(.55rem,1vw,.72rem); letter-spacing:.12em; text-transform:uppercase;
+    color:#8A6420; text-shadow:0 0 8px #F1E7CE}
+  .tl-col strong{display:block; font-family:'Cinzel',serif; font-weight:600;
+    font-size:clamp(.72rem,1.4vw,1rem); letter-spacing:.09em; color:#5C3D22;
+    margin:.05rem 0 .5rem; text-shadow:0 0 9px #F1E7CE,0 0 4px #F1E7CE}
+  .tl-r{display:block; margin-bottom:.5rem; text-shadow:0 0 9px #F1E7CE,0 0 4px #F1E7CE}
+  .tl-r u{display:block; text-decoration:none; font-family:'Jost',sans-serif;
+    font-size:clamp(.58rem,1.05vw,.76rem); letter-spacing:.06em; color:#8A6420}
+  .tl-r b{display:block; font-family:'Cormorant Garamond',serif; font-weight:400;
+    font-size:clamp(.82rem,1.6vw,1.1rem); color:#33281B; line-height:1.25}
 
   /* ── THE HISTORY DOOR ───────────────────────────────────────────────────── */
   .door-wrap{display:flex; justify-content:center; padding:1rem 1.25rem clamp(3rem,8vw,6rem)}
@@ -343,29 +355,36 @@
     body.innerHTML=h
   }
   /* ── THE TIMELINE PAINTS ITSELF from window.TIMELINE ──────────────────────
-     Five eras. Each gets a BRACKET on the axis with TICKS inside showing how dense it is, and its
-     NAME below the bracket as a real button that opens that era's scroll.
-     ⚠ The ticks carry no labels, and that is deliberate. Nine labelled pins collided into mush in
-     exactly the stretch whose tightness is the argument. The axis shows the density; the scroll
-     carries the words. */
+     Five COLUMNS, one per era. On the axis: a bracket showing the era's span with a tick for each
+     of its dates, so density is visible. Below: that era's dates as a column. Between them one
+     L-shaped leader — drop from the bracket, run across, tip down into the column head — so the
+     connection is drawn once per era instead of twenty-six times.
+     ⚠ The ticks are unlabelled. Labelling them collided into mush in exactly the stretch whose
+     tightness is the whole argument. */
   ;(function(){
     var T=window.TIMELINE||[], pins=document.getElementById('tl-pins')
     if(!T.length) return
-    /* two rows of names, so the Crusades and the Enlightenment do not sit on each other */
-    var ROW=['a','b','a','b','a']
-    pins.innerHTML = T.map(function(e,i){
-      var span=(e.to-e.from)||0.001, mid=(e.from+e.to)/2
+    /* ⭐ MEASURED, NOT NUDGED. The axis rule drawn into timeline.png is at y=85–87 of 1002 —
+       8.58% of the height, and the only row that is 100% ink across the full width. The ticks were
+       at 5.4%, which is the YEAR-LABEL band, so they floated above the line through the numbers.
+       Everything below hangs off AXIS now, the way the drawn ticks at 1860 and 1980 do. */
+    var AXIS=0.0858, BAR=0.135, HEAD=0.156
+    pins.innerHTML = T.map(function(e){
+      var span=(e.to-e.from)||0.002, mid=(e.from+e.to)/2
       var ticks=(e.ticks||[]).map(function(k){
         return '<i class="tl-t" style="left:'+((k-e.from)/span*100)+'%"></i>' }).join('')
-      /* ⚠ clamp the NAME, not the bracket. BEFORE THE MAP centres at 1.9% and ran off the left
-         edge of the parchment; the bracket itself must stay where the years actually are. */
-      var nameAt = Math.min(Math.max(mid, 0.085), 0.915)
-      return '<li class="tl-era" style="left:'+(e.from*100)+'%;width:'+(span*100)+'%">'+
-               '<span class="tl-brk">'+ticks+'</span>'+
-             '</li>'+
-             '<li class="tl-name tl-'+ROW[i]+'" style="left:'+(nameAt*100)+'%">'+
-               '<button type="button" data-scroll="'+e.card+'" aria-haspopup="dialog">'+e.label+'</button>'+
-             '</li>'
+      var x1=Math.min(mid,e.col), x2=Math.max(mid,e.col)
+      var rows=e.rows.map(function(r){
+        return '<span class="tl-r"><u>'+r[0]+'</u><b>'+r[1]+'</b></span>' }).join('')
+      return '<li class="tl-era" style="left:'+(e.from*100)+'%;width:'+(span*100)+'%;top:'+(AXIS*100)+'%">'+
+               '<span class="tl-brk">'+ticks+'</span></li>'+
+             '<li class="tl-drop" style="left:'+(mid*100)+'%;top:'+(AXIS*100)+'%;height:'+((BAR-AXIS)*100)+'%"></li>'+
+             '<li class="tl-run"  style="left:'+(x1*100)+'%;width:'+((x2-x1)*100)+'%;top:'+(BAR*100)+'%"></li>'+
+             '<li class="tl-tip"  style="left:'+(e.col*100)+'%;top:'+(BAR*100)+'%;height:'+((HEAD-BAR)*100)+'%"></li>'+
+             '<li class="tl-col" style="left:'+(e.col*100)+'%;top:'+(HEAD*100)+'%">'+
+               '<button type="button" data-scroll="'+e.card+'" aria-haspopup="dialog">'+
+                 '<i>'+e.span+'</i><strong>'+e.label+'</strong>'+rows+
+               '</button></li>'
     }).join('')
   })()
 

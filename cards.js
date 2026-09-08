@@ -230,26 +230,65 @@ window.CARDS = {
     lead:'1860 is on the axis for a reason, and it is not a yoga date.',
     body:[
       {p:'<strong>It is the Bengal Renaissance</strong> \u2014 the Indian cultural and intellectual revival running through the nineteenth century and out the other side. It is what re-popularised hatha yoga, and it is the same current that eventually produces Indian cinema. Tagore is born in 1861.'},
-      {p:'Vivekananda in Chicago, 1893. The Tibetan Book of the Dead in English, 1927. The first scientific studies around 1931.', cite:'History of Meditation'},
-      {p:'Then the secular versions built for people who were not Hindu \u2014 Transcendental Meditation in the sixties, and Ashtanga Vinyasa becoming, in the West, simply <em>Yoga</em>.', cite:'History of Meditation'},
+
+      {p:'<strong>The Gay Nineties.</strong> Vivekananda in Chicago, 1893 \u2014 at the World\u2019s Parliament of Religions, held inside the World\u2019s Fair. A man from Calcutta explains Vedanta to America and America claps.'},
+
+      {p:'<strong>The Roaring Twenties.</strong> Yogananda arrives in 1920 and never really leaves. The Gita gets translated again and again. Chakras reach the West \u2014 Woodroffe\u2019s <em>Serpent Power</em> in 1919, and Jung running Kundalini seminars by 1932. The Tibetan Book of the Dead lands in English in 1927. Everybody is squeezing something in.'},
+
+      {p:'<strong>Then the Depression</strong>, and after that we punched Nazis until we felt better.'},
+
+      {p:'<strong>The fifties</strong> were a great time to be white. And notice the direction of travel \u2014 we had to go to <em>them</em>. It arrives as a telephone game through translators, and what comes back is whatever survived the trip.'},
+
+      {p:'<strong>The sixties.</strong> Tune in, drop out. Iyengar\u2019s <em>Light on Yoga</em> in 1966, the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.'},
+
+      {p:'<strong>The seventies.</strong> Well. It was the seventies. Blame Nixon \u2014 off the gold standard in 1971, health care privatised in 1973. Yoga turns up on public television.'},
+
+      {p:'<strong>And then the eighties</strong>, when the tax cuts for the rich actually start \u2014 so rich white people could afford yoga classes again. By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
+
+      {p:'\u26a0 <strong>Which is the same argument as the six branches, wearing different clothes.</strong> That list sorted the practice by caste \u2014 meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change: <em>who has the time to study, and who is bathing in the ashes of the dead.</em>'},
+
       {p:'Science peaks in the late seventies, goes quiet, and comes back when MRI gets cheap. <em>This class is part of that wave.</em>', cite:'History of Meditation'},
-      {p:'By the eighties there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
+
       {p:'<strong>2001: I took my first yoga class in college. The course catalog called it \u201cstretch and relaxation.\u201d</strong>', cite:'History of Meditation'}
     ]
   }
 }
 
 window.TIMELINE = [
-  /* the axis carries the NAME only; `card` is the scroll it opens. `ticks` give each bracket its
-     density — the clump is visibly crowded, and that crowding is the argument. */
-  { card:'era-pre',           from:0.000, to:0.038, label:'BEFORE THE MAP',
-    ticks:[0.004,0.014,0.026] },
-  { card:'era-clump',         from:0.249, to:0.391, label:'THE CLUMP',
+  /* ⭐ FIVE COLUMNS. His call, 8 Sep: "I want 4 or 5 columns" — not one indented cascade walking
+     top to bottom. Each era owns a column of its own dates; `col` is where the column stands
+     (a fraction of the width), `from`/`to` are its bracket on the axis, `ticks` are the individual
+     years. One leader runs from the bracket down to the column head, so the connection to the
+     timeline is drawn once per era rather than twenty-six times.
+     Names are SHORT here on purpose — the row is a door, and the detail is behind it. */
+
+  { card:'era-pre', col:0.015, from:0.000, to:0.038, label:'BEFORE THE MAP', span:'to 3000 BCE',
+    rows:[ ['before all of it','Vishnu&rsquo;s dream, and the Om'],
+           ['the first lesson','Shiva, as yogi, teaching Parvati'],
+           ['3102 BCE','Arjuna&rsquo;s chariot ride'],
+           ['c. 2900 BCE','the flood'],
+           ['c. 1500 BCE','the Vedas'] ],
+    ticks:[0.002,0.008,0.014,0.026,0.184] },
+
+  { card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE CLUMP', span:'900 BCE – 400 CE',
+    rows:[ ['c. 900 BCE','the Torah'], ['c. 800 BCE','the Upanishads'], ['c. 600 BCE','Taoism'],
+           ['c. 400 BCE','Siddhartha'], ['c. 200 BCE','Patanjali?'], ['0','Christ'],
+           ['c. 200 CE','the Gita written down'], ['c. 400 CE','Patanjali?'] ],
     ticks:[0.249,0.26,0.282,0.293,0.325,0.347,0.369,0.391] },
-  { card:'era-crusades',      from:0.460, to:0.494, label:'THE CRUSADES',
+
+  { card:'era-crusades', col:0.405, from:0.460, to:0.494, label:'THE CRUSADES', span:'1095 – 1291',
+    rows:[ ['1095','the First Crusade'], ['1111','al-Ghazali'], ['c. 1150','the ladder'],
+           ['1291','the last Crusade'] ],
     ticks:[0.467,0.470,0.476,0.488] },
-  { card:'era-enlightenment', from:0.518, to:0.554, label:'THE ENLIGHTENMENT',
+
+  { card:'era-enlightenment', col:0.575, from:0.518, to:0.554, label:'THE ENLIGHTENMENT', span:'1650 – 1860',
+    rows:[ ['1785','the Gita in English'], ['1854','Walden'], ['by 1850','hatha nearly gone'] ],
     ticks:[0.527,0.542,0.549] },
-  { card:'era-modern',        from:0.616, to:0.960, label:'MODERN',
-    ticks:[0.616,0.684,0.692,0.75,0.79,0.879] }
+
+  { card:'era-modern', col:0.755, from:0.616, to:0.960, label:'MODERN', span:'1860 – now',
+    rows:[ ['1893','Vivekananda'], ['1920','Yogananda'], ['1927','Book of the Dead'],
+           ['the 1950s','beatniks'], ['1966','Light on Yoga'], ['1971','the gold standard'],
+           ['1987','the seven chakras'], ['the 1980s','tax cuts, and LA'],
+           ['2001','&ldquo;stretch and relaxation&rdquo;'] ],
+    ticks:[0.616,0.670,0.684,0.730,0.762,0.772,0.792,0.815,0.879] }
 ]
