@@ -52,7 +52,7 @@ window.CARDS = {
       ['consciousness',            'if you came in through philosophy'],
       ['the spark',                'if you like Transformers'],
       ['controlled hallucination', 'if you like cognitive science'],
-      ['the one in the pod',       'if you liked The Matrix — but see below, it only half fits']
+      ['genius malignus',          'if you liked The Matrix — which is Descartes in better coats']
     ],
     body:[
       {p:'Those are not five things. They are five vocabularies pointing at one thing, and the test is '+
@@ -60,10 +60,10 @@ window.CARDS = {
          'change: something is doing the experiencing, and it cannot get around in front of itself to '+
          'have a look.'},
       {p:'<strong>That last one is worth a minute, because it is the one that goes wrong.</strong> '+
-         'Descartes imagined an <em>evil demon</em> — a deceiver with the power to fake the entire world, '+
+         'Descartes imagined the <em>genius malignus</em> — a deceiver with the power to fake the entire world, '+
          'every sight and sound and body. No machine; pure malice. Three hundred years later Hilary '+
          'Putnam swapped the demon for hardware: a brain in a vat of fluid, wired to a computer feeding '+
-         'it a life. The Matrix is Putnam in leather trench coats.'},
+         'it a life. The Matrix is Putnam in better coats.'},
       {p:'And here is the correction, because the film invites the mistake: <strong>the Matrix is the '+
          'kosha, not the Atman.</strong> The simulation is the sheath — the render, Maya, the screen. It '+
          'belongs on the other side of the ledger entirely.'},
