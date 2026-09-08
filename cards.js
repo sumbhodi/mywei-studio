@@ -213,7 +213,7 @@ window.CARDS = {
       {p:'&#8212;'},
 
       {p:'<strong>The eighties.</strong> Woo. Crystals, spirit animals, angel guides, and a magic wand on an infomercial. '},
-      {p:'<strong>The nineties.</strong> <em>I bet you jog and eat salads too.</em> If nothing else works, try yoga. The <em>be here now</em> and <em>wherever you go, there you are</em> books make their way into rehabs, mental hospitals and jails \u2014 and from there they leak into pop culture. Fight Club has a cave and a spirit animal. Happy Gilmore has a happy place. Once you start looking you find a few Adam Sandler films with one.'},
+      {p:'<strong>The nineties.</strong> <em>I bet you jog and eat salads too.</em> If nothing else works, try yoga. The <em>be here now</em> and <em>wherever you go, there you are</em> books make their way into rehabs, mental hospitals and jails \u2014 and from there they leak into pop culture. Fight Club has a cave and a spirit animal. Happy Gilmore has a happy place.'},
       {p:'<strong>Post-Y2K</strong> it goes mainstream, but filtered. It arrives in the college catalog under a name nobody could object to: <em>stretch and relaxation.</em>'},
       {p:'<strong>The 2010s</strong> \u2014 the Jois family goes hard on the trademark, and the argument about who owns this gets loud. That is when you start hearing there are <em>more people practising in LA than in all of India</em>. I will stand by it as an urban legend, because I have never been able to source it and neither has anyone else \u2014 but it is exactly the sort of line people reach for when the argument is about ownership.'},
       {p:'<strong>2008</strong> \u2014 I graduate from SLCC\u2019s first yoga teacher training program.'},
