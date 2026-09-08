@@ -450,6 +450,8 @@ window.TIMELINE = [
         {p:'The Maharaja of Mysore, Krishna Raja Wadiyar IV, sets up a yoga school inside his palace and puts <strong>Krishnamacharya</strong> in charge of it. He funds it for two decades.'},
         {p:'<strong>The revival was patronage.</strong> Not a lineage handed quietly down &mdash; a royal budget, aimed at a public.'},
         {p:'&#9888; And the detail that reframes the whole thing: <strong>in 1930s Mysore, yoga was the subject of scorn among young Indians.</strong> They preferred the fashionable, manly bodybuilding gym to the palace yogashala. It was competing for teenagers against Western weightlifting, and losing.'},
+        {p:'<strong>Because hatha was what poor people did.</strong> Go back and look at the six branches: hatha is tagged <em>lowest caste</em>. That is not a footnote about the past &mdash; it is the reason a Mysore teenager in 1933 would rather lift weights. The caste tag was still working, eight hundred years on, without anybody having to say it out loud.'},
+        {p:'<strong>So the practice gets sorted three times on this timeline, and it is the same practice every time.</strong> Caste put it at the bottom. Colonial taste made it embarrassing. Money made it a luxury. And the branch assigned to the lowest caste is the one that conquered the world &mdash; and then got expensive.'},
         {p:'So it is not an unbroken tradition being passed on. It is a nearly dead practice being <em>revived</em>, deliberately, by a state that decided it mattered.',
          cite:'Wikipedia: Tirumalai Krishnamacharya', href:'https://en.wikipedia.org/wiki/Tirumalai_Krishnamacharya'}
       ]},
