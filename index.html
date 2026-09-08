@@ -164,33 +164,27 @@
   .tl-stage{position:relative}
   .tl-art{width:100%; height:auto; display:block}
   .tl-pins{list-style:none; position:absolute; inset:0; margin:0; padding:0}
-  .tl-pin{position:absolute; top:5.6%; transform:translateX(-50%);
-    display:flex; flex-direction:column; align-items:center}
-  .tl-tick{display:block; width:2px; height:1.1rem; background:#734E32; opacity:.9}
-  /* the hairline from pin to blurb — faint, it is a leader not a rule */
-  .tl-line{display:block; width:1px; background:#8B7355; opacity:.42; margin-top:.2rem}
+  /* the bracket: a span on the axis, with its ticks inside */
+  .tl-era{position:absolute; top:5.4%; height:1rem}
+  .tl-brk{position:absolute; inset:0; display:block;
+    border-left:2px solid #734E32; border-right:2px solid #734E32;
+    border-bottom:2px solid #734E32; opacity:.8}
+  .tl-t{position:absolute; top:0; width:1px; height:.58rem; background:#734E32; opacity:.95}
 
-  .tl-blurb{position:absolute; width:min(30%,15rem); transform:translateX(-4px)}
-  .tl-blurb u{font-family:'Jost',sans-serif; text-decoration:none; display:block;
-    font-size:clamp(.62rem,1.1vw,.8rem); letter-spacing:.12em; text-transform:uppercase;
-    color:#8A6420; margin-bottom:.1rem}
-  .tl-blurb b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.06em;
-    color:#5C3D22; font-size:clamp(.8rem,1.5vw,1rem); display:block}
-  .tl-blurb span{font-family:'Cormorant Garamond',serif; color:#33281B;
-    font-size:clamp(.85rem,1.6vw,1.08rem); line-height:1.4; display:block; margin-top:.15rem}
-  .tl-blurb em{font-family:'Jost',sans-serif; font-style:normal;
-    font-size:clamp(.62rem,1.1vw,.78rem); color:#7A6448; line-height:1.45;
-    display:block; margin-top:.35rem; padding-left:.5rem; border-left:1px solid #C4AF84}
-
-  /* the blurbs under the picture — the half that works with images off, at any zoom, read aloud */
-  .tl-list{list-style:none; margin:1.5rem auto 0; padding:0; max-width:38rem}
-  .tl-list li{padding:.9rem 0; border-bottom:1px dotted #C4AF84}
-  .tl-list b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.08em;
-    color:#734E32; display:block; font-size:1.05rem}
-  .tl-list span{font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:#33281B;
-    display:block; margin-top:.2rem}
-  .tl-empty{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem;
-    color:#6B573C; text-align:center; padding:1.5rem 0}
+  /* the name IS the door */
+  .tl-name{position:absolute; transform:translateX(-50%)}
+  .tl-a{top:9.5%}
+  .tl-b{top:14.5%}
+  .tl-name button{
+    background:none; border:1px solid transparent; cursor:pointer;
+    font-family:'Cinzel',serif; font-weight:600; letter-spacing:.12em;
+    font-size:clamp(.6rem,1.15vw,.86rem); color:#5C3D22; white-space:nowrap;
+    padding:.3rem .55rem; border-radius:3px;
+    text-shadow:0 0 9px #F1E7CE,0 0 4px #F1E7CE;
+    transition:background .16s, border-color .16s, color .16s;
+  }
+  .tl-name button:hover{background:rgba(246,239,220,.92); border-color:#C4AF84; color:#8A6420}
+  .tl-name button:focus-visible{outline:3px solid #1C5C8C; outline-offset:3px}
 
   /* ── THE HISTORY DOOR ───────────────────────────────────────────────────── */
   .door-wrap{display:flex; justify-content:center; padding:1rem 1.25rem clamp(3rem,8vw,6rem)}
@@ -349,27 +343,28 @@
     body.innerHTML=h
   }
   /* ── THE TIMELINE PAINTS ITSELF from window.TIMELINE ──────────────────────
-     A pin sits on the axis at its year. A hairline drops from the pin to a blurb parked further
-     down the parchment, so a crowded stretch (everything from 800 BCE to 400 CE lands inside a
-     tenth of the axis) does not pile up on one line. `y` is the stagger. */
+     Five eras. Each gets a BRACKET on the axis with TICKS inside showing how dense it is, and its
+     NAME below the bracket as a real button that opens that era's scroll.
+     ⚠ The ticks carry no labels, and that is deliberate. Nine labelled pins collided into mush in
+     exactly the stretch whose tightness is the argument. The axis shows the density; the scroll
+     carries the words. */
   ;(function(){
     var T=window.TIMELINE||[], pins=document.getElementById('tl-pins')
     if(!T.length) return
-    pins.innerHTML = T.map(function(t){
-      /* keep a blurb on the page: it hugs its pin, but never runs off either edge */
-      var left = Math.min(Math.max(t.at, 0.03), 0.72)
-      /* ⚠ NO YEAR ON THE AXIS. Nine pins, five of them inside a tenth of the width, and the
-         labels overlapped into mush — in exactly the stretch whose tightness IS the argument.
-         The tick alone shows the clustering; the year rides on the blurb, where there is room. */
-      return '<li class="tl-pin" style="left:'+(t.at*100)+'%">'+
-               '<i class="tl-tick"></i>'+
-               '<i class="tl-line" style="height:calc('+(t.y*100)+'% - 1.6rem)"></i>'+
+    /* two rows of names, so the Crusades and the Enlightenment do not sit on each other */
+    var ROW=['a','b','a','b','a']
+    pins.innerHTML = T.map(function(e,i){
+      var span=(e.to-e.from)||0.001, mid=(e.from+e.to)/2
+      var ticks=(e.ticks||[]).map(function(k){
+        return '<i class="tl-t" style="left:'+((k-e.from)/span*100)+'%"></i>' }).join('')
+      /* ⚠ clamp the NAME, not the bracket. BEFORE THE MAP centres at 1.9% and ran off the left
+         edge of the parchment; the bracket itself must stay where the years actually are. */
+      var nameAt = Math.min(Math.max(mid, 0.085), 0.915)
+      return '<li class="tl-era" style="left:'+(e.from*100)+'%;width:'+(span*100)+'%">'+
+               '<span class="tl-brk">'+ticks+'</span>'+
              '</li>'+
-             '<li class="tl-blurb" style="left:'+(left*100)+'%;top:'+(t.y*100)+'%">'+
-               '<u>'+t.year+'</u>'+
-               '<b>'+t.title+'</b>'+
-               '<span>'+t.blurb+'</span>'+
-               (t.note?'<em>'+t.note+'</em>':'')+
+             '<li class="tl-name tl-'+ROW[i]+'" style="left:'+(nameAt*100)+'%">'+
+               '<button type="button" data-scroll="'+e.card+'" aria-haspopup="dialog">'+e.label+'</button>'+
              '</li>'
     }).join('')
   })()
