@@ -66,7 +66,8 @@ window.CARDS = {
          'matters exactly as much as arriving.'},
       {p:'So the yoke is the tool we use to re-member what the brain split apart. Not destroying the ego '+
          '— <em>true ego death is suicide, it is just a matter of pace</em> — but loosening its grip. '+
-         'Getting out of the pool long enough to dry off.', cite:'History of Yoga'}
+         'Getting out of the pool long enough to dry off.', cite:'History of Yoga'},
+      {p:'<strong>Yoga is a tool. We sharpen it through practice. It is not a destination.</strong>'}
     ]
   },
 
