@@ -45,17 +45,16 @@
   }
 
   *{margin:0;padding:0;box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    background:#EDE2C8;
-    display:flex; align-items:center; justify-content:center;
-    color-scheme:light;
-  }
+  body{background:#EDE2C8; color-scheme:light}
+  /* ⚠ NO min-height HERE. It used to hold a full 100vh and centre the tree in it, which left a
+     band of empty parchment between the roots and the timeline. The timeline is meant to touch
+     the roots — the axis reads as the ground the tree stands in. */
+  .screen{display:flex; justify-content:center}
 
   /* the stage carries the painting's own aspect ratio, so the overlay lays out in % of it */
   .stage{
     position:relative;
-    width:min(100vw, calc(100vh * 1200 / 896));
+    width:min(100%, calc(100vh * 1200 / 896)); flex:none;
     aspect-ratio:1200/896;
   }
   .stage img{width:100%; height:100%; display:block; object-fit:contain}
@@ -144,6 +143,48 @@
   button.w:hover{color:#4A2F1C}
   button.w:focus-visible{outline:3px solid #1C5C8C; outline-offset:6px; border-radius:2px}
 
+  /* ── THE TIMELINE ──────────────────────────────────────────────────────── */
+  .timeline{
+    width:min(100%, calc(100vh * 1200 / 896));   /* the stage's own basis, so the edges line up */
+    margin:0 auto; padding:0;
+    /* ⭐ the scroll's torn top edge rides OVER the base of the tree, so the roots run under the
+       parchment instead of stopping at it. A % margin is a share of the width, so the overlap
+       stays proportional at every size; a px value would drift. z-index puts the tear on top. */
+    margin-top:-7%; position:relative; z-index:2;
+  }
+  .tl-h{font-family:'Cinzel',serif; font-size:clamp(1.1rem,2.4vw,1.5rem); letter-spacing:.16em;
+    color:#734E32; text-align:center; margin-bottom:1.2rem}
+  .tl-stage{position:relative}
+  .tl-art{width:100%; height:auto; display:block}
+  .tl-pins{list-style:none; position:absolute; inset:0; margin:0; padding:0}
+  .tl-pin{position:absolute; top:5.2%; transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:.15rem}
+  .tl-pin i{display:block; width:2px; height:1.5rem; background:#734E32; opacity:.8}
+  .tl-pin b{font-family:'Jost',sans-serif; font-weight:500; font-size:.78rem; letter-spacing:.04em;
+    color:#4A2F1C; white-space:nowrap; text-shadow:0 0 8px #F1E7CE,0 0 4px #F1E7CE}
+
+  /* the blurbs under the picture — the half that works with images off, at any zoom, read aloud */
+  .tl-list{list-style:none; margin:1.5rem auto 0; padding:0; max-width:38rem}
+  .tl-list li{padding:.9rem 0; border-bottom:1px dotted #C4AF84}
+  .tl-list b{font-family:'Cinzel',serif; font-weight:400; letter-spacing:.08em;
+    color:#734E32; display:block; font-size:1.05rem}
+  .tl-list span{font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:#33281B;
+    display:block; margin-top:.2rem}
+  .tl-empty{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem;
+    color:#6B573C; text-align:center; padding:1.5rem 0}
+
+  /* ── THE HISTORY DOOR ───────────────────────────────────────────────────── */
+  .door-wrap{display:flex; justify-content:center; padding:1rem 1.25rem clamp(3rem,8vw,6rem)}
+  .history-door{position:relative; background:none; border:none; padding:.5rem; cursor:pointer;
+    width:min(420px,80vw); transition:transform .18s}
+  .history-door img{width:100%; height:auto; display:block;
+    filter:drop-shadow(0 6px 18px rgba(60,42,25,.30))}
+  .history-door:hover{transform:scale(1.03)}
+  .history-door:focus-visible{outline:3px solid #1C5C8C; outline-offset:6px; border-radius:4px}
+  .door-word{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    font-family:'Cinzel',serif; font-size:clamp(1.1rem,3.4vw,1.9rem);
+    letter-spacing:.22em; color:#5C3D22; text-shadow:0 0 10px rgba(246,239,220,.85)}
+
   /* ── THE SCROLL — his blank parchment, opened over the tree ────────────────
      ⚠ 7 Sep: "remove scroll art, changed my mind. open the blank scroll, write new one with philo."
      So there is no rolled-scroll icon anywhere; the words themselves are the door, and what opens
@@ -205,6 +246,7 @@
 </head>
 <body>
 
+<section class="screen">
 <div class="stage">
   <img src="art/yoga-tree.jpg"
        alt="A tree drawn in Tamil script, with the word YOGA lettered into its canopy."
@@ -236,7 +278,28 @@
   </p>
 
 </div>
+</section>
 
+<!-- ── THE TIMELINE — open, not a card. Scroll down and it is simply there.
+     ⚠ The axis is drawn INTO timeline.png (3000 BCE · 1860 · 1980 · 2020) and it is deliberately
+     non-linear: 4,860 years in the first stretch, 120 in the second, 40 in the last. That
+     compression IS the argument — almost everything the West calls yoga happens in the last inch.
+     Pins are DATA (window.TIMELINE at the foot of cards.js): one entry per date, `at` is its
+     fraction along the axis. A new date is one line and touches no markup. -->
+<section class="timeline">
+  <div class="tl-stage">
+    <img class="tl-art" src="art/timeline.png" alt="" aria-hidden="true" width="878" height="1002">
+    <ul class="tl-pins" id="tl-pins"></ul>
+  </div>
+  <ol class="tl-list" id="tl-list"></ol>
+</section>
+
+<section class="door-wrap">
+  <button class="history-door" type="button" data-scroll="history" aria-haspopup="dialog">
+    <img src="art/scroll.png" alt="" aria-hidden="true" width="1584" height="672">
+    <span class="door-word">HISTORY</span>
+  </button>
+</section>
 
 <div class="scrim" id="scrim" hidden></div>
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h" hidden>
@@ -266,6 +329,16 @@
       return '<p>'+p.p+cite+'</p>' }).join('')
     body.innerHTML=h
   }
+  /* the timeline paints itself from window.TIMELINE — pins and blurbs from one array */
+  ;(function(){
+    var T=window.TIMELINE||[], pins=document.getElementById('tl-pins'), list=document.getElementById('tl-list')
+    if(!T.length) return
+    pins.innerHTML=T.map(function(t){
+      return '<li class="tl-pin" style="left:'+(t.at*100)+'%"><i></i><b>'+t.year+'</b></li>' }).join('')
+    list.innerHTML=T.map(function(t){
+      return '<li><b>'+t.year+'</b><span>'+t.blurb+'</span></li>' }).join('')
+  })()
+
   function open(btn){
     var c=window.CARDS[btn.dataset.scroll]; if(!c) return
     render(c); from=btn

@@ -147,5 +147,45 @@ window.CARDS = {
          'necessary illusion. You see through it and you order the coffee anyway. That is not hypocrisy. '+
          'That is the practice.'}
     ]
+  },
+
+  /* ── THE HISTORY — the rolled scroll below the timeline opens this ───────── */
+  history: {
+    h:'THE HISTORY', sub:'where all of it comes from',
+    lead:'When did this begin? <strong>Before the universe.</strong>',
+    body:[
+      {p:'Most cosmogenesis stories involve some form of vibration or intention. In the beginning was '+
+         'the Word. Vishnu\'s dream. The Logos.', cite:'History of Yoga'},
+      {p:'If the universe burst into existence in a void — does it make a sound?', cite:'History of Yoga'},
+      {p:'<em>I like to imagine a cosmic Brahma bull slowly pronouncing the syllable Ohm. That is '+
+         'probably what it sounded like. It still echoes, if you listen.</em>', cite:'History of Yoga'},
+      {p:'And the sidebar, for anyone who wants it: the Big Bang did produce acoustic pressure waves — '+
+         'oscillations that shaped how matter is distributed across the observable universe. '+
+         '<strong>The cosmos literally has a frequency.</strong> This is not fan fiction.',
+         cite:'History of Yoga'},
+      {p:'<strong>There is an actual lineage.</strong> Krishna describes it directly in the Bhagavad '+
+         'Gita: he taught this yoga first to Vivasvan, the sun god; Vivasvan to Manu, the first king; '+
+         'Manu to Ikshvaku. Sun to earth to kings to teachers to you.', cite:'History of Yoga'},
+      {p:'The first yoga lesson we have a story for: <strong>Shiva, on a mountaintop, teaching '+
+         'Parvati.</strong> Eighty-four asanas. From the Mahanirvana Tantra.', cite:'History of Yoga'},
+      {p:'<em>The PG-13 version of that story ends right there.</em>', cite:'History of Yoga'},
+      {p:'What matters is this: it is not a modern wellness trend, and it was not invented by Lululemon. '+
+         'It is a technology for consciousness older than writing, with a direct lineage from teacher to '+
+         'student reaching back to the beginning of recorded thought. <strong>And possibly before.</strong>',
+         cite:'History of Yoga'}
+    ]
   }
 }
+
+/* ── THE TIMELINE ────────────────────────────────────────────────────────────
+ * One entry per date. `at` is its fraction along the axis DRAWN INTO timeline.png —
+ * 3000 BCE sits at 0.02, 1860 at 0.55, 1980 at 0.79, 2020 at 0.96 — so a date between two
+ * ticks goes between their numbers. Adding one is a line here and nothing else.
+ *
+ * ⚠ Seeded with only the two facts his own Six Branches doc already states. Everything else is
+ * his to give — nothing has been invented to fill the axis out. */
+window.TIMELINE = [
+  /* his dates go here — one line each: { at:0.42, year:'c. 400 CE', blurb:'…' }
+     `at` is the fraction along the axis drawn into timeline.png:
+     3000 BCE ≈ 0.02 · 1860 ≈ 0.55 · 1980 ≈ 0.79 · 2020 ≈ 0.96 */
+]
