@@ -216,7 +216,7 @@ window.CARDS = {
   },
 
   'era-enlightenment': {
-    h:'THE ENLIGHTENMENT', sub:'1650 \u2013 1860',
+    h:'THE ENLIGHTENMENT', sub:'1685 \u2013 1815',
     lead:'The West rediscovers it, and for the first time gets to read it.',
     body:[
       {p:'The Gita is translated into English in 1785. The ancient texts start circulating in languages that are not Sanskrit \u2014 better translations, no philosopher\u2019s stone needed.', cite:'History of Meditation'},
@@ -226,8 +226,20 @@ window.CARDS = {
     ]
   },
 
+  'era-transcendental': {
+    h:'TRANSCENDENTAL', sub:'1830s \u2013 the 1920s',
+    lead:'The century where the West stops translating it and starts believing it.',
+    body:[
+      {p:'Whitman and Thoreau first \u2014 the texts arrive in English and immediately turn into American writing. <em>Walden</em> in 1854.', cite:'History of Meditation'},
+      {p:'Then the Victorian appetite for the ancient and the occult: Theosophy in 1875, Egyptomania, the Golden Dawn, the Orient Express. The east becomes fashionable in drawing rooms, and the Theosophical Society moves its headquarters to Madras in 1882.'},
+      {p:'<strong>And the current runs the other way at the same time.</strong> Colonial scholarship had printed and catalogued the Sanskrit texts; Indian reform movements read their own tradition back out of those editions and re-presented it. Arya Samaj 1875, Vivekananda\u2019s mission 1897. Scholars call the result Neo-Vedanta.'},
+      {p:'Vivekananda at the Chicago World\u2019s Fair in 1893. Yogananda arriving in 1920 and never really leaving. The Tibetan Book of the Dead in English in 1927.'},
+      {p:'It is also where the asana practice gets rebuilt \u2014 mixed with European physical culture on its way to Krishnamacharya\u2019s Mysore school. <strong>The yoga that reached the West was reassembled in the same window it was exported in.</strong>'}
+    ]
+  },
+
   'era-modern': {
-    h:'MODERN', sub:'1860 \u2013 now',
+    h:'MODERN', sub:'the 1950s \u2013 now',
     lead:'1860 is on the axis for a reason, and it is not a yoga date.',
     body:[
       {p:'<strong>It is the Bengal Renaissance</strong> \u2014 the Indian cultural and intellectual revival running through the nineteenth century and out the other side. It is what re-popularised hatha yoga, and it is the same current that eventually produces Indian cinema. Tagore is born in 1861.'},
@@ -256,13 +268,13 @@ window.CARDS = {
 }
 
 window.TIMELINE = [
-  /* ⭐ EACH DATE IS ITS OWN CARD. His call, 8 Sep. A row carries its own `body`, so the scroll is
-     built straight off the row and there is no second place to keep in sync — add a date here and
-     it is a door the moment it exists.
-     `at` puts its tick on the axis; the column head still opens the era card.
-     ⚠ A row with no body says so on its face. Nothing is invented in his name to fill a gap. */
+  /* ⭐ SIX COLUMNS. His layout, 8 Sep: the last column starts at the fifties; everything from the
+     roaring twenties back moves into TRANSCENDENTAL; and THE ENLIGHTENMENT stacks UNDER the
+     Crusades at the same x, which frees a slot and stops the middle of the axis from crowding.
+     `top` is optional — a column without one starts at the head line. The stacked one runs its
+     leader down the left edge of the column above it rather than through its text. */
 
-  { card:'era-pre', col:0.015, from:0.000, to:0.038, label:'BEFORE THE MAP', span:'to 3000 BCE',
+{ card:'era-pre', col:0.015, from:0.000, to:0.038, label:'BEFORE THE MAP', span:'to 3000 BCE',
     rows:[
       { at:0.002, y:'before all of it', n:'Vishnu&rsquo;s dream, and the Om', body:[
         {p:'The Brahma bull pronounces the sacred syllable and Vishnu&rsquo;s dream begins &mdash; a metaphor for the universe holding itself to a single thread of the multiverse <em>through observation</em>.', cite:'A Brief History of Nothing'},
@@ -294,7 +306,7 @@ window.TIMELINE = [
       ]}
     ]},
 
-  { card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE AXIAL AGE', span:'900 BCE &ndash; 400 CE',
+{ card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE AXIAL AGE', span:'900 BCE &ndash; 400 CE',
     rows:[
       { at:0.249, y:'c. 900 BCE', n:'the Torah', body:[
         {p:'It refers to meditative practice as if it were a common, well-understood behaviour. Nobody is introducing the idea; everybody already has it.', cite:'History of Meditation'}
@@ -332,7 +344,7 @@ window.TIMELINE = [
       ]}
     ]},
 
-  { card:'era-crusades', col:0.405, from:0.460, to:0.494, label:'THE CRUSADES', span:'1095 &ndash; 1291',
+{ card:'era-crusades', col:0.405, from:0.460, to:0.494, label:'THE CRUSADES', span:'1095 &ndash; 1291',
     rows:[
       { at:0.467, y:'1095', n:'the First Crusade', body:[
         {p:'Forced contact between Latin Christendom, Byzantium and the Islamic world &mdash; and within about a century, meditation gets a makeover in four traditions at once.'},
@@ -351,7 +363,8 @@ window.TIMELINE = [
       ]}
     ]},
 
-  { card:'era-enlightenment', col:0.575, from:0.518, to:0.554, label:'THE ENLIGHTENMENT', span:'1650 &ndash; 1860',
+  { card:'era-enlightenment', col:0.405, top:0.470, from:0.518, to:0.548,
+    label:'THE ENLIGHTENMENT', span:'1685 &ndash; 1815',
     rows:[
       { at:0.540, y:'1784', n:'the Asiatic Society', body:[
         {p:'British orientalist scholarship starts cataloguing and <strong>printing</strong> Sanskrit texts. Max M&uuml;ller&rsquo;s <em>Sacred Books of the East</em> follows.'},
@@ -359,7 +372,13 @@ window.TIMELINE = [
       ]},
       { at:0.542, y:'1785', n:'the Gita in English', body:[
         {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation'}
-      ]},
+      ]}
+    ],
+    ticks:[0.527,0.540,0.542] },
+
+  { card:'era-transcendental', col:0.575, from:0.548, to:0.700,
+    label:'TRANSCENDENTAL', span:'1830s &ndash; the 1920s',
+    rows:[
       { at:0.549, y:'1854', n:'Walden', body:[
         {p:'The West rediscovers the practice and writes it down in its own voice. Whitman and Thoreau.', cite:'History of Meditation'},
         {p:'Hatha is practised in British India for the first time in centuries in this same window.'},
@@ -370,19 +389,15 @@ window.TIMELINE = [
         {p:'<em>The physical practice of hatha yoga had all but disappeared from the world by 1850.</em>', cite:'The Six Branches'},
         {p:'<strong>The column closes on almost nothing.</strong> Which is the fact that makes the next column absurd.'},
         {p:'The mat is invented in this window too. Before that it was a bed &mdash; which is what makes the PG-13 version of the Shiva and Parvati story hard to animate.'}
-      ]}
-    ]},
-
-  { card:'era-modern', col:0.755, from:0.616, to:0.960, label:'MODERN', span:'1860 &ndash; now',
-    rows:[
+      ]},
       { at:0.600, y:'1875', n:'the Theosophists', body:[
         {p:'The Victorian appetite for the ancient and the occult &mdash; Theosophy founded in 1875, Egyptomania, the Golden Dawn in 1888, the Orient Express running from 1883. The east becomes fashionable in drawing rooms.'},
         {p:'The Theosophical Society moves its headquarters to Adyar, Madras, in 1882. It is one of the main pipes through which Indian ideas reach the West &mdash; and it is also how a lot of Western assumptions flow back the other way.'}
       ]},
       { at:0.606, y:'1875&ndash;97', n:'rediscovering the roots', body:[
         {p:'Colonialism produces a counter-current: Indian reform movements re-reading the tradition and re-presenting it. Arya Samaj in 1875, Vivekananda&rsquo;s Ramakrishna Mission in 1897. Scholars call the result <strong>Neo-Vedanta</strong>.'},
-        {p:'&#9888; And the strongest version of this claim, which is contested and worth knowing: Mark Singleton&rsquo;s <em>Yoga Body</em> argues modern postural yoga was substantially <strong>reassembled</strong> in this window &mdash; blended with European physical culture, gymnastics and Scandinavian drill &mdash; arriving at Krishnamacharya&rsquo;s Mysore Palace school in the 1930s.'},
-        {p:'Which would mean the asana sequence in this room has a colonial gymnasium in its ancestry, not only a cave. <em>Hold that loosely. But hold it.</em>'}
+        {p:'<strong>And this is where the asana practice you are about to do actually comes from.</strong> Modern postural yoga was substantially <em>reassembled</em> in this window &mdash; blended with European physical culture, gymnastics and Scandinavian drill &mdash; arriving at Krishnamacharya&rsquo;s Mysore Palace school in the 1930s. The scholarship is Mark Singleton&rsquo;s <em>Yoga Body</em>.'},
+        {p:'So the sequence in this room has <strong>a colonial gymnasium in its ancestry, not only a cave.</strong> I teach that on purpose. You are owed the real lineage, and the real one is more interesting: a practice that had all but died being rebuilt, by colonised people, out of their own texts and their coloniser\u2019s drill manuals, and then sold back to the world.'}
       ]},
       { at:0.616, y:'1893', n:'Vivekananda', body:[
         {p:'At the World&rsquo;s Parliament of Religions, held inside the Chicago World&rsquo;s Fair. A man from Calcutta explains Vedanta to America and America claps.'},
@@ -394,7 +409,13 @@ window.TIMELINE = [
       { at:0.684, y:'1927', n:'Book of the Dead', body:[
         {p:'The Tibetan Book of the Dead is published in English.', cite:'History of Meditation'},
         {p:'Chakras arrive in the same stretch &mdash; Woodroffe&rsquo;s <em>Serpent Power</em> in 1919, and Jung running Kundalini seminars by 1932.'}
-      ]},
+      ]}
+    ],
+    ticks:[0.549,0.550,0.600,0.606,0.616,0.670,0.684] },
+
+  { card:'era-modern', col:0.755, from:0.720, to:0.960,
+    label:'MODERN', span:'the 1950s &ndash; now',
+    rows:[
       { at:0.730, y:'the 1950s', n:'beatniks', body:[
         {p:'A great time to be white. And notice the direction of travel: <strong>we had to go to them.</strong>'},
         {p:'It arrives as a telephone game through translators, and what comes back is whatever survived the trip.'}
@@ -422,5 +443,6 @@ window.TIMELINE = [
         {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'},
         {p:'<em>This class is part of that wave.</em>'}
       ]}
-    ]}
+    ],
+    ticks:[0.730,0.762,0.772,0.792,0.815,0.879] }
 ]

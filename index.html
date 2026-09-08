@@ -375,6 +375,10 @@
       var ticks=(e.ticks||[]).map(function(k){
         return '<i class="tl-t" style="left:'+((k-e.from)/span*100)+'%"></i>' }).join('')
       var x1=Math.min(mid,e.col), x2=Math.max(mid,e.col)
+      /* ⭐ a stacked column carries its own `top`. Its leader runs across at the shared bar and
+         then drops the whole way down at the column's LEFT EDGE — beside the column above it,
+         never through its text. */
+      var head=(e.top!=null)?e.top:HEAD
       /* ⭐ each DATE is its own door now, not just the era. The row carries its own body in
          window.TIMELINE, so the scroll is built straight off the row — one place to keep. */
       var rows=e.rows.map(function(r,j){
@@ -384,8 +388,8 @@
                '<span class="tl-brk">'+ticks+'</span></li>'+
              '<li class="tl-drop" style="left:'+(mid*100)+'%;top:'+(AXIS*100)+'%;height:'+((BAR-AXIS)*100)+'%"></li>'+
              '<li class="tl-run"  style="left:'+(x1*100)+'%;width:'+((x2-x1)*100)+'%;top:'+(BAR*100)+'%"></li>'+
-             '<li class="tl-tip"  style="left:'+(e.col*100)+'%;top:'+(BAR*100)+'%;height:'+((HEAD-BAR)*100)+'%"></li>'+
-             '<li class="tl-col" style="left:'+(e.col*100)+'%;top:'+(HEAD*100)+'%">'+
+             '<li class="tl-tip"  style="left:'+(e.col*100)+'%;top:'+(BAR*100)+'%;height:'+((head-BAR)*100)+'%"></li>'+
+             '<li class="tl-col" style="left:'+(e.col*100)+'%;top:'+(head*100)+'%">'+
                '<button class="tl-head" type="button" data-scroll="'+e.card+'" aria-haspopup="dialog">'+
                  '<i>'+e.span+'</i><strong>'+e.label+'</strong></button>'+
                rows+
