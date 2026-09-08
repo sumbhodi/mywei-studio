@@ -55,13 +55,20 @@ window.CARDS = {
       ['consciousness',            'if you came in through philosophy'],
       ['the spark',                'if you like Transformers'],
       ['controlled hallucination', 'if you like cognitive science'],
-      ['the ghost in the machine', 'if you liked The Matrix — which is Descartes in better coats']
+      ['res cogitans',             'the thinking thing — if you liked The Matrix, which is Descartes in leather']
     ],
     body:[
       {p:'Those are not five things. They are five vocabularies pointing at one thing, and the test is '+
          'that <strong>it survives the translation.</strong> Swap the word and the problem does not '+
          'change: something is doing the experiencing, and it cannot get around in front of itself to '+
          'have a look.'},
+      {p:'That last one is worth a minute. Descartes imagined an <em>evil demon</em> — a deceiver with '+
+         'the power to fake the entire world, every sight and sound and body, top to bottom. The Matrix '+
+         'is that thought experiment with better wardrobe. And his point was not the demon. His point '+
+         'was what the demon <strong>cannot</strong> fake: that something is being deceived. Fool me '+
+         'about everything and there is still a me being fooled. That leftover is the <em>res '+
+         'cogitans</em>, the thinking thing — and it is the same leftover the Upanishads called Atman, '+
+         'arrived at from the opposite direction two thousand years apart.'},
       {p:'<em>Atman is the slice of that universe that says &ldquo;I.&rdquo; Your node of awareness. The '+
          'part of Brahman wearing a body and wondering where it left its keys.</em>',
          cite:'History of Yoga'},
