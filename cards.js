@@ -35,9 +35,35 @@ window.CARDS = {
       {p:'The dictionary will tell you it is a Hindu spiritual and ascetic discipline, widely practised '+
          'for health and relaxation. True, and useless. That describes what people do on a Tuesday, not '+
          'what the word says.', cite:'OED'},
+      {p:'<strong>Atman to Brahman.</strong> Those are the two ends of the yoke, and there is nothing '+
+         'else on the list.'},
       {p:'In Advaita Vedanta — the non-dual tradition yoga draws from most heavily — the answer is that '+
          '<em>we are not yoking two separate things together. We are remembering that they were never '+
          'separate.</em>', cite:'History of Yoga'},
+      {p:'<strong>Remember over force.</strong> That is the method, and it is the part people get wrong '+
+         'first. You are not straining two things into place. You are recalling something that was '+
+         'always the case. A forced yoke is just strain with better branding.'},
+      {p:'Because the duality is the illusion. In here, out there — <em>we are dipole machines. Take any '+
+         'spectrum, collapse it to two poles.</em> Good and bad, hot and cold, sacred and profane, all of '+
+         'them built off the first split.', cite:'Duality', href:'https://www.ozhunga.com/A3/koshas/duality'},
+      {p:'<em>In other words: we are all on the spectrum, and a little bipolar.</em> That is not a bug — '+
+         'it is how a brain navigates a continuous universe it has divided into parts.',
+         cite:'Duality', href:'https://www.ozhunga.com/A3/koshas/duality'},
+      {p:'There are two ways out of the split, and I will tell you which one I take. Either <em>out '+
+         'there</em> is the illusion — simulation, idealism, the world is mind-made — or <strong><em>in '+
+         'here</em> is the illusion.</strong> The observer, the sense of a separate subject sitting '+
+         'behind your eyes, is the construction. Vedanta and neuroscience agree on that one: <em>the '+
+         'self is the model, not the modeler.</em>', cite:'Duality', href:'https://www.ozhunga.com/A3/koshas/duality'},
+      {p:'So what is the yoke actually <em>for</em>. To make your perception of reality match it more '+
+         'closely. To get more awareness of, and more control over, your own controlled hallucination. '+
+         '<strong>To recognise the screen — and realise we were the projector all along.</strong>'},
+      {p:'<strong>Samadhi is the highest goal.</strong> A state of oneness. Easier to find on the cushion '+
+         'or the mat, entirely achievable while doing the dishes, and <em>rude in a heated discussion '+
+         'with a loved one.</em> Not good for watching a movie or a date night. Great for a long solo '+
+         'hike and for gardening.'},
+      {p:'Which is the middle way, and it is why the goal is stated carefully: <strong>to be able to find '+
+         'it — not to stay there.</strong> Because it is technically a form of dissociation, and leaving '+
+         'matters exactly as much as arriving.'},
       {p:'So the yoke is the tool we use to re-member what the brain split apart. Not destroying the ego '+
          '— <em>true ego death is suicide, it is just a matter of pace</em> — but loosening its grip. '+
          'Getting out of the pool long enough to dry off.', cite:'History of Yoga'}
