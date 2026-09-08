@@ -153,13 +153,13 @@ window.CARDS = {
     body:[
       {p:'<strong>Ohm.</strong> A cosmic Brahma bull slowly pronouncing the syllable, and Vishnu\u2019s dream beginning. Most cosmogenesis stories are some form of vibration or intention \u2014 in the beginning was the Word, the Logos, the dream. <em>It still echoes, if you listen.</em>'},
 
-      {p:'<strong>Shiva gets busy with Parvati.</strong> A mountaintop, eighty-four asanas, and the first yoga lesson anybody tells a story about. The PG-13 version ends right there. And we still have no idea what he was actually doing.'},
+      {p:'<strong>Shiva gets busy with Parvati.</strong> A mountaintop, eighty-four asanas, and the first yoga lesson anybody tells a story about. The PG-13 version ends right there. And we still have no idea what he was actually doing. Sometimes Shiva has two arms, sometimes six, sometimes eight. Whatever the temple, Shiva is always standing on a little demon. The traditions disagree about everything except the thing underfoot.'},
 
       {p:'<strong>The early texts.</strong> Vedas and Upanishads \u2014 already describing meditation as ancient when they were written. The Katha has the chariot and the yoke. Kept in people rather than paper, because palm leaf rots.'},
 
-      {p:'<strong>Siddhartha.</strong> Same window as Confucius, Socrates and the Hebrew prophets, from places that were not talking to each other. Buddhists use the same word the Vedas and yoga use \u2014 <em>dhyana</em>. <strong>Buddhism is Yoga II.</strong> That is the side note, not the chapter.'},
+      {p:'<strong>Siddhartha.</strong> Same window as Confucius, Socrates and the Hebrew prophets, from places that were not talking to each other. Buddhists use the same word the Vedas and yoga use \u2014 <em>dhyana</em>. <strong>Buddhism is Yoga II.</strong> That is the side note, not the chapter. Here is why he stands out, since he is not teaching anything new: he taught it for free, to anyone. Women, brown people, white people, he did not care. Everyone else had a paywall.'},
 
-      {p:'<strong>The Sutras.</strong> Patanjali writes the eight limbs down and they get an author. The six branches never do.'},
+      {p:'<strong>The Sutras.</strong> Patanjali writes the eight limbs down and they get an author. The six branches never do. <em>Sutra</em> means suture, the thread that binds a book. Somebody asked him to write the book on yoga and he came back saying it could not be done: it is different in the East and the West, different for every person, the way Shiva has two arms in one temple and eight in the next. So he wrote the binding and the table of contents and left the book to you. He also apparently spoke three languages, had five handwritings and lived eight hundred years. Or there was more than one of him.'},
 
       {p:'&#8212;'},
 
@@ -199,7 +199,7 @@ window.CARDS = {
       {p:'&#8212;'},
 
       {p:'<strong>And running alongside all of it, the other history: exercise.</strong>'},
-      {p:'<strong>The fifties</strong> are the first time exercise is not a hobby but something you <em>do</em>. By the <strong>sixties</strong> everyone is running. By the <strong>seventies</strong> they are blowing out their knees. The <strong>eighties</strong> invent jogging \u2014 faking running \u2014 and the <strong>nineties</strong> replace it with power walking.'},
+      {p:'<strong>The fifties</strong> are the first time exercise is not a hobby but something you <em>do</em>. By the <strong>sixties</strong> everyone is running. By the <strong>seventies</strong> they are blowing out their knees. The <strong>eighties</strong> invent jogging \u2014 faking running \u2014 and the <strong>nineties</strong> replace it with power walking. The reason is blunt: rich white men were dying younger than their poor rural cousins, and when something affects rich white men, we do something about it. Diagnosis, desk jobs and steak. Out of that came the food pyramid, bread and potatoes across the bottom, and the order to exercise.'},
       {p:'High-impact aerobics runs the same years. Jazzercise is the softer version. And the peak of the whole thing is Richard Simmons sweating to the oldies \u2014 who, if you actually look at what he built, nails <strong>low-impact HIIT with just enough bounce to hold off osteoporosis</strong>. He was right and nobody noticed.'},
 
       {p:'<strong>Then somebody walked into an ashtanga school for Westerners</strong> \u2014 or whatever was most marketable in SoCal that week \u2014 and realised these people had been working out what breaks a body and what does not <em>for a century already</em>.'},
@@ -220,10 +220,11 @@ window.CARDS = {
       {p:'<strong>Post-Y2K</strong> it goes mainstream, but filtered. It arrives in the college catalog under a name nobody could object to: <em>stretch and relaxation.</em>'},
       {p:'<strong>The 2010s</strong> \u2014 the Jois family goes hard on the trademark, and the argument about who owns this gets loud. That is when you start hearing there are <em>more people practising in LA than in all of India</em>. I will stand by it as an urban legend, because I have never been able to source it and neither has anyone else \u2014 but it is exactly the sort of line people reach for when the argument is about ownership.'},
       {p:'<strong>2008</strong> \u2014 I graduate from SLCC\u2019s first yoga teacher training program.'},
-      {p:'<strong>2020</strong> \u2014 a pandemic, and everyone is doing it or wishing they had. Meditation finally goes fully mainstream, about three thousand years after it was already ancient.'},
+      {p:'<strong>2020</strong> \u2014 a pandemic, and everyone is doing it or wishing they had. Meditation finally goes fully mainstream, about three thousand years after it was already ancient. At one point SLCC ran twenty-three sections of it.'},
       {p:'<strong>And then, post-2020, somebody makes the towel joke again.</strong> <em>Everything Everywhere All at Once</em> is arguably the most explicitly non-dual film ever to win Best Picture, and it builds the whole argument around a bagel \u2014 an everything bagel, containing all of it, which is exactly the thing that swallows you if you stare too long.'},
       {p:'It runs straight into the problem we already have. <strong>If it is all one, walls are hard to avoid</strong> \u2014 and the film knows it. So it does not land on transcendence. It lands on <em>be kind</em>, and on staying in the room.'},
       {p:'<strong>Which is the pool and the towel, with a bagel.</strong> Same device, arrived at independently, and the same refusal to let you off easily. You see through it and you still have to do the laundry.'},
+      {p:'<strong>And notice what I just did.</strong> An hour on the history of yoga without once telling you how to do yoga. Everyone before me managed the same trick. The Torah has meditation, Christ has contemplation, the Vedas have <em>dhyana</em>, and none of them define it for thousands of years; the dictionary still says a practice done by Hindus and ascetics for well-being, which tells you nothing. Either it was so common that nobody needed to say, or there was a paywall. <em>Give me your gold, swear allegiance for all your lifetimes, and we will tell you the secret.</em> I charge for a class too; the mortgage is real. Siddhartha is the one who broke the rule.'},
 
       {p:'&#8212;'},
 
@@ -434,7 +435,7 @@ window.CARDS = {
     h:'THE CRUSADES', sub:'1095 \u2013 1291',
     lead:'Meditation gets a makeover across the board \u2014 four traditions, one century.',
     body:[
-      {p:'Sufi practice is systematised. Byzantine monks fix prayer to posture and repetition. A Carthusian writes <em>read, ponder, pray, contemplate</em> into a formal ladder. And Zen starts being taught apart from Buddhism.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
+      {p:'Sufi practice is systematised. Byzantine monks fix prayer to posture and repetition. A Carthusian writes <em>read, ponder, pray, contemplate</em> into a formal ladder. And Zen starts being taught apart from Buddhism.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit Everyone is on the road, everyone meets everyone, and every religion starts defining itself against the neighbours. <em>I kneel like this when I pray.</em> <em>No, I bring my forehead to the floor.</em> The Hindus watch all of it and say it was their idea first. They are famously hard to convert, because they agree with you all the way to the end and then tell you that you are spelling his name wrong. Not Christ. Krishna. Another avatar, same pattern.'},
       {p:'Nobody has settled whether they influenced each other or simply arrived at the same place at the same time.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'Every piece has a name, if you want them: Guigo II\u2019s <em>Scala Claustralium</em>, c. 1150, is the ladder. The Byzantine one is <em>hesychasm</em>. The Sufi one runs through al-Ghazali. Chan gets its Song-dynasty codification in the same window.'},
       {p:'\u26a0 <strong>Where the Crusades framing strains.</strong> Symeon dies in 1022 and al-Ghazali in 1111, so half of this predates or straddles the First Crusade. The contact routes \u2014 trade, and Al-Andalus \u2014 were already open. Contemporaneous, then, rather than obviously caused by \u2014 which arguably makes it the more interesting convergence, not the less.'}
@@ -456,7 +457,7 @@ window.CARDS = {
     h:'TRANSCENDENTAL', sub:'1830s \u2013 the 1920s',
     lead:'The century where the West stops translating it and starts believing it.',
     body:[
-      {p:'Whitman and Thoreau first \u2014 the texts arrive in English and immediately turn into American writing. <em>Walden</em> in 1854.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
+      {p:'Whitman and Thoreau first \u2014 the texts arrive in English and immediately turn into American writing. <em>Walden</em> in 1854.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit Thoreau did not move into a van and start streaming; he moved into a cabin on a pond and started writing, and went vegan. The story has not changed. The Enlightenment traded religion for science, science delivered the factory, and once you have watched children walk into the mill through the smoke, the pond looks very good. Eliot\u2019s <em>not with a bang but a whimper</em> is the same mood, and it has been whimpering along for a hundred and fifty years.'},
       {p:'Then the Victorian appetite for the ancient and the occult: Theosophy in 1875, Egyptomania, the Golden Dawn, the Orient Express. The east becomes fashionable in drawing rooms, and the Theosophical Society moves its headquarters to Madras in 1882.'},
       {p:'<strong>And the current runs the other way at the same time.</strong> Colonial scholarship had printed and catalogued the Sanskrit texts; Indian reform movements read their own tradition back out of those editions and re-presented it. Arya Samaj 1875, Vivekananda\u2019s mission 1897. Scholars call the result Neo-Vedanta.'},
       {p:'Vivekananda at the Chicago World\u2019s Fair in 1893. Yogananda arriving in 1920 and never really leaving. The Tibetan Book of the Dead in English in 1927.'},
@@ -766,3 +767,4 @@ window.TREE = {
     ['limb-dharana','DHARANA'], ['limb-dhyana','DHYANA'], ['samadhi','SAMADHI']
   ]
 }
+
