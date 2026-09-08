@@ -25,7 +25,14 @@
      call on contrast." One number, one place. .30 was where it started (invisible to me on a
      scaled screenshot), .48 is where it sits now. Turn it up until it is right in the room, on
      the projector he will actually teach from — that judgement needs his eyes, not mine. */
-  :root{ --arrow-ink:.48; }
+  /* ⭐ THE TWO DIALS — both yours, both one number, both in this block.
+     --word: how big ATMAN and BRAHMAN are. It was 2.6rem when you first said it looked good,
+             3.4rem after I bumped it. Same font either way (Cinzel, measured) — only the size moved.
+     --arrow-ink: how much the arrow pops. Started .30 (invisible), now .48. */
+  :root{
+    --word:2.6rem;
+    --arrow-ink:.48;
+  }
 
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{height:100%}
@@ -57,8 +64,8 @@
   /* ⭐ ALL THREE IN THE TREE'S OWN INK. Sampled, not guessed: 57,384 ink pixels off the trunk
      and the YOGA lettering average #866241, and the single most common value is #734E32. The words
      are the same substance as the drawing, which is the point of lettering them onto it. */
-  .atman  {left:15%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
-  .brahman{left:85%; top:6%; font-size:clamp(1.15rem,4.4vw,3.4rem); letter-spacing:.12em}
+  .atman  {left:15%; top:6%; font-size:clamp(1.15rem,4.4vw,var(--word)); letter-spacing:.12em}
+  .brahman{left:85%; top:6%; font-size:clamp(1.15rem,4.4vw,var(--word)); letter-spacing:.12em}
 
   /* the bad is — same line, no halo, free to be swallowed by the canopy. His call, twice. */
   .is{
