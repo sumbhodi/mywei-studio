@@ -13,6 +13,17 @@ Current joy state: **`joy-2026-09-08`**. `git checkout joy-2026-09-08 -- .` to r
 > wrangler OAuth token has `zone:read` only — it cannot create a zone or touch DNS rows, so those
 > are green buttons in the dash. Adding the custom domain via the Pages API does NOT create the CNAME.
 
+## FOR THE NEXT PASS (Opus for ideas, Fable to ship)
+
+- **Thursday and next Tuesday are the limbs.** Same loop as 8 Sep: he pastes the class transcript,
+  grep each spoken detail against `cards.js`, add the missing ones in his phrasing, `./deploy.sh` on "go".
+- The limb and branch cards were a rough cut at 1am ("will clean after compact"); he has not asked yet.
+  When he does, it is a read of what he actually teaches (asana, pranayama, dharana as guided meds,
+  dhyana explained once then silence) against the card text, not new research.
+- `docs/` snapshots go stale as he edits the Google Docs; refresh is the Drive MCP
+  (`download_file_content`, `text/markdown`) into the same three filenames, then deploy.
+- Phone is done and he confirmed it on his phone. Don't reopen it without a complaint.
+
 ## THE TASK AS IT STOOD — deploy to mywei.studio
 
 He said it plainly at the end of the session: *"I will have fable speed run the post to my wei part
