@@ -29,9 +29,9 @@ window.CARDS = {
     lead:'The root is <em>yuj</em>. To yoke.',
     body:[
       {p:'As in the wishbone-shaped wooden crosspiece you strap to an ox to pull a cart. A tool for '+
-         'doing work. <strong>Not part of an egg.</strong>', cite:'History of Yoga'},
+         'doing work. <strong>Not part of an egg.</strong>'},
       {p:'So yoga is a yoke. A connection, a union, a harness — a tool. Which leaves the only question '+
-         'worth opening a class with: <strong>what are we harnessing?</strong>', cite:'History of Yoga'},
+         'worth opening a class with: <strong>what are we harnessing?</strong>'},
       {p:'The dictionary will tell you it is a Hindu spiritual and ascetic discipline, widely practised '+
          'for health and relaxation. True, and useless. That describes what people do on a Tuesday, not '+
          'what the word says.', cite:'OED'},
@@ -39,7 +39,7 @@ window.CARDS = {
          'else on the list.'},
       {p:'In Advaita Vedanta — the non-dual tradition yoga draws from most heavily — the answer is that '+
          '<em>we are not yoking two separate things together. We are remembering that they were never '+
-         'separate.</em>', cite:'History of Yoga'},
+         'separate.</em>'},
       {p:'<strong>Remember over force.</strong> That is the method, and it is the part people get wrong '+
          'first. You are not straining two things into place. You are recalling something that was '+
          'always the case. A forced yoke is just strain with better branding.'},
@@ -66,7 +66,7 @@ window.CARDS = {
          'matters exactly as much as arriving.'},
       {p:'So the yoke is the tool we use to re-member what the brain split apart. Not destroying the ego '+
          '— <em>true ego death is suicide, it is just a matter of pace</em> — but loosening its grip. '+
-         'Getting out of the pool long enough to dry off.', cite:'History of Yoga'},
+         'Getting out of the pool long enough to dry off.'},
       {p:'<strong>Yoga is a tool. We sharpen it through practice. It is not a destination.</strong>'}
     ]
   },
@@ -83,8 +83,7 @@ window.CARDS = {
     ],
     body:[
       {p:'<em>Atman is the slice of that universe that says &ldquo;I.&rdquo; Your node of awareness. The '+
-         'part of Brahman wearing a body and wondering where it left its keys.</em>',
-         cite:'History of Yoga'},
+         'part of Brahman wearing a body and wondering where it left its keys.</em>'},
       {p:'The eye cannot see itself. The knife cannot cut itself. '+
          'The scale cannot weigh itself. You are studying the mind from inside the mind, and the '+
          'instrument <em>is</em> the thing being measured.', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
@@ -95,8 +94,7 @@ window.CARDS = {
       {p:'<strong>You are the projector.</strong> Atman is the light, not the image. You cannot see the '+
          'projector by squinting harder at the movie.', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
       {p:'Which is why the lab and the temple end up in the same room. Vedanta and neuroscience agree on '+
-         'this one: <em>the self is the model, not the modeler.</em> The observer is the construction.',
-         cite:'History of Yoga'}
+         'this one: <em>the self is the model, not the modeler.</em> The observer is the construction.'}
     ]
   },
 
@@ -106,9 +104,8 @@ window.CARDS = {
     lead:'Not a god. Not a place. The fabric itself.',
     body:[
       {p:'The universe is not a container that holds things — it <em>is</em> what things are. One '+
-         'continuous movement. No seams. No inside or outside. No pockets.', cite:'History of Yoga'},
-      {p:'<em>This is why the universe is always losing its keys. No pockets.</em>',
-         cite:'History of Yoga'},
+         'continuous movement. No seams. No inside or outside. No pockets.'},
+      {p:'<em>This is why the universe is always losing its keys. No pockets.</em>'},
       {p:'There is a scene in <em>I Heart Huckabees</em> that teaches this better than most scripture. A '+
          'detective holds up a bedsheet: this is all the matter and energy there is, you and me and '+
          'everything, nothing left out. Asked what is outside it, he says more sheet. Then he draws '+
@@ -141,7 +138,7 @@ window.CARDS = {
       {p:'So: <strong>Atman is Brahman.</strong> <em>Tat tvam asi</em> — thou art that. The individual '+
          'witness and the witnessed are the same thing looking at itself. The light in your projector is '+
          'the same light in mine; there was only ever one bulb.',
-         cite:'History of Yoga · The Wei', href:'https://www.ozhunga.com/B3/church/'},
+         cite:'The Wei', href:'https://www.ozhunga.com/B3/church/', href:'https://www.ozhunga.com/B3/church/'},
       {p:'And the problem we do not paper over: if it really is all one sheet, walls are still hard to '+
          'avoid, and somebody still has to order the coffee. In here, out there, us and other — a '+
          'necessary illusion. You see through it and you order the coffee anyway. That is not hypocrisy. '+
@@ -154,7 +151,7 @@ window.CARDS = {
     h:'THE HISTORY', sub:'the whole thing, start to finish',
     lead:'Not a list of dates. A story with a turn in it.',
     body:[
-      {p:'<strong>Ohm.</strong> A cosmic Brahma bull slowly pronouncing the syllable, and Vishnu\u2019s dream beginning. Most cosmogenesis stories are some form of vibration or intention \u2014 in the beginning was the Word, the Logos, the dream. <em>It still echoes, if you listen.</em>', cite:'History of Yoga'},
+      {p:'<strong>Ohm.</strong> A cosmic Brahma bull slowly pronouncing the syllable, and Vishnu\u2019s dream beginning. Most cosmogenesis stories are some form of vibration or intention \u2014 in the beginning was the Word, the Logos, the dream. <em>It still echoes, if you listen.</em>'},
 
       {p:'<strong>Shiva gets busy with Parvati.</strong> A mountaintop, eighty-four asanas, and the first yoga lesson anybody tells a story about. The PG-13 version ends right there. And we still have no idea what he was actually doing.'},
 
@@ -180,7 +177,7 @@ window.CARDS = {
 
       {p:'Which explains everything that looked like separate facts. Why hatha sits at the bottom of the caste list. Why the mat arrives as a prop \u2014 cork and rubber rolled over a dirty market floor to make a clean stage. Why the revival is performative all the way down.'},
 
-      {p:'<strong>Then the propaganda tour.</strong> The Maharaja of Mysore\u2019s own word for it. Krishnamacharya sent across South India giving public demonstrations, with a silent film funded for national circulation. Meanwhile young Indians in Mysore thought yoga was beneath them and preferred the bodybuilding gym \u2014 because hatha was what poor people did.', cite:'History of Meditation'},
+      {p:'<strong>Then the propaganda tour.</strong> The Maharaja of Mysore\u2019s own word for it. Krishnamacharya sent across South India giving public demonstrations, with a silent film funded for national circulation. Meanwhile young Indians in Mysore thought yoga was beneath them and preferred the bodybuilding gym \u2014 because hatha was what poor people did.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
 
       {p:'<strong>And then the fetishism of the East.</strong> World\u2019s fairs and travelling shows. The contortionist, the beggar, the rope trick, the levitating man with his staff \u2014 all from the same Victorian appetite for an East that is mystical, bendable and safely far away.'},
 
@@ -260,8 +257,8 @@ window.CARDS = {
   'br-raja': { h:'RAJA', sub:'royal · meditation',
     lead:'Upper Caste',
     body:[
-      {p:'<strong>His 2015 doc tags this branch: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'Focuses on achieving and maintaining specific mental states through meditation — yet still incorporates all eight limbs, including asana.', cite:'The Six Branches'},
+      {p:'<strong>Caste: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'Focuses on achieving and maintaining specific mental states through meditation — yet still incorporates all eight limbs, including asana.'},
       {p:'&#9888; <strong>And notice what the caste tag means here.</strong> The branch that owns <em>meditation</em> was assigned to the people with the leisure to sit. Contemplation was not distributed by aptitude.'}
       ]
   },
@@ -269,8 +266,8 @@ window.CARDS = {
   'br-jnana': { h:'JNANA', sub:'mind · study and wisdom',
     lead:'Upper Caste',
     body:[
-      {p:'<strong>His 2015 doc tags this branch: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'Still follows the eight-limbed practice, but focuses on improvement of the mind through scholarly endeavour.', cite:'The Six Branches'},
+      {p:'<strong>Caste: Upper Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'Still follows the eight-limbed practice, but focuses on improvement of the mind through scholarly endeavour.'},
       {p:'&#9888; <strong>This is the branch the whole systemic argument is about.</strong> Scholarship needs literacy, time, and somebody else doing the work. When you ask <em>who has time to study and read, and who is bathing in the ashes of the dead</em> &mdash; this is the branch on the answering end.'}
       ]
   },
@@ -278,38 +275,38 @@ window.CARDS = {
   'br-karma': { h:'KARMA', sub:'living life, learning lessons',
     lead:'Working Caste',
     body:[
-      {p:'<strong>His 2015 doc tags this branch: Working Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'<em>We are all doing this, it\'s just a matter of how consciously.</em>', cite:'The Six Branches'},
-      {p:'The trick is to live now in such a way that you create better tomorrows — in this lifetime and the next.', cite:'The Six Branches'}
+      {p:'<strong>Caste: Working Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'<em>We are all doing this, it\'s just a matter of how consciously.</em>'},
+      {p:'The trick is to live now in such a way that you create better tomorrows — in this lifetime and the next.'}
     ]
   },
 
   'br-bhakti': { h:'BHAKTI', sub:'devotion, loving service',
     lead:'Working Caste',
     body:[
-      {p:'<strong>His 2015 doc tags this branch: Working Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'The yoga of devotion, usually to Krishna. Devotees keep the name on their lips and love in their heart, hoping to be spared the endless cycle of death and rebirth.', cite:'The Six Branches'},
-      {p:'The work is to feast and serve and sing and dance — to care for the god, his guests, and fellow devotees. They practise in this life to be the better servant in the next.', cite:'The Six Branches'}
+      {p:'<strong>Caste: Working Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'The yoga of devotion, usually to Krishna. Devotees keep the name on their lips and love in their heart, hoping to be spared the endless cycle of death and rebirth.'},
+      {p:'The work is to feast and serve and sing and dance — to care for the god, his guests, and fellow devotees. They practise in this life to be the better servant in the next.'}
     ]
   },
 
   'br-tantra': { h:'TANTRA', sub:'ritual, ceremony',
     lead:'Monastic Caste',
     body:[
-      {p:'<strong>His 2015 doc tags this branch: Monastic Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'Making every act of a mundane human life into a ritual offered up — to connect with the divine, or simply to raise consciousness.', cite:'The Six Branches'},
-      {p:'<em>While sex can be included in such a practice, so is: the way you make your rice, get dressed, speak, garden. Most Tantric schools actually recommend celibacy.</em>', cite:'The Six Branches'}
+      {p:'<strong>Caste: Monastic Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'Making every act of a mundane human life into a ritual offered up — to connect with the divine, or simply to raise consciousness.'},
+      {p:'<em>While sex can be included in such a practice, so is: the way you make your rice, get dressed, speak, garden. Most Tantric schools actually recommend celibacy.</em>'}
     ]
   },
 
   'br-hatha': { h:'HATHA', sub:'purification of the vessel',
     lead:'Lowest Caste',
     body:[
-      {p:'<strong>His 2015 doc tags this branch: Lowest Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
-      {p:'<em>While hatha is only one sixth of the body of yoga, it is by far the most widely known, practiced and researched form known today.</em>', cite:'The Six Branches'},
-      {p:'<em>Any time the word yoga is used in any language other than Sanskrit, they are probably talking about Hatha.</em>', cite:'The Six Branches'},
-      {p:'Most believed its sole purpose was to keep the body out of the way — that it was not a valid path of transcendence on its own.', cite:'The Six Branches'},
-      {p:'<strong>The physical practice had all but disappeared from the world by 1850. By the 1980s there were more people practicing hatha in LA than in all of India.</strong>', cite:'The Six Branches'}
+      {p:'<strong>Caste: Lowest Caste.</strong> That tag is not a footnote about the past &mdash; it is the argument. The list itself is a caste map.'},
+      {p:'<em>While hatha is only one sixth of the body of yoga, it is by far the most widely known, practiced and researched form known today.</em>'},
+      {p:'<em>Any time the word yoga is used in any language other than Sanskrit, they are probably talking about Hatha.</em>'},
+      {p:'Most believed its sole purpose was to keep the body out of the way — that it was not a valid path of transcendence on its own.'},
+      {p:'<strong>The physical practice had all but disappeared from the world by 1850. By the 1980s there were more people practicing hatha in LA than in all of India.</strong>'}
     ]
   },
 
@@ -324,7 +321,7 @@ window.CARDS = {
     body:[
       {p:'<strong>How it is actually taught:</strong> covered at the start of semester · one guided meditation on ahimsa'},
       {p:'Handled early, then lived rather than lectured. The one that gets its own guided meditation is <strong>ahimsa</strong>.'},
-      {p:'<em>Satya: truth is easier. Stealing is just unsustainable, not wrong — the distinction matters.</em>', cite:'The Wei'}
+      {p:'<em>Satya: truth is easier. Stealing is just unsustainable, not wrong — the distinction matters.</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'}
     ]
   },
 
@@ -339,7 +336,7 @@ window.CARDS = {
     body:[
       {p:'<strong>How it is actually taught:</strong> covered at the start of semester'},
       {p:'Front-loaded with yama, then it runs underneath everything else all semester.'},
-      {p:'<em>Satya: truth is easier. Stealing is just unsustainable, not wrong &mdash; the distinction matters.</em>', cite:'The Wei'},
+      {p:'<em>Satya: truth is easier. Stealing is just unsustainable, not wrong &mdash; the distinction matters.</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
       {p:'Front-loaded with yama at the start of semester, and then it runs underneath everything else without being named again.'}
       ]
   },
@@ -347,8 +344,8 @@ window.CARDS = {
   'limb-asana': { h:'ASANA', sub:'to take a seat',
     body:[
       {p:'<strong>How it is actually taught:</strong> ★ one of the two this class is actually built on'},
-      {p:'<em>Asana refers to more than just a physical pose. It is the practice of becoming fully embodied — both in your physical body and in the present moment.</em>', cite:'The 8 Limbs'},
-      {p:'<em>You are always in a pose. You just forget sometimes. The pose you are in right now — reading this, however you are sitting or standing or lying down — is a pose. You are practicing. You just did not know it was class.</em>', cite:'The Wei'},
+      {p:'<em>Asana refers to more than just a physical pose. It is the practice of becoming fully embodied — both in your physical body and in the present moment.</em>'},
+      {p:'<em>You are always in a pose. You just forget sometimes. The pose you are in right now — reading this, however you are sitting or standing or lying down — is a pose. You are practicing. You just did not know it was class.</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
       {p:'The word means <strong>seat</strong>. Find the seat. That is the limb.'}
     ]
   },
@@ -356,35 +353,35 @@ window.CARDS = {
   'limb-pranayama': { h:'PRANAYAMA', sub:'breath control',
     body:[
       {p:'<strong>How it is actually taught:</strong> ★ one of the two this class is actually built on'},
-      {p:'<em>Prana is the life force that flows through everything: the air we breathe, the food we eat, the sounds we hear, the light we see. Even the love we receive in relationships can be considered prana.</em>', cite:'The 8 Limbs'},
-      {p:'<em>Yama</em> is a discipline or constraint — the same word as the first limb. So pranayama is breath control used as a tool for <strong>disciplining the flow of all the energies in our lives</strong>.', cite:'The 8 Limbs'},
-      {p:'<em>You are always breathing. If you weren\'t — breathe right now. Take a deep breath. You\'re welcome. I accept tips.</em>', cite:'The Wei'}
+      {p:'<em>Prana is the life force that flows through everything: the air we breathe, the food we eat, the sounds we hear, the light we see. Even the love we receive in relationships can be considered prana.</em>'},
+      {p:'<em>Yama</em> is a discipline or constraint — the same word as the first limb. So pranayama is breath control used as a tool for <strong>disciplining the flow of all the energies in our lives</strong>.'},
+      {p:'<em>You are always breathing. If you weren\'t — breathe right now. Take a deep breath. You\'re welcome. I accept tips.</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'}
     ]
   },
 
   'limb-pratyahara': { h:'PRATYAHARA', sub:'awareness of the senses',
     body:[
       {p:'<strong>How it is actually taught:</strong> named at the start of class and again at the end'},
-      {p:'<em>At first translated as a withdrawal from the senses — it is better described as diving so deep into all the senses that you are no longer distracted by them.</em>', cite:'The 8 Limbs'},
-      {p:'<em>The sound of the garbage truck: easy to not identify as self. Music: easy. The voice inside your head reading these words right now: less easy. The inner critic: less.</em>', cite:'The Wei'},
-      {p:'<em>Learn to hear it all as if listening to music.</em>', cite:'The Wei'}
+      {p:'<em>At first translated as a withdrawal from the senses — it is better described as diving so deep into all the senses that you are no longer distracted by them.</em>'},
+      {p:'<em>The sound of the garbage truck: easy to not identify as self. Music: easy. The voice inside your head reading these words right now: less easy. The inner critic: less.</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'},
+      {p:'<em>Learn to hear it all as if listening to music.</em>', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'}
     ]
   },
 
   'limb-dharana': { h:'DHARANA', sub:'mental focus',
     body:[
       {p:'<strong>How it is actually taught:</strong> this is where the guided meditations live'},
-      {p:'<em>A single-minded intention. Traditionally a drishti — a gaze upon a sacred object or meditative device: candle, incense, ancestor. It can also simply be a thought to keep you present, or any mantra that fits your practice.</em>', cite:'The 8 Limbs'},
-      {p:'The white bear is why it works this way. Tell the mind <em>don\'t</em> and one part obeys while another keeps checking whether it has stopped yet — and the checking is the thinking. So you do not empty the head by force. <strong>Give it a brown bear first.</strong>', cite:'the bible · Field and Stream'}
+      {p:'<em>A single-minded intention. Traditionally a drishti — a gaze upon a sacred object or meditative device: candle, incense, ancestor. It can also simply be a thought to keep you present, or any mantra that fits your practice.</em>'},
+      {p:'The white bear is why it works this way. Tell the mind <em>don\'t</em> and one part obeys while another keeps checking whether it has stopped yet — and the checking is the thinking. So you do not empty the head by force. <strong>Give it a brown bear first.</strong>', cite:'The Wei &middot; Field and Stream', href:'https://www.ozhunga.com/B3/church/'}
     ]
   },
 
   'limb-dhyana': { h:'DHYANA', sub:'stillness',
     body:[
       {p:'<strong>How it is actually taught:</strong> taught by explaining it once, then shutting up as much as possible'},
-      {p:'<em>Traditional or zazen meditation. A clear still mind.</em>', cite:'The 8 Limbs'},
+      {p:'<em>Traditional or zazen meditation. A clear still mind.</em>'},
       {p:'The method <strong>is</strong> the silence after the explanation. Say it once, then get out of the way — talking over it is the one thing guaranteed to prevent it.'},
-      {p:'<strong>Dhyana has no door that isn\'t dharana.</strong> You choose a thought, hold it on purpose, let it end, choose again. Empty is best if it comes — but it comes <em>through</em> the choosing, never through the forcing.', cite:'the bible'}
+      {p:'<strong>Dhyana has no door that isn\'t dharana.</strong> You choose a thought, hold it on purpose, let it end, choose again. Empty is best if it comes — but it comes <em>through</em> the choosing, never through the forcing.', cite:'The Wei', href:'https://www.ozhunga.com/B3/church/'}
     ]
   },
 
@@ -392,17 +389,17 @@ window.CARDS = {
     h:'SAMADHI', sub:'the eighth limb \u2014 and the one to be careful with',
     lead:'Bliss. Enlightenment. Oneness.',
     body:[
-      {p:'<em>Bliss, enlightenment, oneness.</em>', cite:'The 8 Limbs'},
+      {p:'<em>Bliss, enlightenment, oneness.</em>'},
       {p:'Naming it pulls you out of it. So it gets explained one time, and then left alone \u2014 I rarely mention it again after that.'},
       {p:'A state of oneness. Easier to find on the cushion or the mat, entirely achievable while doing the dishes, and <em>rude in a heated discussion with a loved one</em>. Not good for watching a movie or a date night. Great for a long solo hike and for gardening.'},
       {p:'<strong>Find the seat. Turn the brain off. Unplug it \u2014 and then plug it back in.</strong> Find sukhasana and samadhi, and leave before you need to change your shorts.'},
 
       {p:'<strong>Now the part I tell you on the first day, so it is not a surprise later.</strong>'},
-      {p:'<em>I am a special case. I love doing nothing. My first mental hospitalization was due to catatonia. I was completely unresponsive. Nothing was distracting me from my meditation. I was deep.</em>', cite:'A Meditation on Meditation'},
-      {p:'<em>In fact I have struggled with being addicted to doing nothing. It is what led to my chronic homelessness. <strong>If you sit in zazen long enough you eventually wind up in a pile of crap.</strong> The body does not stop processing, after all.</em>', cite:'A Meditation on Meditation'},
+      {p:'<em>I am a special case. I love doing nothing. My first mental hospitalization was due to catatonia. I was completely unresponsive. Nothing was distracting me from my meditation. I was deep.</em>', cite:'A Meditation on Meditation', href:'https://docs.google.com/document/d/1cndJM7V-niKBu-TFr1r17igdgg91PljAWWqs_V376VE/edit'},
+      {p:'<em>In fact I have struggled with being addicted to doing nothing. It is what led to my chronic homelessness. <strong>If you sit in zazen long enough you eventually wind up in a pile of crap.</strong> The body does not stop processing, after all.</em>', cite:'A Meditation on Meditation', href:'https://docs.google.com/document/d/1cndJM7V-niKBu-TFr1r17igdgg91PljAWWqs_V376VE/edit'},
       {p:'So when I say <strong>true enlightenment is useless</strong>, that is not a bit. It is a report.'},
 
-      {p:'<strong>And the line that has to come with it:</strong> <em>I would never recommend insanity, addiction and psychosis for anyone else. But they always worked for me. So have asana, pranayama and pratyahara.</em>', cite:'A Meditation on Meditation'},
+      {p:'<strong>And the line that has to come with it:</strong> <em>I would never recommend insanity, addiction and psychosis for anyone else. But they always worked for me. So have asana, pranayama and pratyahara.</em>', cite:'A Meditation on Meditation', href:'https://docs.google.com/document/d/1cndJM7V-niKBu-TFr1r17igdgg91PljAWWqs_V376VE/edit'},
 
       {p:'Which is why the goal is stated the careful way. <strong>To be able to find it \u2014 not to stay there.</strong> It is technically a form of dissociation, and <em>leaving matters exactly as much as arriving.</em>'},
       {p:'That is the middle way, and it is the whole reason this class has a door on both ends. I am not selling you somewhere to go. I am teaching you a seat you can get up from.'}
@@ -413,8 +410,8 @@ window.CARDS = {
     h:'BEFORE THE MAP', sub:'to 3000 BCE',
     lead:'Everything left of here is told, not written.',
     body:[
-      {p:'Shiva on a mountaintop, teaching Parvati. The first lesson anybody tells a story about \u2014 and <em>we still have no idea what he was actually doing</em>. Either it was so ordinary nobody bothered to explain it, or it was a guarded skill bordering on magic.', cite:'A Brief History of Nothing'},
-      {p:'Before that, the Brahma bull pronouncing the syllable, and Vishnu\u2019s dream beginning. Some theories have chanting and toning predating language \u2014 and being what led to language.', cite:'History of Meditation'},
+      {p:'Shiva on a mountaintop, teaching Parvati. The first lesson anybody tells a story about \u2014 and <em>we still have no idea what he was actually doing</em>. Either it was so ordinary nobody bothered to explain it, or it was a guarded skill bordering on magic.', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'},
+      {p:'Before that, the Brahma bull pronouncing the syllable, and Vishnu\u2019s dream beginning. Some theories have chanting and toning predating language \u2014 and being what led to language.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'This is where the deluge sits, and where recorded history more or less starts.'},
       {p:'\u26a0 <strong>On \u201cyoga is 5,000 years old.\u201d</strong> That number is back-extrapolated. Part of it leans on a seated figure on an Indus Valley seal around 2500 BCE that may or may not be a yogi \u2014 genuinely contested. Recognisable yoga turns up in the Upanishads, much later. The flood is the sturdier anchor of the two: there is a real silt layer at Shuruppak dated near 2900 BCE.'}
     ]
@@ -426,8 +423,8 @@ window.CARDS = {
     body:[
       {p:'Upanishads. Taoism. Siddhartha. Confucius. Socrates. The Hebrew prophets. Independent regions, no contact, one window.'},
       {p:'<strong>The name is Karl Jaspers\u2019.</strong> He called it the Axial Age, and the argument about whether it is one phenomenon or a coincidence we have named is still live. Either answer is interesting.'},
-      {p:'<strong>Taoism is the turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> \u2014 a tool you use on yourself, with benefits you can talk about.', cite:'History of Meditation'},
-      {p:'Then the Silk Road opens and it stops being local. Buddhism travels it, and the word travels with it: Buddhists use the same word the Vedas and yoga use \u2014 <em>dhyana</em>. That shared word is the tell that this is one lineage rather than parallel invention.', cite:'History of Meditation'},
+      {p:'<strong>Taoism is the turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> \u2014 a tool you use on yourself, with benefits you can talk about.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
+      {p:'Then the Silk Road opens and it stops being local. Buddhism travels it, and the word travels with it: Buddhists use the same word the Vedas and yoga use \u2014 <em>dhyana</em>. That shared word is the tell that this is one lineage rather than parallel invention.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'Christ lands <em>late</em> in this column, not early. By then the missionary business is thriving and everybody wants a cut.'},
       {p:'\u26a0 <strong>Two notes.</strong> Historians call the first half of this the <em>Axial Age</em>. And Patanjali gets two ticks on purpose \u2014 tradition puts the Sutras near 200 BCE, current scholarship argues c. 400 CE. The column is wide enough to hold the argument.'}
     ]
@@ -437,8 +434,8 @@ window.CARDS = {
     h:'THE CRUSADES', sub:'1095 \u2013 1291',
     lead:'Meditation gets a makeover across the board \u2014 four traditions, one century.',
     body:[
-      {p:'Sufi practice is systematised. Byzantine monks fix prayer to posture and repetition. A Carthusian writes <em>read, ponder, pray, contemplate</em> into a formal ladder. And Zen starts being taught apart from Buddhism.', cite:'History of Meditation'},
-      {p:'Nobody has settled whether they influenced each other or simply arrived at the same place at the same time.', cite:'History of Meditation'},
+      {p:'Sufi practice is systematised. Byzantine monks fix prayer to posture and repetition. A Carthusian writes <em>read, ponder, pray, contemplate</em> into a formal ladder. And Zen starts being taught apart from Buddhism.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
+      {p:'Nobody has settled whether they influenced each other or simply arrived at the same place at the same time.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'Every piece has a name, if you want them: Guigo II\u2019s <em>Scala Claustralium</em>, c. 1150, is the ladder. The Byzantine one is <em>hesychasm</em>. The Sufi one runs through al-Ghazali. Chan gets its Song-dynasty codification in the same window.'},
       {p:'\u26a0 <strong>Where the Crusades framing strains.</strong> Symeon dies in 1022 and al-Ghazali in 1111, so half of this predates or straddles the First Crusade. The contact routes \u2014 trade, and Al-Andalus \u2014 were already open. Contemporaneous, then, rather than obviously caused by \u2014 which arguably makes it the more interesting convergence, not the less.'}
     ]
@@ -448,10 +445,10 @@ window.CARDS = {
     h:'THE ENLIGHTENMENT', sub:'1685 \u2013 1815',
     lead:'The West rediscovers it, and for the first time gets to read it.',
     body:[
-      {p:'The Gita is translated into English in 1785. The ancient texts start circulating in languages that are not Sanskrit \u2014 better translations, no philosopher\u2019s stone needed.', cite:'History of Meditation'},
-      {p:'Hatha is practised in British India for the first time in centuries. Whitman and Thoreau. <em>Walden</em>.', cite:'History of Meditation'},
+      {p:'The Gita is translated into English in 1785. The ancient texts start circulating in languages that are not Sanskrit \u2014 better translations, no philosopher\u2019s stone needed.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
+      {p:'Hatha is practised in British India for the first time in centuries. Whitman and Thoreau. <em>Walden</em>.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'And the mat is invented in this window. Before that it was a bed \u2014 which is what makes the PG-13 version of the Shiva and Parvati story hard to animate.'},
-      {p:'<strong>The column closes on almost nothing.</strong> By 1850 the physical practice had all but disappeared from the world.', cite:'The Six Branches'}
+      {p:'<strong>The column closes on almost nothing.</strong> By 1850 the physical practice had all but disappeared from the world.'}
     ]
   },
 
@@ -459,7 +456,7 @@ window.CARDS = {
     h:'TRANSCENDENTAL', sub:'1830s \u2013 the 1920s',
     lead:'The century where the West stops translating it and starts believing it.',
     body:[
-      {p:'Whitman and Thoreau first \u2014 the texts arrive in English and immediately turn into American writing. <em>Walden</em> in 1854.', cite:'History of Meditation'},
+      {p:'Whitman and Thoreau first \u2014 the texts arrive in English and immediately turn into American writing. <em>Walden</em> in 1854.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'Then the Victorian appetite for the ancient and the occult: Theosophy in 1875, Egyptomania, the Golden Dawn, the Orient Express. The east becomes fashionable in drawing rooms, and the Theosophical Society moves its headquarters to Madras in 1882.'},
       {p:'<strong>And the current runs the other way at the same time.</strong> Colonial scholarship had printed and catalogued the Sanskrit texts; Indian reform movements read their own tradition back out of those editions and re-presented it. Arya Samaj 1875, Vivekananda\u2019s mission 1897. Scholars call the result Neo-Vedanta.'},
       {p:'Vivekananda at the Chicago World\u2019s Fair in 1893. Yogananda arriving in 1920 and never really leaving. The Tibetan Book of the Dead in English in 1927.'},
@@ -485,13 +482,13 @@ window.CARDS = {
 
       {p:'<strong>The seventies.</strong> Well. It was the seventies. Blame Nixon \u2014 off the gold standard in 1971, the HMO Act reshaping health care in 1973. Yoga turns up on public television.'},
 
-      {p:'<strong>And then the eighties</strong>, when the tax cuts for the rich actually start \u2014 so rich white people could afford yoga classes again. By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
+      {p:'<strong>And then the eighties</strong>, when the tax cuts for the rich actually start \u2014 so rich white people could afford yoga classes again. By then there were more people practising hatha in Los Angeles than in all of India.'},
 
       {p:'\u26a0 <strong>Which is the same argument as the six branches, wearing different clothes.</strong> That list sorted the practice by caste \u2014 meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change: <em>who has the time to study, and who is bathing in the ashes of the dead.</em>'},
 
-      {p:'Science peaks in the late seventies, goes quiet, and comes back when MRI gets cheap. <em>This class is part of that wave.</em>', cite:'History of Meditation'},
+      {p:'Science peaks in the late seventies, goes quiet, and comes back when MRI gets cheap. <em>This class is part of that wave.</em>', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
 
-      {p:'<strong>2001: I took my first yoga class in college. The course catalog called it \u201cstretch and relaxation.\u201d</strong>', cite:'History of Meditation'}
+      {p:'<strong>2001: I took my first yoga class in college. The course catalog called it \u201cstretch and relaxation.\u201d</strong>', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'}
     ]
   }
 }
@@ -506,31 +503,31 @@ window.TIMELINE = [
 { card:'era-pre', col:0.015, from:0.000, to:0.038, label:'BEFORE THE MAP', span:'to 3000 BCE',
     rows:[
       { at:0.002, y:'before all of it', n:'Vishnu&rsquo;s dream, and the Om', body:[
-        {p:'The Brahma bull pronounces the sacred syllable and Vishnu&rsquo;s dream begins &mdash; a metaphor for the universe holding itself to a single thread of the multiverse <em>through observation</em>.', cite:'A Brief History of Nothing'},
+        {p:'The Brahma bull pronounces the sacred syllable and Vishnu&rsquo;s dream begins &mdash; a metaphor for the universe holding itself to a single thread of the multiverse <em>through observation</em>.', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'},
         {p:'And it still reverberates. You resonate with it when you om &mdash; and if you listen carefully after you stop, in the moment of silence before the next inhale, you can hear the universe om back. In a good cave it never stops. <em>Echo resonance, not just being a hippy.</em>'},
         {p:'The universe as we know it is basically Vishnu&rsquo;s lucid dream. Which is the same thing we do in class when we take a five minute beach vacation in our minds. <strong>That is the first yoga.</strong>'},
-        {p:'Some theories have chanting and toning predating language &mdash; and being what led to language.', cite:'History of Meditation'}
+        {p:'Some theories have chanting and toning predating language &mdash; and being what led to language.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'}
       ]},
       { at:0.008, y:'the first lesson', n:'Shiva, as yogi, teaching Parvati', body:[
         {p:'The first yoga lesson anybody tells a story about. Shiva on a mountaintop, teaching Parvati. Eighty-four asanas.'},
-        {p:'<em>The PG-13 version of that story ends right there.</em>', cite:'History of Yoga'},
+        {p:'<em>The PG-13 version of that story ends right there.</em>'},
         {p:'And there was no mat. It was a bed &mdash; which is what makes the PG-13 version hard to animate.'},
-        {p:'And the honest part: <strong>we still have no idea what he was actually doing.</strong> Either the concept was so ever-present that no explanation was required, or it was regarded as a special skill bordering on magic &mdash; another thing Shiva had mastered, shrouded in secrecy. <em>No one&rsquo;s gonna buy the cow if you can get the milk for free.</em>', cite:'A Brief History of Nothing'},
+        {p:'And the honest part: <strong>we still have no idea what he was actually doing.</strong> Either the concept was so ever-present that no explanation was required, or it was regarded as a special skill bordering on magic &mdash; another thing Shiva had mastered, shrouded in secrecy. <em>No one&rsquo;s gonna buy the cow if you can get the milk for free.</em>', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'},
         {p:'&#9888; The 84-asana story is sourced to the Mahanirvana Tantra, which is an <strong>18th-century</strong> text. The teaching frame of Shiva instructing Parvati is genuinely ancient; that particular telling of it is one of the latest things you could cite.'}
       ]},
       { at:0.014, y:'3102 BCE', n:'Arjuna&rsquo;s chariot ride', body:[
         {p:'Krishna is his charioteer, a friend he has known since childhood, and then all of time and space freezes except for the two of them.'},
-        {p:'<em>He didn&rsquo;t know till just then, so it wasn&rsquo;t like he was keeping it a secret or anything.</em>', cite:'A Brief History of Nothing'},
+        {p:'<em>He didn&rsquo;t know till just then, so it wasn&rsquo;t like he was keeping it a secret or anything.</em>', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'},
         {p:'Traditionally the start of Kali Yuga. <strong>We go by tradition here, not by history</strong> &mdash; but the footnote is worth having: the text that reports this conversation was written between 200 BCE and 200 CE. <em>The story is set three thousand years before the book that tells it.</em>'},
-        {p:'And if you ask Arjuna, any one of you may suddenly remember all of your lifetimes &mdash; at which point your viewpoint zooms out one level of the fractal, and you are basically Vishnu.', cite:'A Brief History of Nothing'}
+        {p:'And if you ask Arjuna, any one of you may suddenly remember all of your lifetimes &mdash; at which point your viewpoint zooms out one level of the fractal, and you are basically Vishnu.', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'}
       ]},
       { at:0.026, y:'c. 2900 BCE', n:'the flood', body:[
-        {p:'Everything left of here is told, not written. Comet, ice age ending, volcano &mdash; choose your own adventure, and all paths converge on a big flood. <em>All we have left are weird rock piles and graffiti.</em>', cite:'A Brief History of Nothing'},
+        {p:'Everything left of here is told, not written. Comet, ice age ending, volcano &mdash; choose your own adventure, and all paths converge on a big flood. <em>All we have left are weird rock piles and graffiti.</em>', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'},
         {p:'&#9888; This is the sturdier of the two ancient anchors. There is a real silt layer at Shuruppak dated near 2900 BCE. The flood stories are not evidence-free.'},
         {p:'&#9888; The other one is not. <strong>&ldquo;Yoga is 5,000 years old&rdquo; is back-extrapolated</strong> &mdash; partly from a seated figure on an Indus Valley seal around 2500 BCE that may or may not be a yogi. Recognisable yoga turns up in the Upanishads, much later.'}
       ]},
       { at:0.184, y:'c. 1500 BCE', n:'the Vedas', body:[
-        {p:'The Vedas describe meditation as <strong>an ancient formal practice</strong> &mdash; already old when they were written. That is where the back-estimate to 3000 BCE comes from.', cite:'History of Meditation'},
+        {p:'The Vedas describe meditation as <strong>an ancient formal practice</strong> &mdash; already old when they were written. That is where the back-estimate to 3000 BCE comes from.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'They also ran two streams at once, and the tradition named them itself. <strong>&#347;ruti</strong> &mdash; heard, and fixed, locked by recitation techniques redundant enough to catch a dropped syllable. <strong>Sm&#7771;ti</strong> &mdash; remembered, and plastic; the epics, retold and expanded every generation.'},
         {p:'It did not survive on better weather. Palm leaf rots. <strong>India kept its texts in people, not paper</strong> &mdash; and the memorised ones stayed soft. Writing hardcoded them, which was a mistake: <em>a story you can cite is a story you can be wrong about.</em>'}
       ]}
@@ -539,7 +536,7 @@ window.TIMELINE = [
 { card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE AXIAL AGE', span:'900 BCE &ndash; 400 CE',
     rows:[
       { at:0.249, y:'c. 900 BCE', n:'the Torah', body:[
-        {p:'It refers to meditative practice as if it were a common, well-understood behaviour. Nobody is introducing the idea; everybody already has it.', cite:'History of Meditation'},
+        {p:'It refers to meditative practice as if it were a common, well-understood behaviour. Nobody is introducing the idea; everybody already has it.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'<strong>That is the useful part.</strong> Nobody explains a practice everybody already has. It is evidence of ubiquity, not of origin.'}
       ]},
       { at:0.260, y:'c. 800 BCE', n:'the Upanishads', body:[
@@ -547,12 +544,12 @@ window.TIMELINE = [
         {p:'Same span as Mesoamerica and the pyramids, but still a living document when Hebrew, Greek and Latin were being written. Better translations, no philosopher&rsquo;s stone needed. <em>The fan fic survived.</em>'}
       ]},
       { at:0.282, y:'c. 600 BCE', n:'Taoism', body:[
-        {p:'<strong>The turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> &mdash; a tool you use on yourself, with benefits you can talk about outside the temple.', cite:'History of Meditation'},
+        {p:'<strong>The turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> &mdash; a tool you use on yourself, with benefits you can talk about outside the temple.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'&#9888; <strong>And this is the ancestor of the hospital.</strong> The first time anyone discusses the benefits outside a spiritual frame is the first step on a road that ends with an eight-week protocol at a medical school in 1979.'}
       ]},
       { at:0.293, y:'c. 400 BCE', n:'Siddhartha', body:[
         {p:'And Confucius, and Socrates, and the Hebrew prophets. Independent regions, no contact, one window. Historians call it the <strong>Axial Age</strong>.'},
-        {p:'The entire practice of Buddhism can be considered meditation. And the tell that this is one lineage rather than parallel invention: <strong>Buddhists use the same word the Vedas and yoga use &mdash; dhyana.</strong>', cite:'History of Meditation'},
+        {p:'The entire practice of Buddhism can be considered meditation. And the tell that this is one lineage rather than parallel invention: <strong>Buddhists use the same word the Vedas and yoga use &mdash; dhyana.</strong>', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'&#9888; Traditional dates are 563&ndash;483 BCE, but scholarship has moved his death <em>later</em>, toward 400 &mdash; which pulls him toward the rest of the cluster rather than away from it.'}
       ]},
       { at:0.325, y:'c. 200 BCE', n:'Patanjali?', body:[
@@ -563,12 +560,12 @@ window.TIMELINE = [
         {p:'Vishnu comes back as a Jew this time, and they spell it Christ. Same guy. <em>Not really blue.</em>'},
         {p:'First trick was at a party. Both are known for party tricks.'},
         {p:'He lands <em>late</em> in this column, not early &mdash; five hundred years after the cluster. By then the Silk Road is open and it is a thriving industry: everybody wants a cut of the missionary business.'},
-        {p:'It also makes Hindus notoriously hard to convert. <em>&ldquo;Oh yeah, I know this story. We were wondering where he was, he was late. Got in a big fight at the temple back home and had to leave.&rdquo;</em>', cite:'A Brief History of Nothing'}
+        {p:'It also makes Hindus notoriously hard to convert. <em>&ldquo;Oh yeah, I know this story. We were wondering where he was, he was late. Got in a big fight at the temple back home and had to leave.&rdquo;</em>', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'}
       ]},
       { at:0.369, y:'c. 200 CE', n:'the Gita written down', body:[
         {p:'The conversation on the battlefield finally becomes a book &mdash; three thousand years after it is set.'},
         {p:'<strong>This is the two clocks, side by side on one page.</strong> Arjuna&rsquo;s ride is in the first column because that is where tradition puts it. The book is here, because that is when somebody wrote it.'},
-        {p:'<em>Someone decided to start writing down their favourite episodes, like fan fiction.</em> The Gita is a later season &mdash; it gets kind of sci-fi when Krishna freezes timespace.', cite:'A Brief History of Nothing'}
+        {p:'<em>Someone decided to start writing down their favourite episodes, like fan fiction.</em> The Gita is a later season &mdash; it gets kind of sci-fi when Krishna freezes timespace.', cite:'A Brief History of Nothing', href:'https://docs.google.com/document/d/1QaDIxvlvZ5Wcj_zLei7v2j54Gk54xr3Oq7ArDWCtdX4/edit'}
       ]},
       { at:0.391, y:'c. 400 CE', n:'Patanjali?', body:[
         {p:'The other end of the argument. Current scholarship dates the Yoga Sutras here rather than to the 2nd century BCE.'},
@@ -583,18 +580,18 @@ window.TIMELINE = [
         {p:'&#9888; Where the framing strains, and it is worth saying in class: al-Ghazali dies in 1111 and Symeon in 1022, so half of this predates or straddles the First Crusade. The contact routes &mdash; trade, and Al-Andalus &mdash; were already open. <strong>Contemporaneous rather than obviously caused by</strong>, which arguably makes it the more interesting convergence.'}
       ]},
       { at:0.470, y:'1111', n:'al-Ghazali', body:[
-        {p:'Sufi practice is formalised and systematised &mdash; dhikr becomes a structure rather than a habit.', cite:'History of Meditation'},
+        {p:'Sufi practice is formalised and systematised &mdash; dhikr becomes a structure rather than a habit.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'He is the figure who reconciled the mystical practice with orthodox theology &mdash; which is what let it be taught openly rather than quietly.'},
       {p:'The same move, in a different century, as taking the Buddhism out of meditation so a ward can teach it. <strong>Make it acceptable to the institution and it survives.</strong>'}
       ]},
       { at:0.476, y:'c. 1150', n:'the ladder', body:[
-        {p:'A Latin monk writes <strong>read, ponder, pray, contemplate</strong> into a formal structure he calls a ladder.', cite:'History of Meditation'},
+        {p:'A Latin monk writes <strong>read, ponder, pray, contemplate</strong> into a formal structure he calls a ladder.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'Guigo II, a Carthusian &mdash; the <em>Scala Claustralium</em>. In the original: <em>lectio, meditatio, oratio, contemplatio</em>. Those are the same four words.'},
         {p:'In the same window: Byzantine monks fix prayer to posture and repetition (hesychasm), and Zen begins being taught apart from Buddhism as Chan gets its Song-dynasty codification.'}
       ]},
       { at:0.488, y:'1291', n:'the last Crusade', body:[
-        {p:'The window closes. Then roughly six hundred years pass in which nothing much changes &mdash; monks around the world quietly develop and pass on the practice.', cite:'History of Meditation'},
-      {p:'And then roughly six hundred years in which nothing much changes. Monks around the world quietly develop and pass on the practice, and nobody writes a new system.', cite:'History of Meditation'},
+        {p:'The window closes. Then roughly six hundred years pass in which nothing much changes &mdash; monks around the world quietly develop and pass on the practice.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
+      {p:'And then roughly six hundred years in which nothing much changes. Monks around the world quietly develop and pass on the practice, and nobody writes a new system.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'<strong>Which is worth sitting with.</strong> The gap between this and the next column is longer than the gap between the Upanishads and Patanjali.'}
       ]}
     ]},
@@ -607,7 +604,7 @@ window.TIMELINE = [
         {p:'&#9888; And this runs both directions, which is the uncomfortable half. Educated Indians began reading their own tradition back out of colonial editions. What had been kept in people was now kept in books &mdash; catalogued by the people who had colonised them.'}
       ]},
       { at:0.542, y:'1785', n:'the Gita in English', body:[
-        {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation'},
+        {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
       {p:'Charles Wilkins &mdash; the first direct translation of a major Sanskrit work into English. Before this you needed Sanskrit, or a teacher, or both.'},
       {p:'<strong>It is the hinge of the whole Enlightenment column.</strong> Everything downstream &mdash; Thoreau, the Theosophists, Vivekananda&rsquo;s audience &mdash; is people who could finally read it.'}
       ]}
@@ -618,13 +615,13 @@ window.TIMELINE = [
     label:'TRANSCENDENTAL', span:'1830s &ndash; the 1930s',
     rows:[
       { at:0.549, y:'1854', n:'Walden', body:[
-        {p:'The West rediscovers the practice and writes it down in its own voice. Whitman and Thoreau.', cite:'History of Meditation'},
+        {p:'The West rediscovers the practice and writes it down in its own voice. Whitman and Thoreau.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'Hatha is practised in British India for the first time in centuries in this same window.'},
         {p:'&#9888; <strong>Strictly, this one is past the Enlightenment.</strong> That runs c. 1685&ndash;1815; Wilkins&rsquo; Gita in 1785 sits inside it, but Walden is <em>Transcendentalism</em>. The column holds both because the story does.'},
         {p:'And the name is doing double duty on purpose. The European Enlightenment is named for reason displacing religion &mdash; and it labels the exact window in which the West began importing eastern spirituality. <em>Enlightenment</em> is also the word we reach for to translate samadhi.'}
       ]},
       { at:0.550, y:'by 1850', n:'hatha nearly gone', body:[
-        {p:'<em>The physical practice of hatha yoga had all but disappeared from the world by 1850.</em>', cite:'The Six Branches'},
+        {p:'<em>The physical practice of hatha yoga had all but disappeared from the world by 1850.</em>'},
         {p:'<strong>The column closes on almost nothing.</strong> Which is the fact that makes the next column absurd.'},
         {p:'&#9888; <strong>I used to say the mat was invented in this window. It was not, and I have cut it.</strong> The mat is 1967. It is in the modern column now, where it belongs, and the true date is better for the argument anyway.'}
       ]},
@@ -663,7 +660,7 @@ window.TIMELINE = [
         {p:'No copy has ever been produced.'}
       ]},
       { at:0.684, y:'1927', n:'Book of the Dead', body:[
-        {p:'The Tibetan Book of the Dead is published in English.', cite:'History of Meditation'},
+        {p:'The Tibetan Book of the Dead is published in English.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'Chakras arrive in the same stretch &mdash; Woodroffe&rsquo;s <em>Serpent Power</em> in 1919, and Jung running Kundalini seminars by 1932.'}
       ]}
     ],
@@ -683,7 +680,7 @@ window.TIMELINE = [
         {p:'&#9888; He was Belgian, and French-speaking, which is why the story usually gets remembered as a Frenchman. 1919&ndash;2004.'}
       ]},
       { at:0.762, y:'1966', n:'Light on Yoga', body:[
-        {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
+        {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'Tune in, drop out.'}
       ]},
       { at:0.768, y:'1967', n:'the mat', lead:'The seat, by year.',
@@ -749,7 +746,7 @@ window.TIMELINE = [
         {p:'&nbsp;', cite:'the trademark filing, and the branding controversy', href:'https://www.companyvakil.com/trademarksearch/K-PATTABHI-JOIS-ASHTANGA-YOGA-INSTITUTE/656183'}
       ]},
       { at:0.879, y:'2001', n:'&ldquo;stretch and relaxation&rdquo;', body:[
-        {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation'},
+        {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation', href:'https://docs.google.com/document/d/1c8L5Xv5Bi6Dfbc2BHBIRqWL7AnCSHAOiWZC_wjK4Gq4/edit'},
         {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'}
       ]}
     ],
