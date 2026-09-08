@@ -376,8 +376,8 @@ window.TIMELINE = [
     ],
     ticks:[0.527,0.540,0.542] },
 
-  { card:'era-transcendental', col:0.575, from:0.548, to:0.700,
-    label:'TRANSCENDENTAL', span:'1830s &ndash; the 1920s',
+  { card:'era-transcendental', col:0.575, from:0.548, to:0.706,
+    label:'TRANSCENDENTAL', span:'1830s &ndash; the 1930s',
     rows:[
       { at:0.549, y:'1854', n:'Walden', body:[
         {p:'The West rediscovers the practice and writes it down in its own voice. Whitman and Thoreau.', cite:'History of Meditation'},
@@ -406,12 +406,20 @@ window.TIMELINE = [
       { at:0.670, y:'1920', n:'Yogananda', body:[
         {p:'Arrives in the United States and never really leaves. The Roaring Twenties squeeze him in alongside everything else.'}
       ]},
+      { at:0.700, y:'the 1930s', n:'Krishnamacharya', body:[
+        {p:'The Mysore Palace school. <strong>Everything you have ever taken a class in walks out of this one room.</strong>'},
+        {p:'Two of his students: <strong>Pattabhi Jois</strong> leaves with flowing, breath-linked sequences. <strong>Iyengar</strong> &mdash; also his brother-in-law &mdash; leaves with props, belts, blocks and long precise holds. Same teacher, same decade, two practices that are the opposite of each other, and both now sold as ancient.'},
+        {p:'&#9888; <strong>And the flow is not in Patanjali.</strong> The Sutras give posture three lines, and the operative one is <em>sthira sukham asanam</em> &mdash; a seat that is steady and comfortable. No sequences. No vinyasa. Asana there is how you sit so your leg does not fall asleep while you meditate.'},
+        {p:'Jois traced the vinyasa system to a text called the <strong>Yoga Korunta</strong>, which Krishnamacharya said he found in a Calcutta library. Written on palm leaf. <strong>Legend has it the manuscript was destroyed by ants.</strong>'},
+        {p:'&#9888; Which lands exactly on the problem from the Vedas card. <em>Palm leaf rots</em> &mdash; that is precisely why India kept its texts in people rather than paper. So the destruction is entirely plausible <strong>and</strong> entirely convenient: the one document that would prove the ancient lineage got eaten, and what survives is a memory of it.'},
+        {p:'No copy has ever been produced.'}
+      ]},
       { at:0.684, y:'1927', n:'Book of the Dead', body:[
         {p:'The Tibetan Book of the Dead is published in English.', cite:'History of Meditation'},
         {p:'Chakras arrive in the same stretch &mdash; Woodroffe&rsquo;s <em>Serpent Power</em> in 1919, and Jung running Kundalini seminars by 1932.'}
       ]}
     ],
-    ticks:[0.549,0.550,0.600,0.606,0.616,0.670,0.684] },
+    ticks:[0.549,0.550,0.600,0.606,0.616,0.670,0.684,0.700] },
 
   { card:'era-modern', col:0.755, from:0.720, to:0.960,
     label:'MODERN', span:'the 1950s &ndash; now',
@@ -419,6 +427,12 @@ window.TIMELINE = [
       { at:0.730, y:'the 1950s', n:'beatniks', body:[
         {p:'A great time to be white. And notice the direction of travel: <strong>we had to go to them.</strong>'},
         {p:'It arrives as a telephone game through translators, and what comes back is whatever survived the trip.'}
+      ]},
+      { at:0.756, y:'1964', n:'the Belgian', body:[
+        {p:'<strong>Andr&eacute; Van Lysebeth</strong> is the first Westerner through Pattabhi Jois&rsquo;s door. Two months in Mysore on the primary and intermediate series.'},
+        {p:'Then he goes home and publishes <em>Pranayama</em> &mdash; <strong>with a photograph of Jois in it.</strong> That picture is what sends Europeans and Americans to Mysore.'},
+        {p:'One man, one book, one photograph. That is the entire vector by which this reaches the West.'},
+        {p:'&#9888; He was Belgian, and French-speaking, which is why the story usually gets remembered as a Frenchman. 1919&ndash;2004.'}
       ]},
       { at:0.762, y:'1966', n:'Light on Yoga', body:[
         {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
@@ -438,11 +452,22 @@ window.TIMELINE = [
         {p:'By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
         {p:'<strong>Which is the six branches wearing different clothes.</strong> That list sorted the practice by caste: meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change &mdash; <em>who has time to study and read, and who is bathing in the ashes of the dead.</em>'}
       ]},
+      { at:0.918, y:'2010', n:'the name gets claimed', body:[
+        {p:'<em>K Pattabhi Jois Ashtanga Yoga Institute</em> is filed as a trademark on 14 May 2010, held by R. Sharath Jois &mdash; Pattabhi Jois&rsquo;s grandson.'},
+        {p:'The push behind it is American money: a partnership with Sonia Jones, married to a hedge fund billionaire, to codify the teaching, open Jois Yoga boutique studios and launch a clothing line.'},
+        {p:'&#9888; <strong>The correction to the story I used to tell.</strong> It was not white men in the fifties taking the word. It is 2010, it is the lineage family claiming their own name, and it is financed from Greenwich. Which lands closer to the point, not further from it.'},
+        {p:'And the enforcement is not a lawsuit. It is <strong>the authorized teacher list</strong>. Long-time teachers who let the practice evolve &mdash; used props, made modifications &mdash; quietly stopped appearing on it.'},
+        {p:'So I cannot call this class Ashtanga because of <strong>a gate, not a statute</strong>. The bare word is <em>ashtau</em> plus <em>anga</em>: eight, limb. Nobody\u2019s mark stops me teaching the eight limbs and calling them that.'},
+        {p:'<strong>Which is the same shape a third time.</strong> The six branches sorted people by caste. The eighties sorted them by money. The authorization list sorts teachers by obedience.'},
+        {p:'<strong>Fact-checked 8 September 2026.</strong> I had been teaching a version of this where Americans took the word in the 1950s. That is not what the record shows, and I looked it up rather than keep repeating it. The filing date, the holder and the Jois Yoga partnership are all sourced below \u2014 go read them and correct me if they are wrong.',
+         cite:'Wikipedia: K. Pattabhi Jois &middot; R. Sharath Jois', href:'https://en.wikipedia.org/wiki/K._Pattabhi_Jois'},
+        {p:'&nbsp;', cite:'the trademark filing, and the branding controversy', href:'https://www.companyvakil.com/trademarksearch/K-PATTABHI-JOIS-ASHTANGA-YOGA-INSTITUTE/656183'}
+      ]},
       { at:0.879, y:'2001', n:'&ldquo;stretch and relaxation&rdquo;', body:[
         {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation'},
         {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'},
         {p:'<em>This class is part of that wave.</em>'}
       ]}
     ],
-    ticks:[0.730,0.762,0.772,0.792,0.815,0.879] }
+    ticks:[0.730,0.756,0.762,0.772,0.792,0.815,0.879,0.918] }
 ]
