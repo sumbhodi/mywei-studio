@@ -150,7 +150,14 @@
     /* ⭐ the scroll's torn top edge rides OVER the base of the tree, so the roots run under the
        parchment instead of stopping at it. A % margin is a share of the width, so the overlap
        stays proportional at every size; a px value would drift. z-index puts the tear on top. */
-    margin-top:-7%; position:relative; z-index:2;
+    /* ⭐ THE OVERLAP IS THE NOTCH, and it is his measurement, not a taste call. The torn top edge
+       of timeline.png runs from y=21 at its highest point to y=38 at the deepest notch — a 17px
+       tear in an 878px-wide image. Pull the parchment up by the deepest notch (38/878 = 4.33% of
+       the width, which is what a % margin-top resolves against) and the tree fills every notch
+       exactly: the roots show THROUGH the tear instead of being cut off by it, and the parchment's
+       high points meet the bottom of the art. Any more and it eats root; any less and the notches
+       show empty page. */
+    margin-top:-4.33%; position:relative; z-index:2;
   }
   .tl-h{font-family:'Cinzel',serif; font-size:clamp(1.1rem,2.4vw,1.5rem); letter-spacing:.16em;
     color:#734E32; text-align:center; margin-bottom:1.2rem}
