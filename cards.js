@@ -188,6 +188,38 @@ window.CARDS = {
 
       {p:'&#8212;'},
 
+      {p:'<strong>Then the Germans get ornery the first time</strong>, over a poorly planned parade. When the gas masks come off the skirts get shorter, and yoga is hip again.'},
+      {p:'<strong>Culture as skirt length.</strong> Swings and oscillations \u2014 and the theory is real enough to have a name: the hemline index, proposed in 1926. Hems rise when the money does. Then the Depression arrives and the skirts get longer again.'},
+      {p:'<strong>The Germans get ornery a second time</strong>, and everyone feels better after Captain America punches enough Nazis.'},
+      {p:'Then \u2014 <em>if we built it we might as well use it</em> \u2014 we felt bad afterwards, let the Japanese out of the camps, kickstarted their economy into a world power, and had time for yoga again.'},
+
+      {p:'<strong>But in the fifties, brown people were not interested in visiting. Wonder why.</strong>'},
+      {p:'&#9888; There is a hard answer, and it is better than the joke: the <strong>Immigration Act of 1924</strong> barred Asian immigration almost entirely, and it was not repealed until 1965. Nobody came because the law said they could not.'},
+      {p:'<strong>So we went to them.</strong> A Belgian walks into Mysore in 1964, stays two months, and goes home with a photograph.'},
+
+      {p:'The sixties. Then the seventies, and this time it is not the Germans\u2019 fault \u2014 they were being cool, making good music and good cars. Blame Nixon: off the gold standard, health care privatised, and then Reaganomics behind it.'},
+
+      {p:'&#8212;'},
+
+      {p:'<strong>And running alongside all of it, the other history: exercise.</strong>'},
+      {p:'<strong>The fifties</strong> are the first time exercise is not a hobby but something you <em>do</em>. By the <strong>sixties</strong> everyone is running. By the <strong>seventies</strong> they are blowing out their knees. The <strong>eighties</strong> invent jogging \u2014 faking running \u2014 and the <strong>nineties</strong> replace it with power walking.'},
+      {p:'High-impact aerobics runs the same years. Jazzercise is the softer version. And the peak of the whole thing is Richard Simmons sweating to the oldies \u2014 who, if you actually look at what he built, nails <strong>low-impact HIIT with just enough bounce to hold off osteoporosis</strong>. He was right and nobody noticed.'},
+
+      {p:'<strong>Then somebody walked into an ashtanga school for Westerners</strong> \u2014 or whatever was most marketable in SoCal that week \u2014 and realised these people had been working out what breaks a body and what does not <em>for a century already</em>.'},
+      {p:'So: take the asana. Make it dancier. Add music. <strong>Tuck the meditation in at the end.</strong>'},
+      {p:'As my sister-in-law, who works for Hugger Mugger, puts it: <em>yoga is a way to trick Westerners into meditating by wearing them out enough to need a nap.</em>'},
+      {p:'And honestly \u2014 if I ran a school for boys, the way Pattabhi Jois did, and had to get teenage men to sit still and meditate, <strong>I would make them do a bunch of pushups first too.</strong> Hence: optional chaturangas in my class.'},
+
+      {p:'&#8212;'},
+
+      {p:'<strong>The eighties.</strong> Woo. Crystals, spirit animals, angel guides, and a magic wand on an infomercial. And more people practising in LA than in all of India \u2014 which I will stand by as an urban legend, because I have never been able to source it and neither has anyone else.'},
+      {p:'<strong>The nineties.</strong> <em>I bet you jog and eat salads too.</em> If nothing else works, try yoga. The <em>be here now</em> and <em>wherever you go, there you are</em> books make their way into rehabs, mental hospitals and jails \u2014 and from there they leak into pop culture. Fight Club has a cave and a spirit animal. Happy Gilmore has a happy place. Once you start looking you find a few Adam Sandler films with one.'},
+      {p:'<strong>Post-Y2K</strong> it goes mainstream, but filtered. It arrives in the college catalog under a name nobody could object to: <em>stretch and relaxation.</em>'},
+      {p:'<strong>2008</strong> \u2014 I graduate from SLCC\u2019s first yoga teacher training program.'},
+      {p:'<strong>2020</strong> \u2014 a pandemic, and everyone is doing it or wishing they had. Meditation finally goes fully mainstream, about three thousand years after it was already ancient.'},
+
+      {p:'&#8212;'},
+
       {p:'<strong>So here is what I actually teach you.</strong> A routine out of a colonial gymnasium, as performance art. <em>Look at me, look at what I can do</em> is a real part of yoga \u2014 not to be diminished, and not to be indulged. But it is there, it has always been there, and pretending otherwise is the one dishonest move available.'},
 
       {p:'And then, next to it, cognitive science and meditation. <strong>The asana is honest about being a show. The rest is not a show.</strong>'}
