@@ -85,6 +85,12 @@ the temp file, then move it into place. I broke this file three times patching i
 python3 build.py > /tmp/cards_new.js && node --check /tmp/cards_new.js && cp /tmp/cards_new.js cards.js
 ```
 
+⚠ 8 Sep, same rule, new shape: **a paragraph line can end in `cite:'…', href:'…'},` and then the last
+string on the line is the URL, not the prose.** Appending "before the closing quote" put two sentences
+inside a Google Docs link; `node --check` passed, the page rendered, the link was broken. Anchor on
+`', cite:` when it exists, and verify by evaluating the fresh file, never the browser's cached copy
+(python's http.server lets Chrome keep `cards.js` for a while; the check read stale data twice).
+
 ⚠ And never strip with a broad regex — one ate the object structure and `br-raja` came back
 `undefined`. Walk to each occurrence and remove a known literal.
 
