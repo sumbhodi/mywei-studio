@@ -40,10 +40,7 @@ window.CARDS = {
          'separate.</em>', cite:'History of Yoga'},
       {p:'So the yoke is the tool we use to re-member what the brain split apart. Not destroying the ego '+
          '— <em>true ego death is suicide, it is just a matter of pace</em> — but loosening its grip. '+
-         'Getting out of the pool long enough to dry off.', cite:'History of Yoga'},
-      {p:'And worth saying out loud on day one: this is not a modern wellness trend. It was not invented '+
-         'by Lululemon. It is a technology for consciousness older than writing, handed teacher to '+
-         'student the whole way down.', cite:'History of Yoga'}
+         'Getting out of the pool long enough to dry off.', cite:'History of Yoga'}
     ]
   },
 
