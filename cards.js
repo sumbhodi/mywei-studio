@@ -192,10 +192,11 @@ window.CARDS = {
   },
 
   'era-clump': {
-    h:'THE CLUMP', sub:'900 BCE \u2013 400 CE',
+    h:'THE AXIAL AGE', sub:'900 BCE \u2013 400 CE',
     lead:'Everything at once, from places that were not talking to each other.',
     body:[
       {p:'Upanishads. Taoism. Siddhartha. Confucius. Socrates. The Hebrew prophets. Independent regions, no contact, one window.'},
+      {p:'<strong>The name is Karl Jaspers\u2019.</strong> He called it the Axial Age, and the argument about whether it is one phenomenon or a coincidence we have named is still live. Either answer is interesting.'},
       {p:'<strong>Taoism is the turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> \u2014 a tool you use on yourself, with benefits you can talk about.', cite:'History of Meditation'},
       {p:'Then the Silk Road opens and it stops being local. Buddhism travels it, and the word travels with it: Buddhists use the same word the Vedas and yoga use \u2014 <em>dhyana</em>. That shared word is the tell that this is one lineage rather than parallel invention.', cite:'History of Meditation'},
       {p:'Christ lands <em>late</em> in this column, not early. By then the missionary business is thriving and everybody wants a cut.'},
@@ -255,40 +256,171 @@ window.CARDS = {
 }
 
 window.TIMELINE = [
-  /* ⭐ FIVE COLUMNS. His call, 8 Sep: "I want 4 or 5 columns" — not one indented cascade walking
-     top to bottom. Each era owns a column of its own dates; `col` is where the column stands
-     (a fraction of the width), `from`/`to` are its bracket on the axis, `ticks` are the individual
-     years. One leader runs from the bracket down to the column head, so the connection to the
-     timeline is drawn once per era rather than twenty-six times.
-     Names are SHORT here on purpose — the row is a door, and the detail is behind it. */
+  /* ⭐ EACH DATE IS ITS OWN CARD. His call, 8 Sep. A row carries its own `body`, so the scroll is
+     built straight off the row and there is no second place to keep in sync — add a date here and
+     it is a door the moment it exists.
+     `at` puts its tick on the axis; the column head still opens the era card.
+     ⚠ A row with no body says so on its face. Nothing is invented in his name to fill a gap. */
 
   { card:'era-pre', col:0.015, from:0.000, to:0.038, label:'BEFORE THE MAP', span:'to 3000 BCE',
-    rows:[ ['before all of it','Vishnu&rsquo;s dream, and the Om'],
-           ['the first lesson','Shiva, as yogi, teaching Parvati'],
-           ['3102 BCE','Arjuna&rsquo;s chariot ride'],
-           ['c. 2900 BCE','the flood'],
-           ['c. 1500 BCE','the Vedas'] ],
-    ticks:[0.002,0.008,0.014,0.026,0.184] },
+    rows:[
+      { at:0.002, y:'before all of it', n:'Vishnu&rsquo;s dream, and the Om', body:[
+        {p:'The Brahma bull pronounces the sacred syllable and Vishnu&rsquo;s dream begins &mdash; a metaphor for the universe holding itself to a single thread of the multiverse <em>through observation</em>.', cite:'A Brief History of Nothing'},
+        {p:'And it still reverberates. You resonate with it when you om &mdash; and if you listen carefully after you stop, in the moment of silence before the next inhale, you can hear the universe om back. In a good cave it never stops. <em>Echo resonance, not just being a hippy.</em>'},
+        {p:'The universe as we know it is basically Vishnu&rsquo;s lucid dream. Which is the same thing we do in class when we take a five minute beach vacation in our minds. <strong>That is the first yoga.</strong>'},
+        {p:'Some theories have chanting and toning predating language &mdash; and being what led to language.', cite:'History of Meditation'}
+      ]},
+      { at:0.008, y:'the first lesson', n:'Shiva, as yogi, teaching Parvati', body:[
+        {p:'The first yoga lesson anybody tells a story about. Shiva on a mountaintop, teaching Parvati. Eighty-four asanas.'},
+        {p:'<em>The PG-13 version of that story ends right there.</em>', cite:'History of Yoga'},
+        {p:'And the honest part: <strong>we still have no idea what he was actually doing.</strong> Either the concept was so ever-present that no explanation was required, or it was regarded as a special skill bordering on magic &mdash; another thing Shiva had mastered, shrouded in secrecy. <em>No one&rsquo;s gonna buy the cow if you can get the milk for free.</em>', cite:'A Brief History of Nothing'},
+        {p:'&#9888; The 84-asana story is sourced to the Mahanirvana Tantra, which is an <strong>18th-century</strong> text. The teaching frame of Shiva instructing Parvati is genuinely ancient; that particular telling of it is one of the latest things you could cite.'}
+      ]},
+      { at:0.014, y:'3102 BCE', n:'Arjuna&rsquo;s chariot ride', body:[
+        {p:'Krishna is his charioteer, a friend he has known since childhood, and then all of time and space freezes except for the two of them.'},
+        {p:'<em>He didn&rsquo;t know till just then, so it wasn&rsquo;t like he was keeping it a secret or anything.</em>', cite:'A Brief History of Nothing'},
+        {p:'Traditionally the start of Kali Yuga. <strong>We go by tradition here, not by history</strong> &mdash; but the footnote is worth having: the text that reports this conversation was written between 200 BCE and 200 CE. <em>The story is set three thousand years before the book that tells it.</em>'},
+        {p:'And if you ask Arjuna, any one of you may suddenly remember all of your lifetimes &mdash; at which point your viewpoint zooms out one level of the fractal, and you are basically Vishnu.', cite:'A Brief History of Nothing'}
+      ]},
+      { at:0.026, y:'c. 2900 BCE', n:'the flood', body:[
+        {p:'Everything left of here is told, not written. Comet, ice age ending, volcano &mdash; choose your own adventure, and all paths converge on a big flood. <em>All we have left are weird rock piles and graffiti.</em>', cite:'A Brief History of Nothing'},
+        {p:'&#9888; This is the sturdier of the two ancient anchors. There is a real silt layer at Shuruppak dated near 2900 BCE. The flood stories are not evidence-free.'},
+        {p:'&#9888; The other one is not. <strong>&ldquo;Yoga is 5,000 years old&rdquo; is back-extrapolated</strong> &mdash; partly from a seated figure on an Indus Valley seal around 2500 BCE that may or may not be a yogi. Recognisable yoga turns up in the Upanishads, much later.'}
+      ]},
+      { at:0.184, y:'c. 1500 BCE', n:'the Vedas', body:[
+        {p:'The Vedas describe meditation as <strong>an ancient formal practice</strong> &mdash; already old when they were written. That is where the back-estimate to 3000 BCE comes from.', cite:'History of Meditation'},
+        {p:'They also ran two streams at once, and the tradition named them itself. <strong>&#347;ruti</strong> &mdash; heard, and fixed, locked by recitation techniques redundant enough to catch a dropped syllable. <strong>Sm&#7771;ti</strong> &mdash; remembered, and plastic; the epics, retold and expanded every generation.'},
+        {p:'It did not survive on better weather. Palm leaf rots. <strong>India kept its texts in people, not paper</strong> &mdash; and the memorised ones stayed soft. Writing hardcoded them, which was a mistake: <em>a story you can cite is a story you can be wrong about.</em>'}
+      ]}
+    ]},
 
-  { card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE CLUMP', span:'900 BCE – 400 CE',
-    rows:[ ['c. 900 BCE','the Torah'], ['c. 800 BCE','the Upanishads'], ['c. 600 BCE','Taoism'],
-           ['c. 400 BCE','Siddhartha'], ['c. 200 BCE','Patanjali?'], ['0','Christ'],
-           ['c. 200 CE','the Gita written down'], ['c. 400 CE','Patanjali?'] ],
-    ticks:[0.249,0.26,0.282,0.293,0.325,0.347,0.369,0.391] },
+  { card:'era-clump', col:0.215, from:0.249, to:0.391, label:'THE AXIAL AGE', span:'900 BCE &ndash; 400 CE',
+    rows:[
+      { at:0.249, y:'c. 900 BCE', n:'the Torah', body:[
+        {p:'It refers to meditative practice as if it were a common, well-understood behaviour. Nobody is introducing the idea; everybody already has it.', cite:'History of Meditation'}
+      ]},
+      { at:0.260, y:'c. 800 BCE', n:'the Upanishads', body:[
+        {p:'<strong>The OG.</strong> Yoga in a shape you would recognise &mdash; the Katha has the chariot and the yoke.'},
+        {p:'Same span as Mesoamerica and the pyramids, but still a living document when Hebrew, Greek and Latin were being written. Better translations, no philosopher&rsquo;s stone needed. <em>The fan fic survived.</em>'}
+      ]},
+      { at:0.282, y:'c. 600 BCE', n:'Taoism', body:[
+        {p:'<strong>The turn.</strong> Meditation stops being purely spiritual and becomes a <em>skill</em> &mdash; a tool you use on yourself, with benefits you can talk about outside the temple.', cite:'History of Meditation'}
+      ]},
+      { at:0.293, y:'c. 400 BCE', n:'Siddhartha', body:[
+        {p:'And Confucius, and Socrates, and the Hebrew prophets. Independent regions, no contact, one window. Historians call it the <strong>Axial Age</strong>.'},
+        {p:'The entire practice of Buddhism can be considered meditation. And the tell that this is one lineage rather than parallel invention: <strong>Buddhists use the same word the Vedas and yoga use &mdash; dhyana.</strong>', cite:'History of Meditation'},
+        {p:'&#9888; Traditional dates are 563&ndash;483 BCE, but scholarship has moved his death <em>later</em>, toward 400 &mdash; which pulls him toward the rest of the cluster rather than away from it.'}
+      ]},
+      { at:0.325, y:'c. 200 BCE', n:'Patanjali?', body:[
+        {p:'The Sutras. The eight limbs get written down and get an author &mdash; which the six branches never do. That asymmetry is why one column of the tree hangs off a date and the other does not.'},
+        {p:'&#9888; He has two ticks on this timeline on purpose. Tradition puts the Sutras near 200 BCE; current scholarship argues c. 400 CE. Taking the early end puts Siddhartha, the Sutras and Christ inside four centuries.'}
+      ]},
+      { at:0.347, y:'0', n:'Christ', body:[
+        {p:'Vishnu comes back as a Jew this time, and they spell it Christ. Same guy. <em>Not really blue.</em>'},
+        {p:'First trick was at a party. Both are known for party tricks.'},
+        {p:'He lands <em>late</em> in this column, not early &mdash; five hundred years after the cluster. By then the Silk Road is open and it is a thriving industry: everybody wants a cut of the missionary business.'},
+        {p:'It also makes Hindus notoriously hard to convert. <em>&ldquo;Oh yeah, I know this story. We were wondering where he was, he was late. Got in a big fight at the temple back home and had to leave.&rdquo;</em>', cite:'A Brief History of Nothing'}
+      ]},
+      { at:0.369, y:'c. 200 CE', n:'the Gita written down', body:[
+        {p:'The conversation on the battlefield finally becomes a book &mdash; three thousand years after it is set.'},
+        {p:'<strong>This is the two clocks, side by side on one page.</strong> Arjuna&rsquo;s ride is in the first column because that is where tradition puts it. The book is here, because that is when somebody wrote it.'},
+        {p:'<em>Someone decided to start writing down their favourite episodes, like fan fiction.</em> The Gita is a later season &mdash; it gets kind of sci-fi when Krishna freezes timespace.', cite:'A Brief History of Nothing'}
+      ]},
+      { at:0.391, y:'c. 400 CE', n:'Patanjali?', body:[
+        {p:'The other end of the argument. Current scholarship dates the Yoga Sutras here rather than to the 2nd century BCE.'},
+        {p:'The column is wide enough to hold both, and holding both is more honest than picking one.'}
+      ]}
+    ]},
 
-  { card:'era-crusades', col:0.405, from:0.460, to:0.494, label:'THE CRUSADES', span:'1095 – 1291',
-    rows:[ ['1095','the First Crusade'], ['1111','al-Ghazali'], ['c. 1150','the ladder'],
-           ['1291','the last Crusade'] ],
-    ticks:[0.467,0.470,0.476,0.488] },
+  { card:'era-crusades', col:0.405, from:0.460, to:0.494, label:'THE CRUSADES', span:'1095 &ndash; 1291',
+    rows:[
+      { at:0.467, y:'1095', n:'the First Crusade', body:[
+        {p:'Forced contact between Latin Christendom, Byzantium and the Islamic world &mdash; and within about a century, meditation gets a makeover in four traditions at once.'},
+        {p:'&#9888; Where the framing strains, and it is worth saying in class: al-Ghazali dies in 1111 and Symeon in 1022, so half of this predates or straddles the First Crusade. The contact routes &mdash; trade, and Al-Andalus &mdash; were already open. <strong>Contemporaneous rather than obviously caused by</strong>, which arguably makes it the more interesting convergence.'}
+      ]},
+      { at:0.470, y:'1111', n:'al-Ghazali', body:[
+        {p:'Sufi practice is formalised and systematised &mdash; dhikr becomes a structure rather than a habit.', cite:'History of Meditation'}
+      ]},
+      { at:0.476, y:'c. 1150', n:'the ladder', body:[
+        {p:'A Latin monk writes <strong>read, ponder, pray, contemplate</strong> into a formal structure he calls a ladder.', cite:'History of Meditation'},
+        {p:'Guigo II, a Carthusian &mdash; the <em>Scala Claustralium</em>. In the original: <em>lectio, meditatio, oratio, contemplatio</em>. Those are the same four words.'},
+        {p:'In the same window: Byzantine monks fix prayer to posture and repetition (hesychasm), and Zen begins being taught apart from Buddhism as Chan gets its Song-dynasty codification.'}
+      ]},
+      { at:0.488, y:'1291', n:'the last Crusade', body:[
+        {p:'The window closes. Then roughly six hundred years pass in which nothing much changes &mdash; monks around the world quietly develop and pass on the practice.', cite:'History of Meditation'}
+      ]}
+    ]},
 
-  { card:'era-enlightenment', col:0.575, from:0.518, to:0.554, label:'THE ENLIGHTENMENT', span:'1650 – 1860',
-    rows:[ ['1785','the Gita in English'], ['1854','Walden'], ['by 1850','hatha nearly gone'] ],
-    ticks:[0.527,0.542,0.549] },
+  { card:'era-enlightenment', col:0.575, from:0.518, to:0.554, label:'THE ENLIGHTENMENT', span:'1650 &ndash; 1860',
+    rows:[
+      { at:0.540, y:'1784', n:'the Asiatic Society', body:[
+        {p:'British orientalist scholarship starts cataloguing and <strong>printing</strong> Sanskrit texts. Max M&uuml;ller&rsquo;s <em>Sacred Books of the East</em> follows.'},
+        {p:'&#9888; And this runs both directions, which is the uncomfortable half. Educated Indians began reading their own tradition back out of colonial editions. What had been kept in people was now kept in books &mdash; catalogued by the people who had colonised them.'}
+      ]},
+      { at:0.542, y:'1785', n:'the Gita in English', body:[
+        {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation'}
+      ]},
+      { at:0.549, y:'1854', n:'Walden', body:[
+        {p:'The West rediscovers the practice and writes it down in its own voice. Whitman and Thoreau.', cite:'History of Meditation'},
+        {p:'Hatha is practised in British India for the first time in centuries in this same window.'},
+        {p:'&#9888; <strong>Strictly, this one is past the Enlightenment.</strong> That runs c. 1685&ndash;1815; Wilkins&rsquo; Gita in 1785 sits inside it, but Walden is <em>Transcendentalism</em>. The column holds both because the story does.'},
+        {p:'And the name is doing double duty on purpose. The European Enlightenment is named for reason displacing religion &mdash; and it labels the exact window in which the West began importing eastern spirituality. <em>Enlightenment</em> is also the word we reach for to translate samadhi.'}
+      ]},
+      { at:0.550, y:'by 1850', n:'hatha nearly gone', body:[
+        {p:'<em>The physical practice of hatha yoga had all but disappeared from the world by 1850.</em>', cite:'The Six Branches'},
+        {p:'<strong>The column closes on almost nothing.</strong> Which is the fact that makes the next column absurd.'},
+        {p:'The mat is invented in this window too. Before that it was a bed &mdash; which is what makes the PG-13 version of the Shiva and Parvati story hard to animate.'}
+      ]}
+    ]},
 
-  { card:'era-modern', col:0.755, from:0.616, to:0.960, label:'MODERN', span:'1860 – now',
-    rows:[ ['1893','Vivekananda'], ['1920','Yogananda'], ['1927','Book of the Dead'],
-           ['the 1950s','beatniks'], ['1966','Light on Yoga'], ['1971','the gold standard'],
-           ['1987','the seven chakras'], ['the 1980s','tax cuts, and LA'],
-           ['2001','&ldquo;stretch and relaxation&rdquo;'] ],
-    ticks:[0.616,0.670,0.684,0.730,0.762,0.772,0.792,0.815,0.879] }
+  { card:'era-modern', col:0.755, from:0.616, to:0.960, label:'MODERN', span:'1860 &ndash; now',
+    rows:[
+      { at:0.600, y:'1875', n:'the Theosophists', body:[
+        {p:'The Victorian appetite for the ancient and the occult &mdash; Theosophy founded in 1875, Egyptomania, the Golden Dawn in 1888, the Orient Express running from 1883. The east becomes fashionable in drawing rooms.'},
+        {p:'The Theosophical Society moves its headquarters to Adyar, Madras, in 1882. It is one of the main pipes through which Indian ideas reach the West &mdash; and it is also how a lot of Western assumptions flow back the other way.'}
+      ]},
+      { at:0.606, y:'1875&ndash;97', n:'rediscovering the roots', body:[
+        {p:'Colonialism produces a counter-current: Indian reform movements re-reading the tradition and re-presenting it. Arya Samaj in 1875, Vivekananda&rsquo;s Ramakrishna Mission in 1897. Scholars call the result <strong>Neo-Vedanta</strong>.'},
+        {p:'&#9888; And the strongest version of this claim, which is contested and worth knowing: Mark Singleton&rsquo;s <em>Yoga Body</em> argues modern postural yoga was substantially <strong>reassembled</strong> in this window &mdash; blended with European physical culture, gymnastics and Scandinavian drill &mdash; arriving at Krishnamacharya&rsquo;s Mysore Palace school in the 1930s.'},
+        {p:'Which would mean the asana sequence in this room has a colonial gymnasium in its ancestry, not only a cave. <em>Hold that loosely. But hold it.</em>'}
+      ]},
+      { at:0.616, y:'1893', n:'Vivekananda', body:[
+        {p:'At the World&rsquo;s Parliament of Religions, held inside the Chicago World&rsquo;s Fair. A man from Calcutta explains Vedanta to America and America claps.'},
+        {p:'This is downstream of the <strong>Bengal Renaissance</strong> &mdash; which is why 1860 is a tick on this axis at all. It is not a yoga date. It is the Indian cultural revival that re-popularised hatha and became the same current that eventually produces Indian cinema. Tagore is born in 1861.'}
+      ]},
+      { at:0.670, y:'1920', n:'Yogananda', body:[
+        {p:'Arrives in the United States and never really leaves. The Roaring Twenties squeeze him in alongside everything else.'}
+      ]},
+      { at:0.684, y:'1927', n:'Book of the Dead', body:[
+        {p:'The Tibetan Book of the Dead is published in English.', cite:'History of Meditation'},
+        {p:'Chakras arrive in the same stretch &mdash; Woodroffe&rsquo;s <em>Serpent Power</em> in 1919, and Jung running Kundalini seminars by 1932.'}
+      ]},
+      { at:0.730, y:'the 1950s', n:'beatniks', body:[
+        {p:'A great time to be white. And notice the direction of travel: <strong>we had to go to them.</strong>'},
+        {p:'It arrives as a telephone game through translators, and what comes back is whatever survived the trip.'}
+      ]},
+      { at:0.762, y:'1966', n:'Light on Yoga', body:[
+        {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
+        {p:'Tune in, drop out.'}
+      ]},
+      { at:0.772, y:'1971', n:'the gold standard', body:[
+        {p:'Well. It was the seventies. Blame Nixon &mdash; off the gold standard in 1971, health care privatised in 1973.'},
+        {p:'Yoga turns up on public television. Science peaks late in the decade, then goes quiet until MRI gets cheap.'}
+      ]},
+      { at:0.815, y:'1987', n:'the seven chakras', body:[
+        {p:'The seven-chakra system as everyone now knows it gets standardised in the West &mdash; Anodea Judith&rsquo;s <em>Wheels of Life</em>.'},
+        {p:'&#9888; And the rainbow colours are newer than that. The chakras are not traditionally mapped to the visible spectrum at all; that comes from Christopher Hills in 1977.'},
+        {p:'<strong>The chart everybody treats as ancient is the same age as the studios that could suddenly afford to print it.</strong>'}
+      ]},
+      { at:0.792, y:'the 1980s', n:'tax cuts, and LA', body:[
+        {p:'The tax cuts for the rich actually start &mdash; so rich white people could afford yoga classes again.'},
+        {p:'By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
+        {p:'<strong>Which is the six branches wearing different clothes.</strong> That list sorted the practice by caste: meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change &mdash; <em>who has time to study and read, and who is bathing in the ashes of the dead.</em>'}
+      ]},
+      { at:0.879, y:'2001', n:'&ldquo;stretch and relaxation&rdquo;', body:[
+        {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation'},
+        {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'},
+        {p:'<em>This class is part of that wave.</em>'}
+      ]}
+    ]}
 ]
