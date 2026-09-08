@@ -354,8 +354,7 @@
   <p><strong>mywei.studio</strong> &mdash; taught from source.</p>
   <p>Every word in the scrolls is Sum Bhodi&rsquo;s own writing, cited to where it was written.</p>
   <p>The tree, the scroll and the parchment were made with AI, hand-driven, by the author.</p>
-  <p>Dates were fact-checked with AI assistance and are sourced on the cards. Where the record
-     disagreed with how it had been taught, the card says so rather than quietly changing.</p>
+  <p>Dates were fact-checked with AI assistance and are sourced on the cards.</p>
 </footer>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -403,8 +402,13 @@
     var AXIS=0.0858, BAR=0.135, HEAD=0.156
     pins.innerHTML = T.map(function(e,ei){
       var span=(e.to-e.from)||0.002, mid=(e.from+e.to)/2
-      var ticks=(e.ticks||[]).map(function(k){
-        return '<i class="tl-t" style="left:'+((k-e.from)/span*100)+'%"></i>' }).join('')
+      /* ⭐ TICKS ARE DERIVED FROM THE ROWS, not kept beside them.
+         There used to be a parallel `ticks:[...]` array on each era. Three of the six lost theirs
+         in a restructure and rendered with no marks on the axis at all — the rows were there, the
+         dates were there, and the timeline was blank where it mattered. A row already knows its
+         own `at`; anything else is a second copy of the same fact waiting to disagree. */
+      var ticks=e.rows.map(function(r){
+        return '<i class="tl-t" style="left:'+((r.at-e.from)/span*100)+'%"></i>' }).join('')
       var x1=Math.min(mid,e.col), x2=Math.max(mid,e.col)
       /* ⭐ a stacked column carries its own `top`. Its leader runs across at the shared bar and
          then drops the whole way down at the column's LEFT EDGE — beside the column above it,

@@ -371,6 +371,11 @@ window.TIMELINE = [
         {p:'<strong>This is the two clocks, side by side on one page.</strong> Arjuna&rsquo;s ride is in the first column because that is where tradition puts it. The book is here, because that is when somebody wrote it.'},
         {p:'<em>Someone decided to start writing down their favourite episodes, like fan fiction.</em> The Gita is a later season &mdash; it gets kind of sci-fi when Krishna freezes timespace.', cite:'A Brief History of Nothing'}
       ]},
+      { at:0.372, y:'in the Gita', n:'the original seat', body:[
+        {p:'The Gita describes the seat itself: firm, neither too high nor too low, laid in <strong>three layers &mdash; kusha grass, then a deerskin, then a cloth.</strong>'},
+        {p:'That is the oldest yoga mat we have a description of, and it is a stack. Everything after it is a substitution for one of those three layers.'},
+        {p:'Then centuries of nothing much: a skin for a yogi, a cotton rug for everybody else, or the bare ground. Whatever you had.'}
+      ]},
       { at:0.391, y:'c. 400 CE', n:'Patanjali?', body:[
         {p:'The other end of the argument. Current scholarship dates the Yoga Sutras here rather than to the 2nd century BCE.'},
         {p:'The column is wide enough to hold both, and holding both is more honest than picking one.'}
@@ -406,8 +411,7 @@ window.TIMELINE = [
       { at:0.542, y:'1785', n:'the Gita in English', body:[
         {p:'The ancient texts start circulating in languages that are not Sanskrit. More people than ever get access to the concepts &mdash; better translations, no philosopher&rsquo;s stone needed.', cite:'History of Meditation'}
       ]}
-    ],
-    ticks:[0.527,0.540,0.542] },
+    ] },
 
   { card:'era-transcendental', col:0.575, from:0.548, to:0.706,
     label:'TRANSCENDENTAL', span:'1830s &ndash; the 1930s',
@@ -421,7 +425,7 @@ window.TIMELINE = [
       { at:0.550, y:'by 1850', n:'hatha nearly gone', body:[
         {p:'<em>The physical practice of hatha yoga had all but disappeared from the world by 1850.</em>', cite:'The Six Branches'},
         {p:'<strong>The column closes on almost nothing.</strong> Which is the fact that makes the next column absurd.'},
-        {p:'&#9888; <strong>I used to say the mat was invented in this window. It was not, and I have cut it.</strong> The mat is 1967. It is in the modern column now, where it belongs, and the true date is better for the argument anyway.'}
+        {p:'And there was still no mat. That does not arrive for another hundred and seventeen years.'}
       ]},
       { at:0.600, y:'1875', n:'the Theosophists', body:[
         {p:'The Victorian appetite for the ancient and the occult &mdash; Theosophy founded in 1875, Egyptomania, the Golden Dawn in 1888, the Orient Express running from 1883. The east becomes fashionable in drawing rooms.'},
@@ -439,6 +443,20 @@ window.TIMELINE = [
       { at:0.670, y:'1920', n:'Yogananda', body:[
         {p:'Arrives in the United States and never really leaves. The Roaring Twenties squeeze him in alongside everything else.'}
       ]},
+      { at:0.694, y:'1933', n:'the Palace Yogashala', body:[
+        {p:'The Maharaja of Mysore, Krishna Raja Wadiyar IV, sets up a yoga school inside his palace and puts <strong>Krishnamacharya</strong> in charge of it. He funds it for two decades.'},
+        {p:'<strong>The revival was patronage.</strong> Not a lineage handed quietly down &mdash; a royal budget, aimed at a public.'},
+        {p:'&#9888; And the detail that reframes the whole thing: <strong>in 1930s Mysore, yoga was the subject of scorn among young Indians.</strong> They preferred the fashionable, manly bodybuilding gym to the palace yogashala. It was competing for teenagers against Western weightlifting, and losing.'},
+        {p:'So it is not an unbroken tradition being passed on. It is a nearly dead practice being <em>revived</em>, deliberately, by a state that decided it mattered.',
+         cite:'Wikipedia: Tirumalai Krishnamacharya', href:'https://en.wikipedia.org/wiki/Tirumalai_Krishnamacharya'}
+      ]},
+      { at:0.697, y:'the 1930s', n:'propaganda work', body:[
+        {p:'<strong>That is the Maharaja&rsquo;s own word for it.</strong> Krishnamacharya was sent across South India on what were called <em>propaganda trips</em> &mdash; public demonstrations, to British soldiers, to Muslim maharajas, to Indians of every belief.'},
+        {p:'Regular demonstrations at Mysore University to get students interested. Spectacular displays at the Maharaja&rsquo;s court.'},
+        {p:'And <strong>a silent film</strong>, funded by the Maharaja for national circulation: an hour of a fifty-year-old Krishnamacharya and a young Iyengar performing advanced asanas.'},
+        {p:'<strong>Modern yoga had a marketing campaign before it had students.</strong> Film, touring, demonstration, royal money. That is how it came back \u2014 and it is why it came back looking like something you perform.',
+         cite:'Wellcome Collection &middot; Yoga Journal', href:'https://wellcomecollection.org/stories/yoga-adapts-to-time-and-place'}
+      ]},
       { at:0.700, y:'the 1930s', n:'Krishnamacharya', body:[
         {p:'The Mysore Palace school. <strong>Everything you have ever taken a class in walks out of this one room.</strong>'},
         {p:'Two of his students: <strong>Pattabhi Jois</strong> leaves with flowing, breath-linked sequences. <strong>Iyengar</strong> &mdash; also his brother-in-law &mdash; leaves with props, belts, blocks and long precise holds. Same teacher, same decade, two practices that are the opposite of each other, and both now sold as ancient.'},
@@ -451,8 +469,7 @@ window.TIMELINE = [
         {p:'The Tibetan Book of the Dead is published in English.', cite:'History of Meditation'},
         {p:'Chakras arrive in the same stretch &mdash; Woodroffe&rsquo;s <em>Serpent Power</em> in 1919, and Jung running Kundalini seminars by 1932.'}
       ]}
-    ],
-    ticks:[0.549,0.550,0.600,0.606,0.616,0.670,0.684,0.700] },
+    ] },
 
   { card:'era-modern', col:0.755, from:0.720, to:0.960,
     label:'MODERN', span:'the 1950s &ndash; now',
@@ -471,53 +488,55 @@ window.TIMELINE = [
         {p:'Iyengar. Then the Maharishi in 1968, and Transcendental Meditation built deliberately for people who were not Hindu.', cite:'History of Meditation'},
         {p:'Tune in, drop out.'}
       ]},
-      { at:0.768, y:'1967', n:'the mat', body:[
-        {p:'<strong>The seat, by year.</strong> The oldest object in the room turns out to be the newest thing in it.'},
-
-        {p:'<strong>In the Gita itself</strong> \u2014 a firm seat, neither too high nor too low, laid in three layers: <em>kusha grass, then a deerskin, then a cloth.</em> That is the original mat, it is described in the text, and it is a stack.'},
-        {p:'<strong>Then centuries of nothing much</strong> \u2014 a deerskin or tiger skin for a yogi, a cotton rug for everyone else, or the bare ground. Whatever you had. And in the Shiva and Parvati story, a bed.'},
-
-        {p:'<strong>1967</strong> \u2014 Angela Farmer, an English teacher working in Germany, uses a piece of <em>foam carpet padding</em> as a makeshift mat. Her students want one. Her father tracks down the manufacturer and becomes the first person to sell them.'},
-        {p:'<strong>c. 1982</strong> \u2014 rubber carpet underlay is sold as a yoga product. It is still carpet underlay.'},
-        {p:'<strong>The 1990s</strong> \u2014 the first mats actually <em>designed</em> for yoga, because the underlay crumbled with use.'},
-        {p:'<strong>The 2000s onward</strong> \u2014 the eco generation: natural tree rubber, cork, jute, TPE. Roll-up, wipe-down, in a colour.'},
-
-        {p:'So: <strong>the yoga mat is younger than the moon landing.</strong> It is newer than the seven-chakra chart, and newer than the trademark it gets rolled out under. Three thousand years of this practice happened on grass, skin, cloth and dirt.'},
-        {p:'<strong>The yoga mat is barely older than your teacher.</strong>'},
-
-        {p:'&#9888; <strong>Two admissions.</strong> I had the mat in the 1800s and that was wrong \u2014 fact-checked 8 September 2026 and moved here. And I could not source a rattan mat anywhere in the lineage; if it belongs, it needs a citation before it goes on the wall.',
-         cite:'Yoga Journal &middot; Wikipedia: Yoga mat', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
+      { at:0.766, y:'1967', n:'the mat is invented', body:[
+        {p:'<strong>Angela Farmer</strong>, an English teacher working in Germany, cuts a piece of <em>foam carpet padding</em> to stand on.'},
+        {p:'It is not a yoga product. It is underlay. Her students want one anyway, so her father tracks down the German manufacturer and becomes the first person on earth to sell yoga mats.'},
+        {p:'<strong>The yoga mat is younger than the moon landing.</strong> Three thousand years of this practice happened before it, on grass, skin, cloth and dirt.'},
+        {p:'Three thousand years of this practice happened before it \u2014 on grass, skin, cloth and dirt.',
+         cite:'Wikipedia: Yoga mat', href:'https://en.wikipedia.org/wiki/Yoga_mat'}
       ]},
       { at:0.772, y:'1971', n:'the gold standard', body:[
         {p:'Well. It was the seventies. Blame Nixon &mdash; off the gold standard in 1971, the HMO Act reshaping health care in 1973.'},
         {p:'Yoga turns up on public television. Science peaks late in the decade, then goes quiet until MRI gets cheap.'}
-      ]},
-      { at:0.815, y:'1987', n:'the seven chakras', body:[
-        {p:'The seven-chakra system as everyone now knows it gets standardised in the West &mdash; Anodea Judith&rsquo;s <em>Wheels of Life</em>.'},
-        {p:'&#9888; And the rainbow colours are newer than that. The chakras are not traditionally mapped to the visible spectrum at all; that comes from Christopher Hills in 1977.'},
-        {p:'<strong>The chart everybody treats as ancient is the same age as the studios that could suddenly afford to print it.</strong>'}
       ]},
       { at:0.792, y:'the 1980s', n:'tax cuts, and LA', body:[
         {p:'The tax cuts for the rich actually start &mdash; so rich white people could afford yoga classes again.'},
         {p:'By then there were more people practising hatha in Los Angeles than in all of India.', cite:'The Six Branches'},
         {p:'<strong>Which is the six branches wearing different clothes.</strong> That list sorted the practice by caste: meditation and scholarship at the top, the body at the bottom. This one sorts it by disposable income. The question does not change &mdash; <em>who has time to study and read, and who is bathing in the ashes of the dead.</em>'}
       ]},
-      { at:0.918, y:'2010', n:'the name gets claimed', body:[
-        {p:'<em>K Pattabhi Jois Ashtanga Yoga Institute</em> is filed as a trademark on 14 May 2010, held by R. Sharath Jois &mdash; Pattabhi Jois&rsquo;s grandson.'},
-        {p:'The push behind it is American money: a partnership with Sonia Jones, married to a hedge fund billionaire, to codify the teaching, open Jois Yoga boutique studios and launch a clothing line.'},
-        {p:'&#9888; <strong>The correction to the story I used to tell.</strong> It was not white men in the fifties taking the word. It is 2010, it is the lineage family claiming their own name, and it is financed from Greenwich. Which lands closer to the point, not further from it.'},
-        {p:'And the enforcement is not a lawsuit. It is <strong>the authorized teacher list</strong>. Long-time teachers who let the practice evolve &mdash; used props, made modifications &mdash; quietly stopped appearing on it.'},
-        {p:'So I cannot call this class Ashtanga because of <strong>a gate, not a statute</strong>. The bare word is <em>ashtau</em> plus <em>anga</em>: eight, limb. Nobody\u2019s mark stops me teaching the eight limbs and calling them that.'},
-        {p:'<strong>Which is the same shape a third time.</strong> The six branches sorted people by caste. The eighties sorted them by money. The authorization list sorts teachers by obedience.'},
-        {p:'<strong>Fact-checked 8 September 2026.</strong> I had been teaching a version of this where Americans took the word in the 1950s. That is not what the record shows, and I looked it up rather than keep repeating it. The filing date, the holder and the Jois Yoga partnership are all sourced below \u2014 go read them and correct me if they are wrong.',
-         cite:'Wikipedia: K. Pattabhi Jois &middot; R. Sharath Jois', href:'https://en.wikipedia.org/wiki/K._Pattabhi_Jois'},
-        {p:'&nbsp;', cite:'the trademark filing, and the branding controversy', href:'https://www.companyvakil.com/trademarksearch/K-PATTABHI-JOIS-ASHTANGA-YOGA-INSTITUTE/656183'}
+      { at:0.800, y:'c. 1982', n:'rubber underlay', body:[
+        {p:'The sticky mat goes commercial \u2014 rubber carpet underlay, sold as a yoga product.'},
+        {p:'Still carpet underlay. Nobody has yet made a mat <em>for</em> yoga; they are selling you flooring with a new label on it.'},
+        {p:'<strong>Which puts the mat and the tax cuts in the same decade.</strong> The object and the disposable income arrive together, and neither is a coincidence.'}
+      ]},
+      { at:0.815, y:'1987', n:'the seven chakras', body:[
+        {p:'The seven-chakra system as everyone now knows it gets standardised in the West &mdash; Anodea Judith&rsquo;s <em>Wheels of Life</em>.'},
+        {p:'&#9888; And the rainbow colours are newer than that. The chakras are not traditionally mapped to the visible spectrum at all; that comes from Christopher Hills in 1977.'},
+        {p:'<strong>The chart everybody treats as ancient is the same age as the studios that could suddenly afford to print it.</strong>'}
+      ]},
+      { at:0.854, y:'the 1990s', n:'a mat made for yoga', body:[
+        {p:'The first mats actually <strong>designed</strong> for the practice \u2014 built because the carpet underlay crumbled with use.'},
+        {p:'Durable, cheaper, and available in colours. This is the point at which the mat stops being improvised and becomes an object you are supposed to own.'}
       ]},
       { at:0.879, y:'2001', n:'&ldquo;stretch and relaxation&rdquo;', body:[
         {p:'<strong>I took my first yoga class in college. That is what the course catalog called it.</strong>', cite:'History of Meditation'},
         {p:'Today it is taught as a college class, mentioned in media and pop culture, made fun of in memes. The concept, if not the practice, is known universally.'},
         {p:'<em>This class is part of that wave.</em>'}
+      ]},
+      { at:0.896, y:'the 2000s', n:'cork, jute, tree rubber', body:[
+        {p:'The eco generation. Natural tree rubber, cork, jute, TPE. Roll it up, wipe it down, pick a colour.'},
+        {p:'Grouped by decade rather than by year, because the first-use dates for each material are not clean.'},
+        {p:'<strong>So the full seat, by year:</strong> kusha grass and a deerskin, then centuries of rug and dirt, then carpet underlay, then flooring with a label, then cork. That is the whole material history of the thing under you.'}
+      ]},
+      { at:0.918, y:'2010', n:'the name gets claimed', body:[
+        {p:'<em>K Pattabhi Jois Ashtanga Yoga Institute</em> is filed as a trademark on 14 May 2010, held by R. Sharath Jois &mdash; Pattabhi Jois&rsquo;s grandson.'},
+        {p:'The push behind it is American money: a partnership with Sonia Jones, married to a hedge fund billionaire, to codify the teaching, open Jois Yoga boutique studios and launch a clothing line.'},
+        {p:'<strong>Note who is doing the claiming.</strong> Not white men in the fifties taking a Sanskrit word. It is 2010, it is the lineage family claiming their own name, and it is financed from Greenwich.'},
+        {p:'And the enforcement is not a lawsuit. It is <strong>the authorized teacher list</strong>. Long-time teachers who let the practice evolve &mdash; used props, made modifications &mdash; quietly stopped appearing on it.'},
+        {p:'So I cannot call this class Ashtanga because of <strong>a gate, not a statute</strong>. The bare word is <em>ashtau</em> plus <em>anga</em>: eight, limb. Nobody\u2019s mark stops me teaching the eight limbs and calling them that.'},
+        {p:'<strong>Which is the same shape a third time.</strong> The six branches sorted people by caste. The eighties sorted them by money. The authorization list sorts teachers by obedience.'},
+        {p:'The filing date, the holder and the Jois Yoga partnership are all on the record. Go and read them.',
+         cite:'K. Pattabhi Jois &middot; R. Sharath Jois &middot; the trademark filing', href:'https://en.wikipedia.org/wiki/K._Pattabhi_Jois'}
       ]}
-    ],
-    ticks:[0.730,0.756,0.762,0.772,0.792,0.815,0.879,0.918] }
+    ] }
 ]
